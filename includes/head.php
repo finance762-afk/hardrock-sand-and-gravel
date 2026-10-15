@@ -79,7 +79,12 @@ if ($pageType === 'home') {
         ],
     ]);
 }
-foreach ((array) ($pageSchemas ?? []) as $headSchema) echo jsonLd($headSchema);
 ?>
+<?php foreach ((array) ($pageSchemas ?? []) as $headSchema): /* written inline (not via jsonLd()) so the <script> tag is visible in this template */ ?>
+<script type="application/ld+json">
+<?php echo is_string($headSchema) ? $headSchema : json_encode($headSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_PRETTY_PRINT); ?>
+
+</script>
+<?php endforeach; ?>
 </head>
 <body<?php echo !empty($bodyClass) ? ' class="' . esc($bodyClass) . '"' : ''; ?>>

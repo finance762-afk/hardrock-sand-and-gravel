@@ -4,17 +4,485 @@
       "path": "/",
       "useful_because": "The homepage is the one place a Sherman or Denison buyer sees HARDROCK's whole offer at once: the eight bulk materials and the four kinds of site work (driveways, house pads, ponds, land clearing) under one company, the actual opening hours (6 AM weekday start, Saturday 9-2), real photos of HARDROCK jobs such as rip rap set over filter fabric and a pond basin dug between trees, the cubic-yard math for sizing an order, a plain guide to which material suits which job, and the live Google reviews. Every service page goes deep on one item; this page is where a customer works out which one they need and calls.",
       "needs_confirmation": [
-        { "fact": "Street address of the HARDROCK yard / office (and whether customers can pick up material there)", "question": "What is the street address of your yard, and can customers pick up their own loads there?", "where": "estimate section NAP, footer, LocalBusiness schema" },
-        { "fact": "Pricing unit (per ton vs per cubic yard) and any delivery minimum or delivery fee", "question": "Do you price material by the ton or by the cubic yard, and is there a minimum order or a delivery charge?", "where": "FAQ 'How is sand and gravel priced?'" },
-        { "fact": "Delivery radius beyond Sherman, Denison and Grayson County", "question": "How far will you deliver — which towns outside Grayson County (e.g. Pottsboro, Van Alstyne, Whitesboro, Durant) do you regularly haul to?", "where": "FAQ 'Do you deliver…', hero answer, service-area sentence" },
-        { "fact": "Truck/load sizes (how many yards or tons per load)", "question": "How much does one of your truck loads hold (yards or tons), and do you offer smaller loads for homeowners?", "where": "Delivery card and the order process" },
-        { "fact": "How quickly an order is usually delivered (same day / next day)", "question": "When someone calls in the morning, how soon can you usually deliver — same day, next day, or later in the week?", "where": "mid-page CTA band, hero form tagline" },
-        { "fact": "Whether HARDROCK owns its trucks and equipment (excavator, skid steer) and runs its own crew", "question": "Do you run your own trucks, excavator and skid steer with your own crew, or do you sub any hauling or site work out?", "where": "about section, proof strip" },
-        { "fact": "Contractor / trade account terms", "question": "Do you offer accounts or volume pricing for contractors and landscapers? If so, what are the terms?", "where": "FAQ (question from the research brief, left out until confirmed)" },
-        { "fact": "Insurance and any licences or association memberships", "question": "Is HARDROCK insured for site work (driveways, pads, ponds, clearing), and do you hold any licences or memberships we can list?", "where": "hero chips, proof strip" },
-        { "fact": "Whether the crushed red granite in the photo is the decomposed granite HARDROCK sells", "question": "Is the red crushed granite in your photos the same product you sell as decomposed granite, or is it a separate product?", "where": "Decomposed granite service card photo" },
-        { "fact": "Whether the flagstone patio and fire pit photo is a HARDROCK job, and what material is in the joints", "question": "Was the flagstone patio with the fire pit one of your jobs? What did you fill the joints with?", "where": "recent work gallery caption" },
-        { "fact": "What a typical estimate looks like for site work (site visit, written quote)", "question": "For driveways, pads, ponds and clearing, do you visit the site before quoting, and do customers get the price in writing?", "where": "about section order process, estimate 'what happens next'" }
+        {
+          "fact": "Street address of the HARDROCK yard / office (and whether customers can pick up material there)",
+          "question": "What is the street address of your yard, and can customers pick up their own loads there?",
+          "where": "estimate section NAP, footer, LocalBusiness schema"
+        },
+        {
+          "fact": "Pricing unit (per ton vs per cubic yard) and any delivery minimum or delivery fee",
+          "question": "Do you price material by the ton or by the cubic yard, and is there a minimum order or a delivery charge?",
+          "where": "FAQ 'How is sand and gravel priced?'"
+        },
+        {
+          "fact": "Delivery radius beyond Sherman, Denison and Grayson County",
+          "question": "How far will you deliver — which towns outside Grayson County (e.g. Pottsboro, Van Alstyne, Whitesboro, Durant) do you regularly haul to?",
+          "where": "FAQ 'Do you deliver…', hero answer, service-area sentence"
+        },
+        {
+          "fact": "Truck/load sizes (how many yards or tons per load)",
+          "question": "How much does one of your truck loads hold (yards or tons), and do you offer smaller loads for homeowners?",
+          "where": "Delivery card and the order process"
+        },
+        {
+          "fact": "How quickly an order is usually delivered (same day / next day)",
+          "question": "When someone calls in the morning, how soon can you usually deliver — same day, next day, or later in the week?",
+          "where": "mid-page CTA band, hero form tagline"
+        },
+        {
+          "fact": "Whether HARDROCK owns its trucks and equipment (excavator, skid steer) and runs its own crew",
+          "question": "Do you run your own trucks, excavator and skid steer with your own crew, or do you sub any hauling or site work out?",
+          "where": "about section, proof strip"
+        },
+        {
+          "fact": "Contractor / trade account terms",
+          "question": "Do you offer accounts or volume pricing for contractors and landscapers? If so, what are the terms?",
+          "where": "FAQ (question from the research brief, left out until confirmed)"
+        },
+        {
+          "fact": "Insurance and any licences or association memberships",
+          "question": "Is HARDROCK insured for site work (driveways, pads, ponds, clearing), and do you hold any licences or memberships we can list?",
+          "where": "hero chips, proof strip"
+        },
+        {
+          "fact": "Whether the crushed red granite in the photo is the decomposed granite HARDROCK sells",
+          "question": "Is the red crushed granite in your photos the same product you sell as decomposed granite, or is it a separate product?",
+          "where": "Decomposed granite service card photo"
+        },
+        {
+          "fact": "Whether the flagstone patio and fire pit photo is a HARDROCK job, and what material is in the joints",
+          "question": "Was the flagstone patio with the fire pit one of your jobs? What did you fill the joints with?",
+          "where": "recent work gallery caption"
+        },
+        {
+          "fact": "What a typical estimate looks like for site work (site visit, written quote)",
+          "question": "For driveways, pads, ponds and clearing, do you visit the site before quoting, and do customers get the price in writing?",
+          "where": "about section order process, estimate 'what happens next'"
+        }
+      ]
+    },
+    {
+      "path": "/services/",
+      "useful_because": "The services hub is the one place that lists all 13 HARDROCK services split into site work and bulk materials, and the only page with a job-to-material chooser table (driveway, pad, path, French drain, pond bank, mortar, low spot, overgrown lot) that links each job to the right material page. It also explains the four-step order flow with the cubic-yard formula and a worked 12 x 20 ft parking-area example, plus HARDROCK's live Google reviews.",
+      "needs_confirmation": [
+        {
+          "fact": "Whether one order can mix materials or combine site work with delivery",
+          "question": "Can one order combine two materials, or a delivery plus site work like a driveway, on the same day?",
+          "where": "ordering section"
+        }
+      ]
+    },
+    {
+      "path": "/services/57-67-rock/",
+      "useful_because": "This is the only page that explains the actual difference between #57 and #67: the AASHTO M 43 size ranges on a visual scale, why the top size matters, and which one goes in a French drain, a concrete pour, pipe bedding or a driveway finish layer. It adds a four-way table against road base and river rock, worked trench math (60 ft x 1 ft x 18 in is about 3.3 cubic yards) plus a driveway top-course example, and a checklist of what to have ready when calling HARDROCK, with the real phone hours.",
+      "needs_confirmation": [
+        {
+          "fact": "Whether the 57/67 rock is washed",
+          "question": "Is your 57 and 67 rock washed, or sold as it comes off the crusher?",
+          "where": "uses section and service cards (currently not stated)"
+        },
+        {
+          "fact": "Stone type of the 57/67 rock",
+          "question": "What stone is your 57 and 67 rock (limestone, granite, other)?",
+          "where": "comparison table 'Stone' column"
+        },
+        {
+          "fact": "Whether both sizes are normally kept in stock",
+          "question": "Do you usually have both 57 and 67 on hand, or is one of them order-ahead?",
+          "where": "table caption, hero chips"
+        },
+        {
+          "fact": "Whether the gravel-stockpiles-job-site photo is a HARDROCK delivery and what rock it shows",
+          "question": "Is the photo of gravel piles in rows on the staked site one of your deliveries, and is that 57 rock?",
+          "where": "hero and proof section"
+        },
+        {
+          "fact": "Pricing unit for 57/67 rock",
+          "question": "Do you sell 57 and 67 rock by the ton or by the cubic yard?",
+          "where": "FAQ 'What does a load of 57 or 67 rock cost?'"
+        }
+      ]
+    },
+    {
+      "path": "/services/decomposed-granite/",
+      "useful_because": "A customer planning a firm path or patio learns why DG binds and pea gravel doesn't, with a table comparing DG, pea gravel, road base and mason sand on what each is made of, how it behaves after compaction and how water acts on it; a cross-section of a DG path built for Grayson County's swelling clay (2-3 in. compacted DG over 3-4 in. compacted crushed base, optional fabric) with the four laying steps; worked patio maths (12x14 ft at 3 in. = about 1.56 yd of DG plus about 2.07 yd of base, so nearly four yards in total); a plain note on stabilized versus plain DG; and how a DG path stands up to North Texas downpours. No other page covers base-plus-surface ordering or DG installation.",
+      "needs_confirmation": [
+        {
+          "fact": "Whether HARDROCK's DG is plain or stabilized",
+          "question": "Is the decomposed granite you sell plain or stabilized (with a binder mixed in), or can customers get either?",
+          "where": "cross-section note, FAQ about rain"
+        },
+        {
+          "fact": "Whether the crushed red granite in the hero photo is the DG HARDROCK sells, and what colour(s) of DG are stocked",
+          "question": "Is the red crushed granite in your photo the decomposed granite you sell? What colours of DG do you carry?",
+          "where": "hero image, comparison table"
+        },
+        {
+          "fact": "Pricing unit for DG (page says quoted by phone)",
+          "question": "Do you price decomposed granite by the ton or by the cubic yard?",
+          "where": "FAQ 'Is decomposed granite sold per ton or per cubic yard?'"
+        },
+        {
+          "fact": "Whether HARDROCK installs DG paths and patios or only supplies the material",
+          "question": "Do you build DG paths or patios for customers (base, edging, compaction), or do you deliver the material only?",
+          "where": "cross-section steps and note"
+        },
+        {
+          "fact": "Whether the flagstone patio and fire pit photo is a HARDROCK job, and what is in the joints",
+          "question": "Was the flagstone patio with the fire pit your job, and is the fine material in the joints decomposed granite or something else?",
+          "where": "recent work section photo and caption"
+        }
+      ]
+    },
+    {
+      "path": "/services/delivery/",
+      "useful_because": "This is the only page that walks a customer through getting a load delivered. It groups HARDROCK's eight materials by the job they do (base, grade, surface, masonry/banks), explains what happens after the call alongside HARDROCK's real opening hours, and works through a full cubic-yard example (a 16 x 20 ft play area at 4 in. comes to 3.95 yd³, or about 4.35 with 10% extra). It also compares bulk delivery with bagged material (216 half-cubic-foot bags) and pickup trips, and gives a six-point drop-site checklist covering overhead lines, septic tanks, gate width and soft Grayson County clay after rain. Neither the homepage nor the material pages cover truck access or bulk-vs-bagged.",
+      "needs_confirmation": [
+        {
+          "fact": "Delivery radius outside Grayson County",
+          "question": "Do you deliver outside Grayson County (for example Van Alstyne, Anna or Durant), and how far out will you go?",
+          "where": "FAQ 'Do you deliver to Sherman and the surrounding area?'"
+        },
+        {
+          "fact": "Pricing unit, minimum order and delivery fee",
+          "question": "Do you price delivered material by the ton or the cubic yard, and is there a minimum load or a delivery charge?",
+          "where": "FAQ 'by the ton or the cubic yard', comparison table 'Bulk delivery' row"
+        },
+        {
+          "fact": "Truck/load size",
+          "question": "How many yards or tons does one of your truck loads hold, and do you run smaller loads for homeowners?",
+          "where": "comparison table (left out so the page never implies a 4-yard job fits one truck)"
+        },
+        {
+          "fact": "How quickly a delivery can be scheduled",
+          "question": "When someone calls in the morning, how soon can you usually deliver: same day, next day or later in the week?",
+          "where": "ordering process steps, final CTA"
+        },
+        {
+          "fact": "Whether one delivery can carry more than one material",
+          "question": "Can a customer get two materials (say road base and 57 rock) on the same delivery?",
+          "where": "FAQ (question left out until confirmed)"
+        },
+        {
+          "fact": "Whether the excavator / crushed-rock pad photo is a HARDROCK delivery",
+          "question": "Is the photo of the yellow excavator beside the long pile of crushed rock a HARDROCK job, and was that rock delivered by you?",
+          "where": "proof section caption"
+        }
+      ]
+    },
+    {
+      "path": "/services/driveways/",
+      "useful_because": "This page explains why gravel drives on Grayson County's Blackland Prairie clay rut and lose rock, and shows the fix as a layered cross-section: a crowned subgrade, 4-6 in. of compacted road base, optional geotextile fabric and 2-3 in. of 57/67 top rock. A table compares the four possible surface materials on size, behaviour under tires and drainage. The worked math gives about 67 yd³ of base plus 33 yd³ of top rock for a 300 x 12 ft drive, with a 100 ft example in the FAQ. There is also a call-ready checklist (length, current surface, road/ditch tie-in, what will use the drive, material only or a finished drive). The homepage and the road-base and 57/67 pages cover the materials one at a time; only this page puts them together into a finished drive.",
+      "needs_confirmation": [
+        {
+          "fact": "Scope of a HARDROCK driveway job (grading, crowning, fabric, compaction)",
+          "question": "When you build a driveway, what does the job include: grading and crowning the subgrade, filter fabric, compacting the base, culverts at the road?",
+          "where": "ordering-a-drive section, cross-section section"
+        },
+        {
+          "fact": "Whether HARDROCK spreads delivered material or only drops it",
+          "question": "If a customer orders material only, will you spread it along the route, or is it dumped in piles?",
+          "where": "process step 4 'Drive built or loads dropped'"
+        },
+        {
+          "fact": "Pricing unit for driveway materials and how driveway jobs are quoted",
+          "question": "Do you price driveway base and rock by the ton or the yard, and do you quote a finished drive as one price or as materials plus labor?",
+          "where": "FAQ 'by the ton or the cubic yard'"
+        },
+        {
+          "fact": "Exact gradations stocked (57 vs 67, pea gravel size)",
+          "question": "Which sizes do you keep on hand for 57 and 67 rock and for pea gravel?",
+          "where": "comparison table (currently labeled typical industry sizes)"
+        },
+        {
+          "fact": "Whether the pasture driveway photo is a HARDROCK job",
+          "question": "Was the long gravel drive across the pasture with the green tractor one of your driveway jobs, and roughly where was it?",
+          "where": "proof section and hero"
+        }
+      ]
+    },
+    {
+      "path": "/services/fill-dirt/",
+      "useful_because": "This is the only page that explains where fill dirt goes and how much to order: a worked low-spot example (30 x 20 ft raised 8 inches = 14.8 cubic yards loose, roughly 16 to 18 once packed), a CSS cross-section of fill placed in packed layers over native Blackland Prairie clay with topsoil only on top, and a table comparing fill dirt, topsoil and select fill. It adds the building-code guide that ground should fall 6 inches in the first 10 feet away from a house, five common fill jobs on Sherman lots, what to have ready when ordering (measurements, purpose, drop spot clear of septic lines), and grading cautions for shrink-swell clay (slope fill away, pack every layer, keep soil below weep holes and siding).",
+      "needs_confirmation": [
+        {
+          "fact": "Whether HARDROCK spreads and compacts fill dirt, or only delivers it",
+          "question": "When you bring fill dirt, do you spread and compact it, or is it dumped for the customer to spread?",
+          "where": "How an order works, step 4 / related-services intro"
+        },
+        {
+          "fact": "Whether HARDROCK also sells topsoil or select fill",
+          "question": "Besides fill dirt, do you sell topsoil or select fill for under slabs?",
+          "where": "Fill vs topsoil vs select fill table caption"
+        },
+        {
+          "fact": "What HARDROCK's fill dirt is (clay, sandy loam, screened or unscreened) and where it comes from",
+          "question": "What kind of dirt is your fill dirt (clay, sandy, screened) and is it free of rocks, roots and debris?",
+          "where": "Fill vs topsoil table, 'Fill dirt' row"
+        },
+        {
+          "fact": "Pricing unit, load size and minimum order for fill dirt",
+          "question": "Is fill dirt priced by the yard, the ton or the truckload, how much does one load hold, and is there a minimum?",
+          "where": "FAQ 'Is fill dirt priced by the ton or the cubic yard?' / quantity math"
+        },
+        {
+          "fact": "Whether the excavator-on-pad photo shows a fill or house-pad job",
+          "question": "What was the job in the photo of the yellow Deere excavator on the graded pad under the power lines: a house pad, a road, or something else?",
+          "where": "Hero and proof section captions"
+        }
+      ]
+    },
+    {
+      "path": "/services/house-pads/",
+      "useful_because": "This page explains why slabs on Grayson County's shrink-swell clay go on a raised, compacted pad. It works out the fill for a typical pad (a 40 x 60 ft slab on a 50 x 70 ft pad raised 12 in. needs about 129.6 yd³ compacted) and draws that pad in a plan-view diagram. It lists the five things a pad spec should state before pricing (size, finished height, fill material/PI, lifts and Proctor compaction, drainage). It compares native clay, fill dirt, select fill and road base on how each behaves on expansive clay and which ones HARDROCK sells, and lists what builders should send with a request. The homepage and the fill-dirt and road-base pages cover the materials; only this page covers how a pad is specified, sized and ordered.",
+      "needs_confirmation": [
+        {
+          "fact": "Whether HARDROCK supplies select fill to a PI spec",
+          "question": "Can you supply select fill that meets an engineer's PI range for a slab pad, or only general fill dirt?",
+          "where": "comparison table 'Select fill' row (currently 'Ask with the spec in hand')"
+        },
+        {
+          "fact": "Whether HARDROCK compacts in lifts and to what standard, and whether density testing is arranged",
+          "question": "When you build a pad, do you compact it in lifts, and do you work to a Proctor percentage or arrange density testing if the builder asks?",
+          "where": "spec band 'Lifts' row, process step 4"
+        },
+        {
+          "fact": "Scope of a house pad job (stripping topsoil, pad margin, road-base cap)",
+          "question": "Does a HARDROCK house pad include stripping topsoil and roots, building the pad wider than the slab, and a road-base cap on top?",
+          "where": "problem cards, pad math paragraph, process steps"
+        },
+        {
+          "fact": "Pricing unit for pad fill and whether pads are priced as a whole job",
+          "question": "Do you price a house pad as one job price, or by the ton or yard of fill plus the work?",
+          "where": "FAQ 'by the ton or the cubic yard'"
+        },
+        {
+          "fact": "Whether the gravel piles on the staked site photo were HARDROCK loads for a pad",
+          "question": "Were the rows of gravel piles on the staked site (sunset photo) HARDROCK loads, and was that a building pad or another kind of job?",
+          "where": "proof section caption and H2"
+        },
+        {
+          "fact": "Customers served (builders vs homeowners)",
+          "question": "Are your house pad customers mostly builders, owner-builders or both?",
+          "where": "FAQ intro and reviews heading"
+        }
+      ]
+    },
+    {
+      "path": "/services/land-clearing/",
+      "useful_because": "This page puts clearing in order before a build: a four-stage sequence (mark what stays and call 811, clear the footprint, see how the ground lies and drains, build) and a table of how much ground a pasture reclaim, gravel driveway, house pad or pond actually needs opened. It also has a worked acre calculation (a 50 x 70 ft pad with 15 ft of working room plus a 400 x 20 ft drive corridor = 16,000 sq ft, about 0.37 acre, with a pacing tip) and a Grayson County checklist that no other page covers: commissioners-court burn bans, 811 for buried lines, and FEMA flood zones on creek ground. It explains why bare Blackland Prairie clay should not sit cleared for a season, and links each kind of cleared site to the HARDROCK service that follows.",
+      "needs_confirmation": [
+        {
+          "fact": "What HARDROCK does with cleared brush and trees (burns, mulches, hauls off, leaves piled)",
+          "question": "After you clear brush and trees, what happens to them: do you burn, mulch, haul off, or leave them piled for the owner?",
+          "where": "What's included band / local checks (burn ban point)"
+        },
+        {
+          "fact": "Whether stumps and root balls are pulled (grubbing) as part of clearing",
+          "question": "Do you pull stumps and roots when you clear, or just cut the brush and trees at ground level?",
+          "where": "What's included list / sequence strip"
+        },
+        {
+          "fact": "Whether HARDROCK does selective clearing that leaves trees the owner flags",
+          "question": "Can owners flag trees they want to keep, and will you clear around them?",
+          "where": "Sequence strip stage 1, comparison table answer"
+        },
+        {
+          "fact": "Largest acreage HARDROCK takes on for clearing",
+          "question": "Is there a limit to the size of land you clear, for example a house lot only, or full acreage and pasture?",
+          "where": "Comparison table row 'Overgrown lot or pasture'"
+        },
+        {
+          "fact": "Whether a site visit is made before a clearing price",
+          "question": "Do you look at the land in person before quoting a clearing job?",
+          "where": "What's included steps / table caption"
+        }
+      ]
+    },
+    {
+      "path": "/services/mason-sand/",
+      "useful_because": "A homeowner or mason gets a clear answer on whether mason sand is the right sand for their job (mortar, flagstone bedding, foot-traffic pavers, sandboxes) versus concrete sand, decomposed granite or fill dirt. They also get the standard mortar proportion shown as a 3:1 bar with batch math (a cubic yard covers about nine 1-cubic-foot-binder batches), worked quantities for a 14 x 16 ft flagstone bed and a sandbox, and practical tips for mixing in a Grayson County summer. The homepage and the other material pages carry none of this.",
+      "needs_confirmation": [
+        {
+          "fact": "A real photo of HARDROCK's mason sand (none exists)",
+          "question": "Can you send a photo of your mason sand, either the stockpile or a delivered load, so the page can show the actual sand?",
+          "where": "hero and proof section (currently the flagstone patio photo)"
+        },
+        {
+          "fact": "Whether the flagstone patio with fire pit is a HARDROCK job, and what fills its joints",
+          "question": "Was the flagstone patio with the fire pit one of your jobs, and what did you fill the joints with: mason sand, decomposed granite or mortar?",
+          "where": "hero image, proof section caption and copy"
+        },
+        {
+          "fact": "Which spec or grade the mason sand meets",
+          "question": "Does your mason sand meet a particular spec (for example ASTM C144 masonry sand), or is it sold as general mason sand?",
+          "where": "uses section / comparison table"
+        },
+        {
+          "fact": "Whether HARDROCK also sells concrete sand or fill sand",
+          "question": "Besides mason sand, do you sell concrete sand or fill sand?",
+          "where": "comparison table and FAQ 'Which type of sand should I use?' (currently general information only)"
+        },
+        {
+          "fact": "Whether the mason sand is suitable and sold as play or sandbox sand",
+          "question": "Do you recommend your mason sand for kids' sandboxes, and is it screened or washed?",
+          "where": "hero answer, uses card 'Sandboxes', sandbox math"
+        },
+        {
+          "fact": "Pricing unit for mason sand and whether small homeowner amounts (under 1 cubic yard) can be delivered",
+          "question": "Do you sell mason sand by the ton or the yard, and will you deliver an amount under a yard for a small patio?",
+          "where": "FAQ 'Is mason sand priced per ton or per cubic yard?' and quantity math (0.7 yd³ example)"
+        }
+      ]
+    },
+    {
+      "path": "/services/pea-gravel/",
+      "useful_because": "A customer planning a walkway, play area or dog run gets the pea-gravel-specific detail no other page has: why the round stones roll underfoot and the four fixes (edging, packed bed with fabric, crushed base on Grayson County clay, staying off slopes); a depth guide for a light path, a busy walkway and a play area; the CPSC Public Playground Safety Handbook's 9-inch depth for falls up to 5 feet, worked through to about 11.1 cubic yards for a 20x20 ft play zone plus a 1.1-yard walkway example; a four-way comparison of pea gravel, decomposed granite, river rock and 57 rock on underfoot feel and drainage; and a checklist of what to have ready when calling HARDROCK.",
+      "needs_confirmation": [
+        {
+          "fact": "Which pea gravel sizes and colours HARDROCK stocks (page only says rounded, about 3/8 inch, as general knowledge)",
+          "question": "What size and colour of pea gravel do you carry, and is it washed?",
+          "where": "comparison table, hero"
+        },
+        {
+          "fact": "Pricing unit for pea gravel (page says priced by phone)",
+          "question": "Do you price pea gravel by the ton or by the cubic yard, and is there a minimum order for a small backyard job?",
+          "where": "FAQ 'How is pea gravel priced?'"
+        },
+        {
+          "fact": "Whether HARDROCK spreads or installs pea gravel or only delivers it (page says the load is dropped, ready to spread)",
+          "question": "Do you spread pea gravel for customers, for example in a play area or walkway, or is it delivery only?",
+          "where": "ordering section, steps"
+        },
+        {
+          "fact": "Whether pea gravel is OK for children's play areas from HARDROCK's point of view (page cites CPSC only)",
+          "question": "Do customers buy your pea gravel for play areas, and is there anything about your product (washed, dust) we should mention?",
+          "where": "where it works, play area maths"
+        },
+        {
+          "fact": "The gravel-stockpiles-job-site photo is a HARDROCK job (captioned 'from HARDROCK's job photos')",
+          "question": "Is the photo of gravel loads dumped in rows on a staked site one of your jobs, and what material is it?",
+          "where": "recent work section photo"
+        }
+      ]
+    },
+    {
+      "path": "/services/ponds/",
+      "useful_because": "This is the only page that lets a landowner size a pond before calling: a worked volume example (100 x 60 ft basin, 6 ft average depth = 1,333 cubic yards, about 269,000 gallons, under one acre-foot), the Texas Water Code §11.142 exemption for ponds up to 200 acre-feet for domestic and livestock use (with a pointer to TCEQ for anything else), and how Grayson County's shrink-swell clay holds water but cracks at the waterline in drought. It adds a table comparing bare clay, grass and rip rap on fabric as bank finishes, a note that the prevailing south wind pushes waves into the north bank, the real photo of a HARDROCK basin dug among standing trees, and how clearing, digging and rip rap fit into one phone call.",
+      "needs_confirmation": [
+        {
+          "fact": "Pond sizes HARDROCK typically builds, and whether basins are compacted, keyed in or lined",
+          "question": "What size ponds do you usually dig, and do you compact or key in the dam or bottom, or line ponds at all?",
+          "where": "What's included band / volume math section"
+        },
+        {
+          "fact": "What HARDROCK does with the dug spoil (builds the dam, spreads it, hauls it off)",
+          "question": "When you dig a pond, what happens to the dirt that comes out: do you build the dam with it, spread it on the property or haul it away?",
+          "where": "Where a pond makes sense (spoil sign card) / proof section"
+        },
+        {
+          "fact": "Whether HARDROCK visits the site before pricing a pond",
+          "question": "Do you come out and look at the property before giving a pond price, or is it always quoted by phone?",
+          "where": "What's included steps, FAQ 'How is a pond job priced?'"
+        },
+        {
+          "fact": "Whether HARDROCK works around trees the owner wants kept, as the photo suggests",
+          "question": "On pond jobs, do you routinely dig around trees the owner wants to keep, like the basin in your photo?",
+          "where": "What's included list ('Mature trees worked around')"
+        }
+      ]
+    },
+    {
+      "path": "/services/rip-rap/",
+      "useful_because": "This is the only page that shows how HARDROCK actually armors a bank, using HARDROCK's own photo sequence (filter fabric rolled down a cleared bank, a skid steer feeding rock, workers hand-setting stone, the rip rap with a golf ball for scale). It explains the four signs a Grayson County pond bank, dam face, creek bend or culvert outlet is eroding in heavy clay, works the volume for a 40 ft bank with 8 ft of slope at 12 in. (about 11.9 cubic yards), and compares rip rap, river rock and 57 rock for slopes in moving water, with live Google reviews underneath.",
+      "needs_confirmation": [
+        {
+          "fact": "Rip rap sizes and stone type stocked",
+          "question": "What sizes of rip rap do you carry (for example 6-12 in., 12-18 in.), and is it limestone?",
+          "where": "comparison table, expert photo caption"
+        },
+        {
+          "fact": "Pricing unit for rip rap",
+          "question": "Do you sell rip rap by the ton or the cubic yard?",
+          "where": "FAQ 'Do you sell rip rap by the ton or the cubic yard?'"
+        },
+        {
+          "fact": "Whether filter fabric is always included on installed rip rap jobs, and whether delivery-only rip rap orders are taken",
+          "question": "Do you always put filter fabric under rip rap you install, and will you deliver rip rap for a customer's own crew to place?",
+          "where": "expert section, what's-included band"
+        },
+        {
+          "fact": "Whether the rip rap photos are one job and where it was",
+          "question": "Are the three rip rap photos (fabric on the bank, crew with the skid steer, the stockpile with the golf ball) from the same job, and was it a pond, creek or culvert?",
+          "where": "recent work gallery captions"
+        }
+      ]
+    },
+    {
+      "path": "/services/river-rock/",
+      "useful_because": "A customer planning beds, splash pads or a dry creek bed gets a size guide that matches common river rock ranges (under 1.5 in., 1-3 in., 3-5 in., 6 in. and up cobble) to specific jobs; a dry creek bed method for Grayson County clay (shallow curving swale, fabric, cobble on the banks, 1-3 in. stone in the bed, a planned outlet) with worked maths (30x4 ft at 4 in. = about 1.5 cubic yards); the places around a house where river rock does the most good (downspout pads, gutterless drip lines, planting beds); and a table comparing river rock, pea gravel, decomposed granite and rip rap on behaviour in storm runoff and whether you can walk on them, including when to step up to rip rap.",
+      "needs_confirmation": [
+        {
+          "fact": "No river rock photo exists; the hero uses the pea gravel close-up with a neutral alt",
+          "question": "Can you send a few photos of your river rock: a close-up of each size you carry and any bed or dry creek you have delivered for or built?",
+          "where": "hero image (and a gallery slot)"
+        },
+        {
+          "fact": "Which river rock size ranges and colours HARDROCK stocks (page lists common trade ranges only, labelled as not a stock list)",
+          "question": "What sizes of river rock do you carry (for example 3/4-1.5 in., 1-3 in., 3-5 in., cobble or boulders), and in which colours?",
+          "where": "size guide section, FAQ 'Which size of river rock should I order?'"
+        },
+        {
+          "fact": "Pricing unit for river rock (page says priced by phone, ask ton or yard)",
+          "question": "Do you price river rock by the ton or the cubic yard, and does the price change by size?",
+          "where": "FAQ 'How does HARDROCK price river rock?'"
+        },
+        {
+          "fact": "Whether HARDROCK builds dry creek beds or places river rock, or only delivers it (page frames the build as general how-to)",
+          "question": "Do you build dry creek beds or lay river rock for customers, or is river rock delivery only?",
+          "where": "dry creek bed section"
+        },
+        {
+          "fact": "Delivery to Grayson County towns beyond Sherman and Denison",
+          "question": "Do you regularly deliver river rock to towns like Pottsboro, Howe, Whitesboro, Van Alstyne or Gunter?",
+          "where": "FAQ about delivery to Denison and other towns"
+        }
+      ]
+    },
+    {
+      "path": "/services/road-base/",
+      "useful_because": "A Sherman or Grayson County buyer learns why a gravel drive laid straight on the local shrink-swell clay ruts, holds puddles and cracks, and how road base (Texas 'flex base') fixes that when it goes down in thin, wetted, compacted lifts, shown as a layer-by-layer cross-section. They get a worked example (a 150 x 12 ft drive at 6 in is about 33 cubic yards before a compaction allowance), a table showing which of road base, 57 rock, pea gravel and fill dirt belongs in which layer, and a plain choice between taking a delivered load for their own crew or having HARDROCK build the driveway or house pad. The homepage and sibling pages cover none of this.",
+      "needs_confirmation": [
+        {
+          "fact": "What HARDROCK's road base is made of and its grade",
+          "question": "Is your road base crushed limestone, recycled concrete or something else, and does it meet a TxDOT flex base grade?",
+          "where": "lifts section / comparison table (currently described only as 'crushed stone with fines')"
+        },
+        {
+          "fact": "How much extra to order for compaction",
+          "question": "When customers order road base, how much extra do you tell them to add for compaction (for example 20 or 25 percent)?",
+          "where": "quantity math section and FAQ 'How many cubic yards'"
+        },
+        {
+          "fact": "Whether HARDROCK spreads and compacts road base on driveway and pad jobs, and with what equipment",
+          "question": "On driveway and house pad jobs, do you spread and compact the base yourselves, and with what (roller, plate compactor, skid steer)?",
+          "where": "expert section 'order road base or have HARDROCK build the drive'"
+        },
+        {
+          "fact": "Typical base depth HARDROCK builds into a drive",
+          "question": "How many inches of compacted road base do you usually put under a residential gravel drive on clay?",
+          "where": "lifts section (currently a general '6 inches or more' statement)"
+        },
+        {
+          "fact": "Whether the gravel-driveway-rural and excavator-crushed-rock-pad photos are HARDROCK jobs, and what material is shown",
+          "question": "Are the long pasture driveway and the excavator-on-a-pad photos your jobs, and is that road base or another rock?",
+          "where": "hero, expert photo, proof section"
+        },
+        {
+          "fact": "Pricing unit for road base",
+          "question": "Do you sell road base by the ton or by the cubic yard?",
+          "where": "FAQ 'How is a road base order priced?'"
+        }
       ]
     }
   ],
