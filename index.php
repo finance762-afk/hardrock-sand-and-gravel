@@ -2,6 +2,7 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/p1-form-helpers.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-helpers.php';
 ?>
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
@@ -98,6 +99,7 @@ $tickerItems = [
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
+<style><?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/blog.css'; ?></style>
 <style>
 /* ==========================================================================
    Homepage — HARDROCK Sand and Gravel (Phase 3, archetype bold-industrial)
@@ -461,6 +463,21 @@ if ($homeReviews !== ''): ?>
     </div>
   </div>
 </section>
+
+<!-- ============ FROM THE BLOG (registry-driven: newest post) ============ -->
+<?php if (!empty($blogPosts)): $homePost = $blogPosts[0]; ?>
+<section class="section hr-blog edge-curve-top" aria-labelledby="home-blog-title">
+  <div class="container">
+    <div class="section-title reveal-up">
+      <span class="eyebrow">From the Blog</span>
+      <h2 id="home-blog-title">What should you know before ordering <span class="text-accent">gravel</span> in Sherman?</h2>
+      <p>HARDROCK Sand and Gravel publishes plain-English guides on quantities, driveways and rock choice for Sherman, Denison and Grayson County. The newest one is below.</p>
+    </div>
+    <div class="reveal-up"><?php echo blog_card($homePost, '(max-width: 800px) 100vw, 560px', 'blog-card--featured'); ?></div>
+    <div class="hr-blog__foot"><a class="btn btn-secondary" href="/blog/">View all articles</a></div>
+  </div>
+</section>
+<?php endif; ?>
 
 <!-- ============ ESTIMATE ============ -->
 <section class="section hr-estimate" id="estimate" aria-labelledby="home-estimate-title">

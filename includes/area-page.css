@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Service-area pages — HARDROCK Sand and Gravel (Phase 6, archetype bold-industrial)
+   Shared composition for /service-areas/ and /service-areas/{slug}/, inlined ahead of each page's own <style>
+   (after includes/service-page.css, which owns the hero, answer blocks, FAQ band and CTA band).
+   Every value is a token (var()) or a color-mix() of tokens.
+   ========================================================================== */
+
+/* --- Intro: lede column beside an "at a glance" fact card --- */
+.ap-intro { background: var(--color-paper); }
+.ap-intro__grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: var(--space-3xl); align-items: start; }
+.ap-intro__copy { display: grid; gap: var(--space-md); }
+.ap-intro__copy > p { margin: 0; color: var(--color-ink-2); max-width: var(--measure); }
+.ap-facts { margin: 0; padding: var(--space-lg); display: grid; gap: 0; border-radius: var(--radius-sm); background: var(--color-dark); color: var(--color-white); box-shadow: var(--shadow-lg); position: relative; overflow: clip; }
+.ap-facts::before { content: ""; position: absolute; inset: 0 0 auto 0; height: var(--space-xs); background: repeating-linear-gradient(-45deg, var(--color-accent) 0 var(--space-xs), var(--color-dark) var(--space-xs) var(--space-md)); }
+.ap-facts__title { margin: var(--space-sm) 0 var(--space-xs); font-family: var(--font-accent); text-transform: uppercase; letter-spacing: .14em; font-size: var(--fs-small); color: var(--color-accent-bright); }
+.ap-facts div { display: flex; justify-content: space-between; gap: var(--space-md); padding: var(--space-xs) 0; border-bottom: 1px dashed color-mix(in srgb, var(--color-white) 20%, transparent); }
+.ap-facts div:last-of-type { border-bottom: 0; }
+.ap-facts dt { color: color-mix(in srgb, var(--color-white) 72%, transparent); font-size: var(--fs-small); }
+.ap-facts dd { margin: 0; text-align: right; font-family: var(--font-accent); font-weight: 700; font-size: 1.05rem; }
+.ap-facts__note { margin: var(--space-sm) 0 0; font-size: var(--fs-small); color: color-mix(in srgb, var(--color-white) 65%, transparent); }
+@media (max-width: 900px) { .ap-intro__grid { grid-template-columns: 1fr; gap: var(--space-2xl); } }
+
+/* --- Services available: featured tiles + chip list --- */
+.ap-svc { background: var(--color-surface); }
+.ap-svc__tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-md); margin: 0 0 var(--space-lg); padding: 0; list-style: none; }
+.ap-svc__tile a { position: relative; display: grid; grid-template-rows: auto auto 1fr auto; gap: var(--space-xs); height: 100%; text-decoration: none; padding: var(--space-lg); border-radius: var(--radius-sm); border: 1px solid var(--color-line); box-shadow: var(--shadow-sm); transition: transform var(--transition), box-shadow var(--transition); }
+.ap-svc__tile:nth-child(3n+1) a { background: var(--color-card-tint-1); }
+.ap-svc__tile:nth-child(3n+2) a { background: var(--color-card-tint-2); }
+.ap-svc__tile:nth-child(3n) a { background: var(--color-card-tint-3); }
+.ap-svc__tile a:hover { transform: translateY(calc(-1 * var(--space-1))); box-shadow: var(--shadow); }
+.ap-svc__tile svg { color: var(--color-accent-dark); }
+.ap-svc__tile b { font-family: var(--font-heading); font-size: 1.25rem; text-transform: uppercase; letter-spacing: .02em; color: var(--color-ink); }
+.ap-svc__tile span { font-size: var(--fs-small); color: var(--color-ink-2); }
+.ap-svc__tile em { font-style: normal; margin-top: var(--space-xs); font-family: var(--font-accent); text-transform: uppercase; letter-spacing: .1em; font-size: var(--fs-small); font-weight: 700; color: var(--color-accent-dark); }
+.ap-svc__tile em::after { content: " \2192"; }
+.ap-svc__chips { display: flex; flex-wrap: wrap; gap: var(--space-xs); margin: 0; padding: 0; list-style: none; }
+.ap-svc__chips a { text-decoration: none; display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 var(--space-md); border-radius: var(--radius-full); border: 1px solid var(--color-line); background: var(--color-paper); font-weight: 600; font-size: var(--fs-small); color: var(--color-ink); transition: border-color var(--transition), color var(--transition); }
+.ap-svc__chips a:hover { border-color: var(--color-accent); color: var(--color-accent-dark); }
+@media (max-width: 900px) { .ap-svc__tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .ap-svc__tiles { grid-template-columns: 1fr; } }
+
+/* --- Why HARDROCK here: four company facts (from intake only) --- */
+.ap-why { background: var(--color-paper-2); }
+.ap-why__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-md); margin: 0; padding: 0; list-style: none; }
+.ap-why__grid li { display: grid; gap: var(--space-xs); align-content: start; padding: var(--space-lg); border-radius: var(--radius-sm); background: var(--color-surface); border-top: var(--space-1) solid var(--color-accent); box-shadow: var(--shadow-sm); }
+.ap-why__grid svg { color: var(--color-accent-dark); }
+.ap-why__grid b { font-family: var(--font-heading); font-size: 1.15rem; text-transform: uppercase; letter-spacing: .02em; color: var(--color-ink); }
+.ap-why__grid span { font-size: var(--fs-small); color: var(--color-ink-2); }
+@media (max-width: 1000px) { .ap-why__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .ap-why__grid { grid-template-columns: 1fr; } }
+
+/* --- Neighbouring areas strip --- */
+.ap-near { background: var(--color-paper); padding-block: var(--space-3xl); }
+.ap-nearby { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-md); margin: var(--space-lg) 0 0; padding: 0; list-style: none; }
+.ap-nearby a { text-decoration: none; display: grid; grid-template-columns: auto 1fr; column-gap: var(--space-sm); align-items: center; min-height: 4.5rem; padding: var(--space-md) var(--space-lg); border-radius: var(--radius-sm); border: 1px solid var(--color-line); background: var(--color-surface); transition: border-color var(--transition), transform var(--transition); }
+.ap-nearby a:hover { border-color: var(--color-accent); transform: translateY(calc(-1 * var(--space-1))); }
+.ap-nearby svg { grid-row: span 2; color: var(--color-accent-dark); }
+.ap-nearby b { font-family: var(--font-heading); font-size: 1.1rem; text-transform: uppercase; letter-spacing: .02em; color: var(--color-ink); }
+.ap-nearby span { font-size: var(--fs-small); color: var(--color-ink-2); }
+@media (max-width: 900px) { .ap-nearby { grid-template-columns: 1fr; } }
+
+/* --- Source note under the fact card --- */
+.ap-sources { margin: var(--space-md) 0 0; font-size: var(--fs-small); color: var(--color-muted); max-width: var(--measure); }
+.ap-sources a { color: var(--color-accent-dark); text-decoration: underline; text-underline-offset: .18em; }
+
+@media (prefers-reduced-motion: reduce) { .ap-svc__tile a, .ap-nearby a, .ap-svc__chips a { transition: none; } }
