@@ -1,0 +1,22 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "useful_because": "The homepage is the one place a Sherman or Denison buyer sees HARDROCK's whole offer at once: the eight bulk materials and the four kinds of site work (driveways, house pads, ponds, land clearing) under one company, the actual opening hours (6 AM weekday start, Saturday 9-2), real photos of HARDROCK jobs such as rip rap set over filter fabric and a pond basin dug between trees, the cubic-yard math for sizing an order, a plain guide to which material suits which job, and the live Google reviews. Every service page goes deep on one item; this page is where a customer works out which one they need and calls.",
+      "needs_confirmation": [
+        { "fact": "Street address of the HARDROCK yard / office (and whether customers can pick up material there)", "question": "What is the street address of your yard, and can customers pick up their own loads there?", "where": "estimate section NAP, footer, LocalBusiness schema" },
+        { "fact": "Pricing unit (per ton vs per cubic yard) and any delivery minimum or delivery fee", "question": "Do you price material by the ton or by the cubic yard, and is there a minimum order or a delivery charge?", "where": "FAQ 'How is sand and gravel priced?'" },
+        { "fact": "Delivery radius beyond Sherman, Denison and Grayson County", "question": "How far will you deliver — which towns outside Grayson County (e.g. Pottsboro, Van Alstyne, Whitesboro, Durant) do you regularly haul to?", "where": "FAQ 'Do you deliver…', hero answer, service-area sentence" },
+        { "fact": "Truck/load sizes (how many yards or tons per load)", "question": "How much does one of your truck loads hold (yards or tons), and do you offer smaller loads for homeowners?", "where": "Delivery card and the order process" },
+        { "fact": "How quickly an order is usually delivered (same day / next day)", "question": "When someone calls in the morning, how soon can you usually deliver — same day, next day, or later in the week?", "where": "mid-page CTA band, hero form tagline" },
+        { "fact": "Whether HARDROCK owns its trucks and equipment (excavator, skid steer) and runs its own crew", "question": "Do you run your own trucks, excavator and skid steer with your own crew, or do you sub any hauling or site work out?", "where": "about section, proof strip" },
+        { "fact": "Contractor / trade account terms", "question": "Do you offer accounts or volume pricing for contractors and landscapers? If so, what are the terms?", "where": "FAQ (question from the research brief, left out until confirmed)" },
+        { "fact": "Insurance and any licences or association memberships", "question": "Is HARDROCK insured for site work (driveways, pads, ponds, clearing), and do you hold any licences or memberships we can list?", "where": "hero chips, proof strip" },
+        { "fact": "Whether the crushed red granite in the photo is the decomposed granite HARDROCK sells", "question": "Is the red crushed granite in your photos the same product you sell as decomposed granite, or is it a separate product?", "where": "Decomposed granite service card photo" },
+        { "fact": "Whether the flagstone patio and fire pit photo is a HARDROCK job, and what material is in the joints", "question": "Was the flagstone patio with the fire pit one of your jobs? What did you fill the joints with?", "where": "recent work gallery caption" },
+        { "fact": "What a typical estimate looks like for site work (site visit, written quote)", "question": "For driveways, pads, ponds and clearing, do you visit the site before quoting, and do customers get the price in writing?", "where": "about section order process, estimate 'what happens next'" }
+      ]
+    }
+  ],
+  "consolidate": []
+}

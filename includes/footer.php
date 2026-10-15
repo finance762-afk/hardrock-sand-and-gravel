@@ -157,7 +157,7 @@ $footHasText = strlen($footText) >= 10;
         <label for="dialog-message">Project details (optional)</label>
         <textarea id="dialog-message" name="message" rows="3" placeholder="Material, amount, delivery address"></textarea>
       </div>
-      <?php echo p1_consent_row('dialog'); ?>
+      <?php echo consentFieldset('dialog'); ?>
       <button type="submit" class="btn btn-primary btn-lg">Request My Estimate</button>
       <p class="form-footnote">Consent is not a condition of purchase. Message and data rates may apply if you reply by text.</p>
     </form>

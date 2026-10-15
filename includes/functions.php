@@ -299,3 +299,74 @@ if (!function_exists('generateFAQSchema')) {
         return ['@context' => 'https://schema.org', '@type' => 'FAQPage', 'mainEntity' => $fnItems];
     }
 }
+
+if (!function_exists('pictureTag')) {
+    /**
+     * <picture> for a local photo: AVIF source + WebP srcset built from the -480/-960/-1600 variants that exist on
+     * disk (v6.3), the .jpg as <img src>, intrinsic width/height read from the .jpg. $base is the filename stem in
+     * /assets/images/ ('gravel-driveway-rural'). Options: loading (lazy|eager), fetchpriority, class, img_class.
+     * Lazy images get decoding="async"; the hero passes loading=eager + fetchpriority=high.
+     */
+    function pictureTag(string $base, string $alt, string $sizes = '100vw', array $opts = []): string {
+        $fnDir = dirname(__DIR__) . '/assets/images/';
+        $fnWebp = []; $fnAvif = [];
+        foreach ([480, 960, 1600] as $fnW) {
+            if (is_file($fnDir . $base . '-' . $fnW . '.webp')) $fnWebp[] = '/assets/images/' . $base . '-' . $fnW . '.webp ' . $fnW . 'w';
+            if (is_file($fnDir . $base . '-' . $fnW . '.avif')) $fnAvif[] = '/assets/images/' . $base . '-' . $fnW . '.avif ' . $fnW . 'w';
+        }
+        $fnSize = @getimagesize($fnDir . $base . '.jpg') ?: [1600, 1200];
+        $fnLoading = $opts['loading'] ?? 'lazy';
+        $fnImg = '<img src="/assets/images/' . esc($base) . '.jpg"'
+               . ($fnWebp ? ' srcset="' . esc(implode(', ', $fnWebp)) . '" sizes="' . esc($sizes) . '"' : '')
+               . ' alt="' . esc($alt) . '" width="' . (int) $fnSize[0] . '" height="' . (int) $fnSize[1] . '"'
+               . ' loading="' . esc($fnLoading) . '"'
+               . (!empty($opts['fetchpriority']) ? ' fetchpriority="' . esc($opts['fetchpriority']) . '"' : '')
+               . ($fnLoading === 'lazy' ? ' decoding="async"' : '')
+               . (!empty($opts['img_class']) ? ' class="' . esc($opts['img_class']) . '"' : '') . '>';
+        return '<picture' . (!empty($opts['class']) ? ' class="' . esc($opts['class']) . '"' : '') . '>'
+             . ($fnAvif ? '<source type="image/avif" srcset="' . esc(implode(', ', $fnAvif)) . '" sizes="' . esc($sizes) . '">' : '')
+             . $fnImg . '</picture>';
+    }
+}
+
+if (!function_exists('pictureSrcset')) {
+    /** "…-480.avif 480w, …" for the head.php imagesrcset preload (same files pictureTag() emits). */
+    function pictureSrcset(string $base, string $ext = 'avif'): string {
+        $fnDir = dirname(__DIR__) . '/assets/images/';
+        $fnOut = [];
+        foreach ([480, 960, 1600] as $fnW) {
+            if (is_file($fnDir . $base . '-' . $fnW . '.' . $ext)) $fnOut[] = '/assets/images/' . $base . '-' . $fnW . '.' . $ext . ' ' . $fnW . 'w';
+        }
+        return implode(', ', $fnOut);
+    }
+}
+
+if (!function_exists('consentFieldset')) {
+    /**
+     * The three SEPARATE, unbundled, never pre-checked consent boxes every full contact form carries
+     * (TCPA 2025/2026 + Texas, contact-form-standard.md): email opt-in, SMS opt-in, terms (required).
+     */
+    function consentFieldset(string $idPrefix): string {
+        global $siteName, $contactEmail;
+        $fnId = esc($idPrefix);
+        $fnName = esc($siteName);
+        return '<fieldset class="form-consent-fieldset">'
+             . '<legend class="form-consent-legend">Communication consent</legend>'
+             . '<label class="form-consent-item" for="' . $fnId . '-email-opt">'
+             . '<input type="checkbox" id="' . $fnId . '-email-opt" name="email_opt_in" value="yes" class="consent-checkbox">'
+             . '<span class="consent-label"><strong>Email updates (optional):</strong> I agree to receive emails from ' . $fnName
+             . ' about my inquiry, services, promotions, and news. I understand I can unsubscribe anytime via the link in any email or by emailing '
+             . esc($contactEmail) . '. Message frequency varies.</span></label>'
+             . '<label class="form-consent-item" for="' . $fnId . '-sms-opt">'
+             . '<input type="checkbox" id="' . $fnId . '-sms-opt" name="sms_opt_in" value="yes" class="consent-checkbox">'
+             . '<span class="consent-label"><strong>SMS/Text messages (optional):</strong> I agree to receive text messages from ' . $fnName
+             . ' at the phone number I provided. Message types may include appointment reminders, service updates, and promotional offers. '
+             . 'Message frequency varies. Message and data rates may apply. Reply STOP to unsubscribe, HELP for help. '
+             . '<strong>Consent is not a condition of purchase.</strong></span></label>'
+             . '<label class="form-consent-item form-consent-required" for="' . $fnId . '-terms">'
+             . '<input type="checkbox" id="' . $fnId . '-terms" name="terms_accepted" value="yes" class="consent-checkbox" required>'
+             . '<span class="consent-label">I have read and agree to the <a href="/privacy-policy/">Privacy Policy</a> and '
+             . '<a href="/terms/">Terms of Service</a>. <span class="required-star">*</span></span></label>'
+             . '</fieldset>';
+    }
+}
