@@ -5,29 +5,15 @@
     "primary_keyword": "sand and gravel",
     "secondary_keywords": [
       "pea gravel",
-      "57 rock",
-      "67 rock",
-      "pressure runs",
-      "road base",
-      "land clearing",
-      "site development",
-      "select fill",
-      "cushion sand",
       "decomposed granite",
-      "concrte sand",
-      "riprap",
-      "trucking",
+      "gravel delivery sherman tx",
       "mason sand",
-      "selecs base",
-      "tex dot 247",
-      "type a",
-      "commerical",
-      "residential",
-      "Sand & Gravel Supplier",
-      "gravel near me",
       "driveway gravel",
-      "sand and gravel",
-      "fill dirt"
+      "fill dirt",
+      "land clearing",
+      "road base",
+      "sand and gravel sherman tx",
+      "river rock"
     ]
   },
   "tier": "premium",
@@ -36,132 +22,132 @@
     {
       "slug": "delivery",
       "type": "service",
-      "title": "Delivery in , TX",
+      "title": "Delivery in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "Delivery"
       ],
-      "primary_keyword": "delivery  TX"
+      "primary_keyword": "delivery Sherman TX"
     },
     {
       "slug": "driveways",
       "type": "service",
-      "title": "Driveways in , TX",
+      "title": "Driveways in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "Driveways"
       ],
-      "primary_keyword": "driveways  TX"
+      "primary_keyword": "driveways Sherman TX"
     },
     {
       "slug": "house-pads",
       "type": "service",
-      "title": "House pads in , TX",
+      "title": "House pads in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "House pads"
       ],
-      "primary_keyword": "house pads  TX"
+      "primary_keyword": "house pads Sherman TX"
     },
     {
       "slug": "ponds",
       "type": "service",
-      "title": "Ponds in , TX",
+      "title": "Ponds in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "Ponds"
       ],
-      "primary_keyword": "ponds  TX"
+      "primary_keyword": "ponds Sherman TX"
     },
     {
       "slug": "land-clearing",
       "type": "service",
-      "title": "Land clearing in , TX",
+      "title": "Land clearing in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "Land clearing"
       ],
-      "primary_keyword": "land clearing  TX"
+      "primary_keyword": "land clearing Sherman TX"
     },
     {
       "slug": "pea-gravel",
       "type": "service",
-      "title": "Pea gravel in , TX",
+      "title": "Pea gravel in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "Pea gravel"
       ],
-      "primary_keyword": "pea gravel  TX"
+      "primary_keyword": "pea gravel Sherman TX"
     },
     {
       "slug": "decomposed-granite",
       "type": "service",
-      "title": "Decomposed granite in , TX",
+      "title": "Decomposed granite in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "Decomposed granite"
       ],
-      "primary_keyword": "decomposed granite  TX"
+      "primary_keyword": "decomposed granite Sherman TX"
     },
     {
       "slug": "road-base",
       "type": "service",
-      "title": "Road base in , TX",
+      "title": "Road base in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "Road base"
       ],
-      "primary_keyword": "road base  TX"
+      "primary_keyword": "road base Sherman TX"
     },
     {
       "slug": "57-67-rock",
       "type": "service",
-      "title": "57/67 rock in , TX",
+      "title": "57/67 rock in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "57/67 rock"
       ],
-      "primary_keyword": "57/67 rock  TX"
+      "primary_keyword": "57/67 rock Sherman TX"
     },
     {
       "slug": "fill-dirt",
       "type": "service",
-      "title": "Fill dirt in , TX",
+      "title": "Fill dirt in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "Fill dirt"
       ],
-      "primary_keyword": "fill dirt  TX"
+      "primary_keyword": "fill dirt Sherman TX"
     },
     {
       "slug": "mason-sand",
       "type": "service",
-      "title": "Mason sand in , TX",
+      "title": "Mason sand in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "Mason sand"
       ],
-      "primary_keyword": "mason sand  TX"
+      "primary_keyword": "mason sand Sherman TX"
     },
     {
       "slug": "rip-rap",
       "type": "service",
-      "title": "Rip rap in , TX",
+      "title": "Rip rap in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "Rip rap"
       ],
-      "primary_keyword": "rip rap  TX"
+      "primary_keyword": "rip rap Sherman TX"
     },
     {
       "slug": "river-rock",
       "type": "service",
-      "title": "River rock in , TX",
+      "title": "River rock in Sherman, TX",
       "sections": "hero, service_details, process, testimonials, cta",
       "services": [
         "River rock"
       ],
-      "primary_keyword": "river rock  TX"
+      "primary_keyword": "river rock Sherman TX"
     }
   ],
   "phone": "903-420-0330",
@@ -316,9 +302,9 @@
   ],
   "address": {
     "zip": "",
-    "city": "",
+    "city": "Sherman",
     "state": "TX",
-    "street": "Sherman"
+    "street": ""
   },
   "content": {
     "usps": [],
@@ -348,12 +334,12 @@
   "owner_name": "Dean Jones",
   "client_slug": "hardrock-sand-and-gravel",
   "form_action": "https://db.pageone.cloud/functions/v1/leads/hardrock-sand-and-gravel",
-  "github_repo": "",
+  "github_repo": "https://github.com/finance762-afk/hardrock-sand-and-gravel",
   "web_sources": [
     "https://share.google/vbihzgRkTRG3GBJaH",
     "https://hardrocksandandgravel.com"
   ],
-  "company_name": "HARDROCK Sand and Gravel",
+  "company_name": "Hardrock Sand And Gravel",
   "integrations": {
     "geo": null,
     "bbb_url": null,
@@ -393,42 +379,41 @@
     "brief": {
       "faqs": [
         {
-          "a": "We supply concrete sand, masonry sand, fill sand, pea gravel, crushed stone, and road base. Each material suits different jobs, so call or request a quote and we can recommend the right product for your project.",
-          "q": "What types of sand and gravel do you sell?"
+          "a": "We deliver to Sherman and [surrounding communities confirmed by the business] within [delivery radius]. Call with your address and we will confirm the delivery area and schedule your load.",
+          "q": "Do you deliver to Sherman and the surrounding area?"
         },
         {
-          "a": "Both options are available. Delivery covers [service radius] from our yard in [City], and you can also load your own truck or trailer during yard hours. Delivery fees depend on distance and load size.",
-          "q": "Do you deliver, or can I pick up my order?"
+          "a": "Bulk materials are usually measured in cubic yards. Multiply length by width by depth (in feet), then divide by 27. For example, a 10 ft by 10 ft area 4 inches deep needs about 1.2 cubic yards. Add 5 to 10 percent for compaction and waste. We can help you check your numbers before you order.",
+          "q": "How much sand or gravel do I need for my project?"
         },
         {
-          "a": "Measure the length, width, and depth in feet, then divide the cubic feet by 27 to get cubic yards. Add about 10 percent for compaction and waste. Our team can also help you estimate before you order.",
-          "q": "How much material do I need for my project?"
+          "a": "Sand is graded by particle size and use. Masonry sand is for mortar and stucco, concrete sand is for mixing concrete and flatwork, and fill sand is for leveling and backfill. Crushed stone base is commonly used under driveways and slabs because it compacts well. Tell us what you are building and we will recommend a grade.",
+          "q": "Which type of sand or gravel should I use?"
         },
         {
-          "a": "Pricing depends on the material, quantity, and delivery distance. Request a quote with your location and project details, and we will reply with an itemized price. [Insert current starting prices if published.]",
-          "q": "How much does sand or gravel cost per yard?"
+          "a": "Pricing depends on the product, and materials are typically quoted per ton or per cubic yard. [Confirm pickup hours and pricing unit.] Bulk pickup is available at our Sherman yard during [hours], and delivery is priced by [distance or load size]. Call for current pricing.",
+          "q": "Do you sell by the ton or the cubic yard, and can I pick up my own load?"
         },
         {
-          "a": "Yes. Commercial accounts can be set up for repeat orders, with [terms, credit application, and payment options]. Contact our office to open an account.",
-          "q": "Do you offer account pricing for contractors and landscapers?"
+          "a": "[Confirm trade account terms.] Contractors, landscapers, and repeat buyers can open a trade account for [payment terms and invoicing details]. Account holders receive [scheduling priority or volume pricing]. Apply by phone or in person at the yard.",
+          "q": "Do you offer account pricing for contractors?"
         }
       ],
-      "about_angle": "Position HARDROCK as a locally rooted yard that knows Texas soils and job-site demands. Lead with the owner or team's commitment to accurate loads, honest pricing, and dependable scheduling, then support it with specifics such as years in operation, yard location, and fleet size once those are confirmed. Avoid generic 'family owned' claims unless they can be documented.",
-      "hero_headline": "Quality Sand & Gravel Delivered to Your Job Site in [City], Texas",
+      "about_angle": "Lead with the yard and the people behind it: a Sherman supplier that knows the materials, the local jobs, and how to get the right load to the site on time. Replace bracketed placeholders with verified facts (years in operation, yard address, fleet size, stockpile photos) before publishing. No site, competitor, or Google Business Profile data was supplied, so this angle is built from the industry and location alone. Avoid generic phrases like quality and service; name the specific materials and the service area instead.",
+      "hero_headline": "Bulk Sand and Gravel Delivered to Sherman and North Texas Job Sites",
       "differentiators": [
-        "Bulk aggregate supplier serving contractors, landscapers, and homeowners, so the site should show both trade and residential ordering paths [verify the customer mix before publishing]",
-        "Stated material range: concrete sand, masonry sand, fill sand, pea gravel, road base, and decorative rock, so buyers can find the right product on one page [confirm the exact inventory]",
-        "Delivery capability: list truck or trailer sizes, yardage per load, and the delivery radius so buyers know whether an order fits their job [add real figures]",
-        "Pricing transparency: publish per-yard or per-ton starting prices or a clear 'request a quote' process, since aggregate buyers compare cost per load first [add real rates]",
-        "Local presence in Texas: name the city, county, and nearby job markets, and build service-area content around them, since this is the main local-intent search opportunity [insert the actual city]",
-        "Operational reliability: highlight on-time delivery, phone availability, and same-day or next-day scheduling if offered, because contractors choose suppliers on dependability [confirm capability]",
-        "Fast quoting: a short quote form or phone line with a response-time promise is a concrete advantage over competitors that bury contact details",
-        "Google Business Profile and reviews: a complete GBP with photos of the yard, trucks, and piles builds trust for a business whose products are hard to judge online"
+        "Local to Sherman and Grayson County, so short hauls to job sites in town and across North Texas [verify yard address and delivery radius]",
+        "Bulk sand and gravel sold with transparent pricing by the ton or cubic yard, so contractors can quote jobs accurately [verify current pricing model]",
+        "Scheduled delivery with dependable trucks and drivers, rather than waiting on a third-party hauler [verify fleet ownership and scheduling process]",
+        "Material guidance for concrete, flatwork, driveways, and base courses, so buyers get the right grade for the job [verify full product list]",
+        "Trade accounts for contractors, landscapers, and repeat buyers, with simple reordering and invoicing [verify terms]",
+        "Honest quantity help for homeowners, so they order what the project actually needs and avoid waste"
       ],
-      "hero_subheadline": "Bulk sand, gravel, and road base for contractors, landscapers, and homeowners. Clear pricing, reliable delivery, and a quick quote from HARDROCK."
+      "hero_subheadline": "Concrete sand, fill, and base materials for contractors, builders, and homeowners, with reliable delivery from our Sherman yard [confirm delivery radius].",
+      "tone_recommendation": "Professional and direct, with a practical, plain-spoken warmth. Use authoritative detail about materials, grades, and quantities, since that is what buyers compare. Keep the friendliness in the contact and delivery language, not in slogans. Avoid hype and unverified superlatives such as best or largest. Write for both contractors who want fast specs and homeowners who need guidance."
     },
     "competitors": [],
-    "generated_at": "2026-10-15T21:44:06.770Z",
+    "generated_at": "2026-10-15T21:58:43.720Z",
     "existing_site": null
   },
   "competitor_urls": [],
