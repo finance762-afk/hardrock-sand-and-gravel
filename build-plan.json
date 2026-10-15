@@ -1,0 +1,538 @@
+{
+  "seo": {
+    "serp_context": null,
+    "target_radius": 25,
+    "primary_keyword": "sand and gravel",
+    "secondary_keywords": [
+      "pea gravel",
+      "57 rock",
+      "67 rock",
+      "pressure runs",
+      "road base",
+      "land clearing",
+      "site development",
+      "select fill",
+      "cushion sand",
+      "decomposed granite",
+      "concrte sand",
+      "riprap",
+      "trucking",
+      "mason sand",
+      "selecs base",
+      "tex dot 247",
+      "type a",
+      "commerical",
+      "residential",
+      "Sand & Gravel Supplier",
+      "gravel near me",
+      "driveway gravel",
+      "sand and gravel",
+      "fill dirt"
+    ]
+  },
+  "tier": "premium",
+  "email": "dean@hardrocksandandgravel.com",
+  "pages": [
+    {
+      "slug": "delivery",
+      "type": "service",
+      "title": "Delivery in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Delivery"
+      ],
+      "primary_keyword": "delivery  TX"
+    },
+    {
+      "slug": "driveways",
+      "type": "service",
+      "title": "Driveways in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Driveways"
+      ],
+      "primary_keyword": "driveways  TX"
+    },
+    {
+      "slug": "house-pads",
+      "type": "service",
+      "title": "House pads in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "House pads"
+      ],
+      "primary_keyword": "house pads  TX"
+    },
+    {
+      "slug": "ponds",
+      "type": "service",
+      "title": "Ponds in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Ponds"
+      ],
+      "primary_keyword": "ponds  TX"
+    },
+    {
+      "slug": "land-clearing",
+      "type": "service",
+      "title": "Land clearing in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Land clearing"
+      ],
+      "primary_keyword": "land clearing  TX"
+    },
+    {
+      "slug": "pea-gravel",
+      "type": "service",
+      "title": "Pea gravel in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Pea gravel"
+      ],
+      "primary_keyword": "pea gravel  TX"
+    },
+    {
+      "slug": "decomposed-granite",
+      "type": "service",
+      "title": "Decomposed granite in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Decomposed granite"
+      ],
+      "primary_keyword": "decomposed granite  TX"
+    },
+    {
+      "slug": "road-base",
+      "type": "service",
+      "title": "Road base in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Road base"
+      ],
+      "primary_keyword": "road base  TX"
+    },
+    {
+      "slug": "57-67-rock",
+      "type": "service",
+      "title": "57/67 rock in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "57/67 rock"
+      ],
+      "primary_keyword": "57/67 rock  TX"
+    },
+    {
+      "slug": "fill-dirt",
+      "type": "service",
+      "title": "Fill dirt in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Fill dirt"
+      ],
+      "primary_keyword": "fill dirt  TX"
+    },
+    {
+      "slug": "mason-sand",
+      "type": "service",
+      "title": "Mason sand in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Mason sand"
+      ],
+      "primary_keyword": "mason sand  TX"
+    },
+    {
+      "slug": "rip-rap",
+      "type": "service",
+      "title": "Rip rap in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Rip rap"
+      ],
+      "primary_keyword": "rip rap  TX"
+    },
+    {
+      "slug": "river-rock",
+      "type": "service",
+      "title": "River rock in , TX",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "River rock"
+      ],
+      "primary_keyword": "river rock  TX"
+    }
+  ],
+  "phone": "903-420-0330",
+  "assets": {
+    "logo": null,
+    "images": [
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/hardrock-sand-and-gravel/photos/1792100576529-k1x0gv-001_ADDITIONAL_AF1QipM1lZjx1JEH.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "hardrock-sand-and-gravel/photos/1792100576529-k1x0gv-001_ADDITIONAL_AF1QipM1lZjx1JEH.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/hardrock-sand-and-gravel/photos/1792100577768-fjsee0-003_ADDITIONAL_AF1QipP4c6ch7ZTy.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "hardrock-sand-and-gravel/photos/1792100577768-fjsee0-003_ADDITIONAL_AF1QipP4c6ch7ZTy.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/hardrock-sand-and-gravel/photos/1792100578709-rlgeej-004_ADDITIONAL_AF1QipOBfZ-kJcuv.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "hardrock-sand-and-gravel/photos/1792100578709-rlgeej-004_ADDITIONAL_AF1QipOBfZ-kJcuv.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/hardrock-sand-and-gravel/photos/1792100579742-4f9h14-005_ADDITIONAL_AF1QipMxokXzlONl.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "hardrock-sand-and-gravel/photos/1792100579742-4f9h14-005_ADDITIONAL_AF1QipMxokXzlONl.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/hardrock-sand-and-gravel/photos/1792100580719-4phlp2-006_ADDITIONAL_AF1QipNgIxTfgkFD.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "hardrock-sand-and-gravel/photos/1792100580719-4phlp2-006_ADDITIONAL_AF1QipNgIxTfgkFD.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/hardrock-sand-and-gravel/photos/1792100586363-urfi6n-007_ADDITIONAL_AF1QipPuzTjrV5_W.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "hardrock-sand-and-gravel/photos/1792100586363-urfi6n-007_ADDITIONAL_AF1QipPuzTjrV5_W.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/hardrock-sand-and-gravel/photos/1792100587716-h9lexm-008_ADDITIONAL_AF1QipM9s42-0pEy.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "hardrock-sand-and-gravel/photos/1792100587716-h9lexm-008_ADDITIONAL_AF1QipM9s42-0pEy.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/hardrock-sand-and-gravel/photos/1792100588898-qpeqek-010_ADDITIONAL_AF1QipNs50zRpX50.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "hardrock-sand-and-gravel/photos/1792100588898-qpeqek-010_ADDITIONAL_AF1QipNs50zRpX50.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/hardrock-sand-and-gravel/photos/1792100590335-x1x4bi-015_ADDITIONAL_AF1QipOLpve8aA_P.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "hardrock-sand-and-gravel/photos/1792100590335-x1x4bi-015_ADDITIONAL_AF1QipOLpve8aA_P.jpg",
+        "quality_score": null
+      },
+      {
+        "alt": "",
+        "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/hardrock-sand-and-gravel/photos/1792100591941-qfgh2u-016_ADDITIONAL_AF1QipPvvTN3JESI.jpg",
+        "page": "any",
+        "role": null,
+        "caption": "",
+        "context": "other",
+        "storage_path": "hardrock-sand-and-gravel/photos/1792100591941-qfgh2u-016_ADDITIONAL_AF1QipPvvTN3JESI.jpg",
+        "quality_score": null
+      }
+    ],
+    "page_allocations": null,
+    "recommended_hero_image": {
+      "alt": "",
+      "url": "https://db.pageone.cloud/storage/v1/object/public/client-assets/hardrock-sand-and-gravel/photos/1792100576529-k1x0gv-001_ADDITIONAL_AF1QipM1lZjx1JEH.jpg",
+      "context": "other",
+      "quality_score": null
+    }
+  },
+  "design": {
+    "fonts": {},
+    "notes": "",
+    "style": "modern",
+    "colors": {
+      "extracted_from_logo": true
+    },
+    "logo_analysis": {}
+  },
+  "domain": "hardrock-sand-and-gravel",
+  "phases": [
+    {
+      "name": "scaffold",
+      "phase": 1,
+      "status": "pending"
+    },
+    {
+      "name": "nav_footer_head",
+      "phase": 2,
+      "status": "pending"
+    },
+    {
+      "name": "homepage",
+      "phase": 3,
+      "status": "pending"
+    },
+    {
+      "name": "inner_pages",
+      "phase": 4,
+      "status": "pending"
+    },
+    {
+      "name": "seo_aeo_deploy",
+      "phase": 5,
+      "status": "pending"
+    }
+  ],
+  "address": {
+    "zip": "",
+    "city": "",
+    "state": "TX",
+    "street": "Sherman"
+  },
+  "content": {
+    "usps": [],
+    "years": 7,
+    "insurance": "",
+    "description": "HARDROCK Sand and Gravel is a local business serving Sherman, TX and the surrounding area, in business since 2019. Services include delivery, pea gravel, 57 rock and 67 rock. Contact HARDROCK Sand and Gravel at 903-420-0330 for availability and pricing.",
+    "certifications": []
+  },
+  "reviews": [],
+  "tagline": "",
+  "industry": "Sand & gravel supplier",
+  "services": [
+    "Delivery",
+    "Driveways",
+    "House pads",
+    "Ponds",
+    "Land clearing",
+    "Pea gravel",
+    "Decomposed granite",
+    "Road base",
+    "57/67 rock",
+    "Fill dirt",
+    "Mason sand",
+    "Rip rap",
+    "River rock"
+  ],
+  "owner_name": "Dean Jones",
+  "client_slug": "hardrock-sand-and-gravel",
+  "form_action": "https://db.pageone.cloud/functions/v1/leads/hardrock-sand-and-gravel",
+  "github_repo": "",
+  "web_sources": [
+    "https://share.google/vbihzgRkTRG3GBJaH",
+    "https://hardrocksandandgravel.com"
+  ],
+  "company_name": "HARDROCK Sand and Gravel",
+  "integrations": {
+    "geo": null,
+    "bbb_url": null,
+    "booking": {
+      "days": [],
+      "windows": [],
+      "authorized": false
+    },
+    "spanish": false,
+    "financing": null,
+    "photo_day": null,
+    "accepts_sms": false,
+    "gbp_place_id": "ChIJjwJvgixjTIYRxDk93hKN_tA",
+    "estimate_tool": {
+      "pricing": [],
+      "authorized": false
+    },
+    "gbp_map_embed": null,
+    "directions_url": "https://www.google.com/maps/dir/?api=1&destination=place_id:ChIJjwJvgixjTIYRxDk93hKN_tA",
+    "elfsight_embed": null,
+    "financing_note": null,
+    "scheduling_url": null,
+    "text_us_number": null,
+    "review_request_url": "https://search.google.com/local/writereview?placeid=ChIJjwJvgixjTIYRxDk93hKN_tA",
+    "certification_links": []
+  },
+  "service_areas": [
+    "Sherman",
+    "Denison",
+    "Grayson County TX"
+  ],
+  "address_public": true,
+  "business_hours": "Mon-Thu 6:00 AM-5:00 PM, Fri 9:00 AM-5:00 PM, Sat 9:00 AM-2:00 PM, Sun closed",
+  "image_curation": null,
+  "research_brief": {
+    "gbp": null,
+    "brief": {
+      "faqs": [
+        {
+          "a": "We supply concrete sand, masonry sand, fill sand, pea gravel, crushed stone, and road base. Each material suits different jobs, so call or request a quote and we can recommend the right product for your project.",
+          "q": "What types of sand and gravel do you sell?"
+        },
+        {
+          "a": "Both options are available. Delivery covers [service radius] from our yard in [City], and you can also load your own truck or trailer during yard hours. Delivery fees depend on distance and load size.",
+          "q": "Do you deliver, or can I pick up my order?"
+        },
+        {
+          "a": "Measure the length, width, and depth in feet, then divide the cubic feet by 27 to get cubic yards. Add about 10 percent for compaction and waste. Our team can also help you estimate before you order.",
+          "q": "How much material do I need for my project?"
+        },
+        {
+          "a": "Pricing depends on the material, quantity, and delivery distance. Request a quote with your location and project details, and we will reply with an itemized price. [Insert current starting prices if published.]",
+          "q": "How much does sand or gravel cost per yard?"
+        },
+        {
+          "a": "Yes. Commercial accounts can be set up for repeat orders, with [terms, credit application, and payment options]. Contact our office to open an account.",
+          "q": "Do you offer account pricing for contractors and landscapers?"
+        }
+      ],
+      "about_angle": "Position HARDROCK as a locally rooted yard that knows Texas soils and job-site demands. Lead with the owner or team's commitment to accurate loads, honest pricing, and dependable scheduling, then support it with specifics such as years in operation, yard location, and fleet size once those are confirmed. Avoid generic 'family owned' claims unless they can be documented.",
+      "hero_headline": "Quality Sand & Gravel Delivered to Your Job Site in [City], Texas",
+      "differentiators": [
+        "Bulk aggregate supplier serving contractors, landscapers, and homeowners, so the site should show both trade and residential ordering paths [verify the customer mix before publishing]",
+        "Stated material range: concrete sand, masonry sand, fill sand, pea gravel, road base, and decorative rock, so buyers can find the right product on one page [confirm the exact inventory]",
+        "Delivery capability: list truck or trailer sizes, yardage per load, and the delivery radius so buyers know whether an order fits their job [add real figures]",
+        "Pricing transparency: publish per-yard or per-ton starting prices or a clear 'request a quote' process, since aggregate buyers compare cost per load first [add real rates]",
+        "Local presence in Texas: name the city, county, and nearby job markets, and build service-area content around them, since this is the main local-intent search opportunity [insert the actual city]",
+        "Operational reliability: highlight on-time delivery, phone availability, and same-day or next-day scheduling if offered, because contractors choose suppliers on dependability [confirm capability]",
+        "Fast quoting: a short quote form or phone line with a response-time promise is a concrete advantage over competitors that bury contact details",
+        "Google Business Profile and reviews: a complete GBP with photos of the yard, trucks, and piles builds trust for a business whose products are hard to judge online"
+      ],
+      "hero_subheadline": "Bulk sand, gravel, and road base for contractors, landscapers, and homeowners. Clear pricing, reliable delivery, and a quick quote from HARDROCK."
+    },
+    "competitors": [],
+    "generated_at": "2026-10-15T21:44:06.770Z",
+    "existing_site": null
+  },
+  "competitor_urls": [],
+  "phone_secondary": "",
+  "service_grouping": {
+    "cap": 16,
+    "tier": "premium",
+    "groups": [
+      {
+        "page": "Delivery",
+        "solo": true,
+        "services": [
+          "Delivery"
+        ]
+      },
+      {
+        "page": "Driveways",
+        "solo": true,
+        "services": [
+          "Driveways"
+        ]
+      },
+      {
+        "page": "House pads",
+        "solo": true,
+        "services": [
+          "House pads"
+        ]
+      },
+      {
+        "page": "Ponds",
+        "solo": true,
+        "services": [
+          "Ponds"
+        ]
+      },
+      {
+        "page": "Land clearing",
+        "solo": true,
+        "services": [
+          "Land clearing"
+        ]
+      },
+      {
+        "page": "Pea gravel",
+        "solo": true,
+        "services": [
+          "Pea gravel"
+        ]
+      },
+      {
+        "page": "Decomposed granite",
+        "solo": true,
+        "services": [
+          "Decomposed granite"
+        ]
+      },
+      {
+        "page": "Road base",
+        "solo": true,
+        "services": [
+          "Road base"
+        ]
+      },
+      {
+        "page": "57/67 rock",
+        "solo": true,
+        "services": [
+          "57/67 rock"
+        ]
+      },
+      {
+        "page": "Fill dirt",
+        "solo": true,
+        "services": [
+          "Fill dirt"
+        ]
+      },
+      {
+        "page": "Mason sand",
+        "solo": true,
+        "services": [
+          "Mason sand"
+        ]
+      },
+      {
+        "page": "Rip rap",
+        "solo": true,
+        "services": [
+          "Rip rap"
+        ]
+      },
+      {
+        "page": "River rock",
+        "solo": true,
+        "services": [
+          "River rock"
+        ]
+      }
+    ],
+    "grouped_count": 13,
+    "original_count": 13
+  },
+  "lead_notification_email": "dean@hardrocksandandgravel.com",
+  "lead_notification_phone": "903-420-0330",
+  "google_business_profile_url": "https://share.google/vbihzgRkTRG3GBJaH"
+}
