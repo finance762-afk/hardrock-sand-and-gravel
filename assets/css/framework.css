@@ -10,13 +10,6 @@
 
 /* === Self-hosted fonts (v6.2 — no Google Fonts CDN) === */
 @font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 400 800;
-  font-display: swap;
-  src: url('/assets/fonts/bricolage-grotesque.woff2') format('woff2');
-}
-@font-face {
   font-family: 'Figtree';
   font-style: normal;
   font-weight: 400 900;
@@ -70,7 +63,7 @@
   --color-neutral-warm: var(--color-paper-2);
 
   /* Type — 3-font system */
-  --font-heading: "Bricolage Grotesque", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-heading: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;   /* archetype bold-industrial: Barlow Condensed display + Figtree body (Phase 2, 2026-10-15) */
   --font-body: "Figtree", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   --font-accent: "Barlow Condensed", 'Arial Narrow', 'Roboto Condensed', sans-serif;
 
@@ -87,8 +80,8 @@
   /* Layout */
   --measure: 62ch; --content-width: 62ch;
   --nav-height: 84px; --navbar-height: 84px;
-  --max-width: 1180px; --container: 1180px; --max-width-wide: 1400px; --container-wide: 1400px;
-  --section-pad: clamp(3.5rem, 7vw, 6rem); --section-pad-mobile: 3rem;
+  --max-width: 1136px; --container: 1136px; --max-width-wide: 1400px; --container-wide: 1400px;
+  --section-pad: clamp(4rem, 10vh, 8rem); --section-pad-mobile: var(--section-pad); /* Phase 2 mandate: clamp(4rem,10vh,8rem) */
   --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
   --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem;
   --space-xs: .5rem; --space-sm: .75rem; --space-md: 1rem; --space-lg: 1.5rem; --space-xl: 2rem; --space-2xl: 3rem; --space-3xl: 4rem; --space-4xl: 6rem;
@@ -605,3 +598,112 @@ html.js-anim .reveal-d1, html.js-anim .reveal-delay-1 { transition-delay: .08s }
 .hero-visual .hero-form-card { position: absolute; left: -2rem; bottom: 1.5rem; width: 320px; z-index: 3; display: grid; }
 @media (max-width: 1120px) { .hero-visual .hero-form-card { left: 1rem; } }
 @media (max-width: 900px) { .hero-grid--visual { grid-template-columns: 1fr; gap: 1.5rem; } .hero-visual { min-height: 0; aspect-ratio: 16 / 10; } .hero-visual__img { right: 0; border-radius: var(--radius-lg); } .hero-visual .hero-form-card { display: none; } }
+
+/* ============================================================================
+   PHASE 2 — header / footer / head layer (2026-10-15)
+   Archetype: bold-industrial. Mandated base rules first, then the shared
+   include styles (text logo, dropdowns, mobile menu, footer, estimate dialog).
+   ============================================================================ */
+
+/* --- Mandated base rules (no section collision, no text overflow) --- */
+section {
+  position: relative;
+  overflow: hidden;
+  overflow: clip;                              /* same clipping, but no scroll container: position:sticky (blog TOC) keeps working */
+  padding: clamp(4rem, 10vh, 8rem) 0;          /* MANDATORY — prevents section collision */
+}
+/* The brief's line is `section.hero { padding: 0 }`. A bare zero would sit the H1 under the fixed header
+   (it did on the first real v7 build, see the note at the top of this file), so only the horizontal
+   padding is zeroed here; .hero / .hero--interior own their vertical clearance. */
+section.hero { padding-inline: 0; }
+h1, h2, h3, h4 {
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+  letter-spacing: 0;                           /* condensed display face: the Bricolage tracking (-.022em) over-tightens it */
+}
+p { overflow-wrap: anywhere; }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+}
+
+/* --- AA fix: ink text on the #c8461a accent measures 3.3:1; white measures 4.8:1 --- */
+.btn-accent, .btn-nav-cta, .mobile-cta-bar__estimate, .skip-link { color: var(--color-white); }
+.btn-accent:hover, .btn-nav-cta:hover { background: var(--color-accent-dark); color: var(--color-white); }
+
+/* --- Text logo (used until a logo file lands in /assets/images/) --- */
+.logo-mark { display: grid; place-items: center; width: 46px; height: 46px; flex: 0 0 auto; background: var(--color-primary); color: var(--color-white); border-bottom: 4px solid var(--color-accent); border-radius: var(--radius-sm); font-family: var(--font-heading); font-weight: 700; font-size: 1.7rem; line-height: 1; }
+.logo-text { display: grid; gap: .1rem; }
+.logo-text .brand-name { font-family: var(--font-heading); font-weight: 700; font-size: 1.55rem; letter-spacing: .04em; line-height: 1; text-transform: uppercase; color: var(--color-ink); }
+.logo-text .brand-sub { margin-top: .15rem; font-size: .7rem; letter-spacing: .16em; }
+.site-header--dark .logo-text .brand-name { color: var(--color-white); }
+.site-header--dark .logo-mark { background: var(--color-accent); border-bottom-color: var(--color-white); }
+.site-logo.has-text-logo { gap: .65rem; }
+.site-footer .logo-text .brand-name { color: var(--color-white); }
+.site-footer .logo-mark { background: var(--color-accent); border-bottom-color: var(--color-white); }
+.site-footer .brand-sub { color: rgba(255, 255, 255, .6); }
+
+/* --- Desktop nav: dropdown bridge, two-column service list, chevron --- */
+.navbar-links > li > a svg, .navbar-links > li > .dropdown-toggle svg { width: 14px; height: 14px; opacity: .65; transition: transform .2s var(--ease); }
+.has-dropdown:hover > a svg, .has-dropdown:focus-within > a svg { transform: rotate(180deg); }
+.dropdown { z-index: 5; }
+.dropdown::before { content: ""; position: absolute; inset: -.5rem 0 auto 0; height: .5rem; }   /* hover bridge across the .35rem gap */
+.dropdown--cols { min-width: 500px; }
+.has-dropdown:hover .dropdown--cols, .has-dropdown:focus-within .dropdown--cols { display: grid !important; grid-template-columns: 1fr 1fr; gap: .1rem .4rem; }
+.dropdown li { list-style: none; }
+.dropdown .dropdown-all { grid-column: 1 / -1; margin-top: .3rem; border-top: 1px solid var(--color-line); padding-top: .3rem; }
+.dropdown .dropdown-all a { font-weight: 600; color: var(--color-primary); }
+.navbar-cta .btn svg { width: 18px; height: 18px; flex: 0 0 auto; }
+@media (max-width: 1240px) {
+  .navbar-links > li > a, .navbar-links > li > .dropdown-toggle { padding-inline: .45rem; font-size: .92rem; }
+  .navbar-cta { gap: .6rem; }
+  .navbar-cta .btn.navbar-phone, .navbar-cta .btn-primary { padding-inline: .8rem; font-size: .9rem; }
+  .logo-text .brand-name { font-size: 1.35rem; }
+}
+
+/* --- Mobile overlay menu --- */
+.mobile-menu-inner { display: grid; gap: 1rem; max-width: 640px; margin-inline: auto; }
+.mobile-menu-links > li > a { display: block; padding: .75rem 0; font-family: var(--font-heading); font-weight: 700; font-size: 1.6rem; letter-spacing: .02em; text-transform: uppercase; color: var(--color-white); text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, .1); }
+.mobile-menu-links > li > a[aria-current="page"] { color: var(--color-accent-bright); }
+.mobile-menu .mobile-submenu { padding: .6rem 0 .9rem; }
+.mobile-menu .mobile-submenu a { min-height: 40px; display: flex; align-items: center; }
+.mobile-menu-cta .btn { width: 100%; }
+.mobile-menu-hours { margin: .5rem 0 0; font-size: .85rem; color: rgba(255, 255, 255, .65); text-align: center; }
+
+/* --- Footer --- */
+.footer-top { padding-bottom: 1rem; }
+.footer-brand .site-logo { margin: 0 0 1rem; }
+.footer-brand img.footer-logo-img { width: auto; height: auto; max-height: 90px; max-width: 220px; margin-bottom: 1rem; }
+.footer-cols-2 { grid-template-columns: 1fr 1fr; column-gap: 1.2rem; }
+.footer-subhead { margin-top: 1.4rem; }
+.footer-hours { display: grid; gap: .25rem; margin-top: 1rem; font-size: .88rem; }
+.footer-hours div { display: flex; justify-content: space-between; gap: 1rem; max-width: 260px; }
+.footer-hours dt { color: rgba(255, 255, 255, .6); }
+.footer-hours dd { margin: 0; text-align: right; }
+.footer-cta { margin-top: 1.1rem; }
+.footer-social { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin-top: 1rem; padding: 0; list-style: none; }
+.footer-bottom { margin-top: 1.5rem; }
+.footer-bottom-bar { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem 1.5rem; font-size: .82rem; color: rgba(255, 255, 255, .6); padding-top: .6rem; }
+.footer-bottom-bar p { margin: 0; }
+.footer-credit { margin: 0; }
+.footer-legal-row { justify-content: center; align-items: center; gap: .2rem .9rem; font-size: .85rem; padding: .4rem 0 .8rem; border-bottom: 1px solid rgba(255, 255, 255, .1); text-align: center; }
+.footer-legal-row .divider, .footer-legal-row .footer-legal-divider { color: rgba(255, 255, 255, .3); font-size: .75rem; }
+@media (max-width: 767px) { .footer-legal-row .divider { display: none; } .footer-legal-row { gap: .1rem 1.2rem; } .footer-bottom-bar { justify-content: center; text-align: center; } }
+.back-to-top svg { width: 20px; height: 20px; transform: rotate(180deg); }
+.mobile-cta-bar svg { width: 20px; height: 20px; flex: 0 0 auto; }
+
+/* --- Estimate dialog (opened by [data-open-estimate]; footer.php renders it on every page) --- */
+.estimate-form { display: grid; gap: .8rem; }
+.estimate-form .field textarea { min-height: 84px; resize: vertical; }
+.estimate-form .btn { width: 100%; }
+.dialog-head h2 { font-size: 1.5rem; }
+dialog.estimate-dialog .dialog-sub { margin: 0 1.35rem .6rem; font-size: .9rem; color: var(--color-muted); }
+.dialog-close svg { width: 20px; height: 20px; }
+
+/* --- Header row: .navbar-inner is height:100%, so the nav itself must fill the fixed bar --- */
+.site-header .navbar { height: 100%; }
+.logo-text .brand-sub { display: block; }   /* the descriptor is half the text logo — keep it on phones too */
+.site-footer .footer-subhead { margin-top: 1.6rem; }                 /* beats `.site-footer h4 { margin: 0 0 .9rem }` */
+.estimate-form input[type="checkbox"] { min-height: 0; width: 20px; height: 20px; padding: 0; }   /* the form-wide 48px input rule must not stretch the consent box */

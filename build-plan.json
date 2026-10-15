@@ -264,13 +264,18 @@
     }
   },
   "design": {
-    "fonts": {},
+    "fonts": {
+      "heading": "Barlow Condensed",
+      "body": "Figtree",
+      "accent": "Barlow Condensed"
+    },
     "notes": "",
     "style": "modern",
     "colors": {
       "extracted_from_logo": true
     },
-    "logo_analysis": {}
+    "logo_analysis": {},
+    "archetype": "bold-industrial"
   },
   "domain": "hardrock-sand-and-gravel",
   "phases": [
