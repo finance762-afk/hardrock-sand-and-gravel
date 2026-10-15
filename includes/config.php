@@ -142,5 +142,13 @@ $serviceZips    = [];   // integrations.service_zips not provided
 
 $cssVersion = '5';      // the SINGLE framework.css cache-bust; bump here on every framework.css / critical.css change
 
+// ---- Legal pages (Phase 5) ----------------------------------------------------------------------
+// Intake did not collect business entity type or state of formation. The entity suffix stays empty (legal pages omit it
+// rather than guess "LLC"); governing law uses the state the business operates in (Sherman, Grayson County, TX).
+$companyEntityType = '';          // UNKNOWN — set to e.g. 'LLC' once confirmed, then the legal pages append it to the name
+$companyState      = 'Texas';
+$companyCounty     = 'Grayson';
+$legalUpdated      = 'October 15, 2026';   // fixed date of the last substantive edit to the four legal pages — change it when the text changes
+
 // ---- Lead attribution (first-touch cookie + p1_attribution_fields()) — must stay last, before any output ----
 require_once __DIR__ . '/attribution.php';

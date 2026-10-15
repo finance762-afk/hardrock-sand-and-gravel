@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Legal pages — HARDROCK Sand and Gravel (privacy, terms, cookies, accessibility)
+   Solid 40vh hero with grain, single narrow reading column, "on this page" list.
+   framework.css owns .legal-prose / .legal-disclaimer; every value here is a token (var()) or a color-mix() of tokens.
+   No reveal classes on these pages: legal text must be readable the instant it loads.
+   ========================================================================== */
+.hero--legal { min-height: 40vh; display: flex; align-items: center; padding-bottom: clamp(2rem, 4vw, 3rem); border-bottom: var(--space-2) solid var(--color-accent); }
+.hero--legal .container { width: min(760px, 100% - 2 * clamp(1rem, 4vw, 2.5rem)); }
+.hero--legal h1, .legal-prose h2, .legal-prose h3 { text-wrap: balance; }
+.hero--legal h1 { text-transform: uppercase; letter-spacing: .01em; }
+.legal-hero__sub { margin: var(--space-xs) 0 0; font-size: var(--fs-lead); max-width: 48ch; }
+.legal-hero__updated { margin: var(--space-sm) 0 0; font-family: var(--font-accent); text-transform: uppercase; letter-spacing: .12em; font-size: var(--fs-small); color: var(--color-accent-bright); }
+
+.legal-body { background: var(--color-paper); padding-block: var(--space-3xl); }
+.content-narrow { max-width: 68ch; margin-inline: auto; }
+.legal-prose { padding-inline: 0; }
+.legal-prose p, .legal-prose li { text-wrap: pretty; }
+.legal-prose h2 { scroll-margin-top: calc(var(--nav-height) + var(--space-lg)); text-transform: uppercase; letter-spacing: .02em; padding-top: var(--space-md); border-top: 1px solid var(--color-line); }
+.legal-prose h3 { scroll-margin-top: calc(var(--nav-height) + var(--space-lg)); }
+.legal-prose ul, .legal-prose ol { margin: 0 0 var(--space-md) var(--space-lg); }
+.legal-prose li { margin-bottom: var(--space-xs); }
+.legal-prose a { color: var(--color-accent-dark); text-decoration: underline; text-decoration-thickness: .08em; text-underline-offset: .18em; }
+.legal-prose table { width: 100%; border-collapse: collapse; margin: 0 0 var(--space-md); font-size: var(--fs-small); }
+.legal-prose th, .legal-prose td { text-align: left; vertical-align: top; padding: var(--space-xs) var(--space-sm); border-bottom: 1px solid var(--color-line); }
+.legal-prose th { font-family: var(--font-accent); text-transform: uppercase; letter-spacing: .08em; color: var(--color-ink); background: var(--color-paper-2); }
+.legal-prose code { font-size: .92em; padding: 0 var(--space-1); background: var(--color-paper-2); border-radius: var(--radius-sm); }
+.legal-table-wrap { overflow-x: auto; }
+
+.legal-toc { margin: 0 0 var(--space-xl); padding: var(--space-md) var(--space-lg); border-left: var(--space-1) solid var(--color-accent); background: var(--color-card-tint-3); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+.legal-toc__title { margin: 0 0 var(--space-xs); font-family: var(--font-accent); text-transform: uppercase; letter-spacing: .12em; font-size: var(--fs-small); color: var(--color-ink); }
+.legal-toc ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 var(--space-lg); margin: 0; padding-left: var(--space-lg); font-size: var(--fs-small); }
+.legal-toc a { display: inline-flex; align-items: center; min-height: 2.75rem; color: var(--color-ink-2); text-decoration: none; }
+.legal-toc a:hover, .legal-toc a:focus-visible { color: var(--color-accent-dark); text-decoration: underline; }
+@media (max-width: 600px) { .legal-toc ol { grid-template-columns: 1fr; } }
