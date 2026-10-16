@@ -43,7 +43,7 @@ $spTel       = 'tel:' . $phoneE164;
 
 $faqs = [
     ['q' => 'Does HARDROCK deliver sand and gravel outside Sherman and Denison?',
-     'a' => 'Hardrock Sand And Gravel serves Grayson County beyond its Sherman base, including the small towns and rural roads between Sherman, Denison and the county lines. Call ' . $spCall . ' with the address; if it sits outside the county, ask before you plan the job around it.'],
+     'a' => 'Hardrock Sand And Gravel serves Grayson County beyond its Sherman base, including the small towns and rural roads between Sherman, Denison and the county lines, and also delivers into the neighboring Collin, Denton, Fannin and Cooke counties. Everything is delivered; there is no customer pickup. Call ' . $spCall . ' with the address; if it sits outside those five counties, ask before you plan the job around it.'],
     ['q' => 'What gravel should I use for a long rural driveway in Grayson County?',
      'a' => 'A common build is road base as the compacted lower layer and 57 rock as the top course, which drains and grips. Soft clay, sandy ground and long culvert crossings each change the details, so describe the lane and any wet spots when you call ' . $spCall . '.'],
     ['q' => 'Can HARDROCK clear land and dig a pond on acreage?',

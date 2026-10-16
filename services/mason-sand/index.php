@@ -29,7 +29,7 @@ $faqs = [
     ['q' => 'Will HARDROCK haul mason sand to a home in Denison or out by the lake?',
      'a' => 'Hardrock Sand And Gravel delivers mason sand to homes in Sherman, Denison and the rest of Grayson County. Call ' . $spCall . ' with the address and the spot where the pile should go, such as the side yard or the end of the drive, and the delivery day is set on that call.'],
     ['q' => 'Is mason sand priced per ton or per cubic yard?',
-     'a' => 'Hardrock Sand And Gravel quotes mason sand by phone rather than posting a rate, since the price moves with the amount and the trip to your address. Measure the patio, sandbox or mortar job first, then call ' . $spCall . ' for the current price and the unit it is sold in.'],
+     'a' => 'Both. Hardrock Sand And Gravel prices mason sand by the ton and by the yard, and a full load is 20 yards or 20 tons. The delivered price still moves with the amount and the trip to your address, so measure the patio, sandbox or mortar job first, then call ' . $spCall . ' for the current price.'],
 ];
 
 $pageSchemas = [
@@ -232,13 +232,13 @@ html.js-anim .ms-mix.reveal-up:not(.in) .ms-mix__bar li { transform: scaleY(.2);
   <div class="container">
     <div class="sp-proof__single">
       <figure class="reveal-left">
-        <?php echo pictureTag('flagstone-patio-fire-pit', 'Flagstone patio with a square stone fire pit and filled joints, a fence and open yard behind', '(max-width: 900px) 100vw, 640px'); ?>
-        <figcaption>Flagstone and a stone fire pit: the kind of backyard build that uses fine sand.</figcaption>
+        <?php echo pictureTag('flagstone-patio-fire-pit', 'Flagstone patio with a square stone fire pit and decomposed granite in the joints, a fence and open yard behind', '(max-width: 900px) 100vw, 640px'); ?>
+        <figcaption>A HARDROCK flagstone patio and stone fire pit, with decomposed granite in the joints: the kind of backyard build that uses fine sand underneath.</figcaption>
       </figure>
       <div class="ms-proof__copy reveal-right">
         <span class="eyebrow">From the ground up</span>
         <h2 id="ms-proof-title">Where does mason sand go in a flagstone patio with a fire pit?</h2>
-        <p class="answer-block">In a flagstone patio with a fire pit, mason sand goes in the thin bed under each flagstone and in the mortar for stone or block walls. The joints between flagstones can be filled with fine sand, decomposed granite or mortar, depending on the finish wanted.</p>
+        <p class="answer-block">In a flagstone patio with a fire pit, mason sand goes in the thin bed under each flagstone and in the mortar for stone or block walls. The joints between flagstones can be filled with fine sand, decomposed granite or mortar, depending on the finish wanted. On the HARDROCK patio pictured here, the joints are decomposed granite.</p>
         <p>Patios and fire pits like this are a favorite weekend build on acreage around Sherman and at lake homes near Pottsboro and Lake Texoma. Every other material HARDROCK supplies is on <a href="/services/">the HARDROCK services overview</a>.</p>
       </div>
     </div>

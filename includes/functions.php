@@ -250,7 +250,7 @@ if (!function_exists('generateLocalBusinessSchema')) {
      */
     function generateLocalBusinessSchema(): array {
         global $siteName, $siteUrl, $phoneE164, $email, $businessDescription, $address, $addressPublic, $geo, $gbp, $hours,
-               $serviceAreas, $services, $socialLinks, $yearEstablished, $schemaImage;
+               $serviceAreas, $serviceCounties, $services, $socialLinks, $yearEstablished, $schemaImage;
         $fnBase = rtrim((string) $siteUrl, '/');
         $fnAddr = ['@type' => 'PostalAddress'];
         if (($addressPublic ?? true) && !empty($address['street'])) $fnAddr['streetAddress'] = $address['street'];
@@ -262,8 +262,9 @@ if (!function_exists('generateLocalBusinessSchema')) {
         $fnHoursIn = [];
         foreach (array_values((array) $hours) as $fnI => $fnH) { $fnH['_idx'] = $fnI; $fnHoursIn[] = $fnH; }
 
+        /* areaServed = the page areas (cities + Grayson County) plus the owner-confirmed delivery counties, deduplicated */
         $fnAreas = [];
-        foreach ((array) $serviceAreas as $fnArea) {
+        foreach (array_unique(array_merge((array) $serviceAreas, (array) ($serviceCounties ?? []))) as $fnArea) {
             $fnAreas[] = ['@type' => stripos($fnArea, 'county') !== false ? 'AdministrativeArea' : 'City', 'name' => $fnArea];
         }
         $fnOffers = [];
@@ -299,10 +300,10 @@ if (!function_exists('generateLocalBusinessSchema')) {
 if (!function_exists('generateServiceSchema')) {
     /** Service node for a config.php $services row (name, slug, description); provider references the homepage #organization. */
     function generateServiceSchema(array $service): array {
-        global $siteUrl, $serviceAreas;
+        global $siteUrl, $serviceAreas, $serviceCounties;
         $fnBase = rtrim((string) $siteUrl, '/');
         $fnAreas = [];
-        foreach ((array) $serviceAreas as $fnArea) {
+        foreach (array_unique(array_merge((array) $serviceAreas, (array) ($serviceCounties ?? []))) as $fnArea) {
             $fnAreas[] = ['@type' => stripos($fnArea, 'county') !== false ? 'AdministrativeArea' : 'City', 'name' => $fnArea];
         }
         return [

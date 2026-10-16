@@ -180,8 +180,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <ol class="sp-steps reveal-right">
         <li><b>Pick the material or job</b><span>Use the cards above or the chooser table. Not sure? Describe the project and HARDROCK will suggest one.</span></li>
         <li><b>Size it</b><span>Measure the area and depth. For site work, the address and a few photos of the ground help.</span></li>
-        <li><b>Call or send the form</b><span>HARDROCK quotes the load or the job by phone and sets the day.</span></li>
-        <li><b>Delivered or built</b><span>The load is dumped where you want it, or the drive, pad, pond or clearing is done.</span></li>
+        <li><b>Call or send the form</b><span>Material is priced by the ton or the yard and quoted by phone; a full load is 20 yards or 20 tons. Driveways, pads, ponds and clearing always get a site visit first to check elevation and soil type.</span></li>
+        <li><b>Delivered or built</b><span>The load is dumped where you want it (delivery only, and two materials come as separate deliveries so they do not mix), or the drive, pad, pond or clearing is done.</span></li>
       </ol>
     </div>
   </div>
@@ -196,7 +196,7 @@ if ($hubReviews !== ''): ?>
     <?php echo $hubReviews; ?>
     <div class="sp-proof__foot">
       <a class="btn btn-secondary" href="<?php echo esc($gbp['share_url']); ?>" target="_blank" rel="noopener">Read HARDROCK's Google reviews</a>
-      <p>Owner <?php echo esc($ownerName); ?> and the HARDROCK team have supplied Sherman and Grayson County since <?php echo esc($yearEstablished); ?>.<?php if (is_dir($_SERVER['DOCUMENT_ROOT'] . '/about')): ?> <a href="/about/">More about HARDROCK</a>.<?php endif; ?></p>
+      <p>Hardrock Sand And Gravel, owned by <?php echo esc($ownerName); ?>, has supplied Sherman and Grayson County since <?php echo esc($yearEstablished); ?> and now delivers across Grayson, Collin, Denton, Fannin and Cooke counties.<?php if (is_dir($_SERVER['DOCUMENT_ROOT'] . '/about')): ?> <a href="/about/">More about HARDROCK</a>.<?php endif; ?></p>
     </div>
   </div>
 </section>

@@ -73,7 +73,7 @@ $blogPosts = [
 
 One `@graph` containing:
 
-- **BlogPosting** — `headline`, `image`, `datePublished`/`dateModified` (from `dateISO`), `keywords`, `author` = the Organization `@id` (NOT a fake person), `publisher` = Organization `@id`, `mainEntityOfPage` = canonical URL
+- **BlogPosting** — `headline`, `image`, `datePublished`/`dateModified` (from `dateISO`), `keywords`, `author` = the Organization **"Page One Insights LLC"** (`{"@type": "Organization", "name": "Page One Insights LLC", "url": "https://pageoneinsights.com/"}` — the visible byline reads "Published by Page One Insights LLC"; NOT a fake person), `publisher` = the client homepage Organization `@id` (`…/#organization`), `mainEntityOfPage` = canonical URL
 - **BreadcrumbList** — Home → Blog → Post
 - **FAQPage** — question/answer pairs that mirror the **visible** on-page FAQ exactly. Never schema-only FAQs.
 
@@ -110,7 +110,7 @@ AI may research and draft a post; a person (or the QA pass) verifies it before i
 - **Business claims come from intake only.** Years in business, licences, certifications, response times, insurance, warranties, "24/7" — only if build-plan.json / config.php / GBP state them. A post written in the owner's voice may not give the owner credentials they do not have.
 - **Metadata matches the post.** Title ≤ 60 chars, meta description and `keywords` describe this post's actual answer; no promised services or areas the post does not cover; alt text describes the image.
 - **No posts spun for coverage.** One pillar plus supporting posts answering real questions from the DataForSEO gaps and GSC queries — never a post per AI sub-query or a swapped-city rewrite. That is scaled content abuse regardless of who wrote it.
-- **Author is the Organization** (BlogPosting `author` = Organization `@id`), never an invented person or title.
+- **Author is the Organization "Page One Insights LLC"** (BlogPosting `author` = Organization "Page One Insights LLC", byline "Published by Page One Insights LLC"; `publisher` = the client homepage Organization `@id`), never an invented person or title.
 - **Free offers are specific.** "Free estimate" says what is free (the on-site visit and written quote) and notes any excluded fees.
 
 ---

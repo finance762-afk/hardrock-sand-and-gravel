@@ -27,7 +27,7 @@ $faqs = [
     ['q' => 'Do you build house pads around Sherman and Denison?',
      'a' => 'Yes. Hardrock Sand And Gravel builds house pads in Sherman, Denison and the rest of Grayson County. Call ' . $spCall . ' with the site address and the slab size, and have the pad spec close by if the builder or engineer has written one.'],
     ['q' => 'Do you price pad fill by the ton or the cubic yard?',
-     'a' => 'Hardrock Sand And Gravel quotes each house pad by phone, because the pad size, the height, the material in the spec and the haul all change the number. Bring the cubic-yard figure from the pad math on this page, and HARDROCK will give you the current price and how the fill is measured.'],
+     'a' => 'Both. Hardrock Sand And Gravel prices pad fill and base by the ton and by the yard, and a full load is 20 yards or 20 tons. A built pad is always quoted after a site visit, because the elevation and the soil type change the fill and the work. Bring the cubic-yard figure from the pad math on this page to the first call.'],
 ];
 
 $pageSchemas = [
@@ -233,7 +233,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="reveal-left">
         <span class="eyebrow">From plans to pad</span>
         <h2 id="hp-breakdown-title">How does a house pad job with HARDROCK move from plans to a finished pad?</h2>
-        <p class="answer-block">A HARDROCK house pad job runs from plans to pad in four steps, all set up by phone. You send the slab size, the site address and the spec; HARDROCK works out the yards of fill and base; you get a price and a day; then the pad is built for the slab crew.</p>
+        <p class="answer-block">A HARDROCK house pad job runs from plans to pad in four steps. You send the slab size, the site address and the spec; HARDROCK visits the site to check the elevation and the soil type and works out the yards of fill and base; you get a price and a day; then the pad is built for the slab crew.</p>
         <ul class="sp-included">
           <li><?php echo icon('map-pin', 18); ?><span>Site address, or the lot and subdivision name</span></li>
           <li><?php echo icon('ruler', 18); ?><span>Slab dimensions from the plans</span></li>
@@ -245,8 +245,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
       <ol class="sp-steps reveal-right">
         <li><b>Send the plans</b><span>Slab size, address and any pad spec, by phone or through the form.</span></li>
-        <li><b>Yards worked out</b><span>Fill and base quantities are figured from the finished pad dimensions.</span></li>
-        <li><b>Price and a start day</b><span>HARDROCK gives the number and a day to begin over the phone.</span></li>
+        <li><b>Site visit and yards worked out</b><span>HARDROCK checks the elevation and soil type on site, then figures fill and base from the finished pad dimensions.</span></li>
+        <li><b>Price and a start day</b><span>The number and a day to begin follow the site visit.</span></li>
         <li><b>Pad built</b><span>Fill and base go in, leaving a level pad ready for the forms.</span></li>
       </ol>
     </div>

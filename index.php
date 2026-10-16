@@ -30,8 +30,8 @@ $homeTel   = 'tel:' . $phoneE164;
 $homeCards = [
     ['slug' => 'delivery', 'photo' => 'gravel-stockpiles-job-site', 'icon' => 'truck',
      'alt'  => 'Rows of dumped gravel loads across a staked site at sundown',
-     'desc' => 'Bulk sand, gravel, rock and dirt dropped where the job needs it.',
-     'bullets' => ['Sand, gravel, rock and dirt', 'Homes, farms and job sites', 'Sherman, Denison, Grayson County']],
+     'desc' => 'Bulk sand, gravel, rock and dirt dropped where the job needs it. Delivery only.',
+     'bullets' => ['Sand, gravel, rock and dirt', 'Full load: 20 yards or 20 tons', 'Five North Texas counties']],
     ['slug' => 'driveways', 'photo' => 'gravel-driveway-rural', 'icon' => 'route',
      'alt'  => 'New gravel drive running across open pasture beside a green tractor',
      'desc' => 'Gravel driveways for homes, farms and rural lots around Sherman.',
@@ -50,8 +50,8 @@ $homeCards = [
      'bullets' => ['Walkways and play areas', 'Landscape beds and drainage', 'Smooth, rounded stone']],
     ['slug' => 'decomposed-granite', 'photo' => 'crushed-red-granite-closeup', 'icon' => 'layers',
      'alt'  => 'Close-up of crushed red granite',
-     'desc' => 'Fine crushed granite for paths, patios and xeriscape beds.',
-     'bullets' => ['Paths, patios and xeriscape', 'Packs firm underfoot', 'Warm red granite color']],
+     'desc' => 'Fine crushed granite for paths, patios and xeriscape beds. Pink granite too.',
+     'bullets' => ['Paths, patios and xeriscape', 'Packs firm underfoot', 'Decomposed and pink granite']],
     ['slug' => 'rip-rap', 'photo' => 'rip-rap-crew-skid-steer', 'icon' => 'waves',
      'alt'  => 'Two workers setting rip rap on filter fabric while a skid steer brings more rock',
      'desc' => 'Large rock that stops erosion on banks, pond edges and culverts.',
@@ -68,7 +68,7 @@ $galleryItems = [
     ['img' => 'pea-gravel-closeup',      'wide' => false, 'tag' => 'Pea gravel', 'alt' => 'Close-up of rounded grey and tan pea gravel', 'cap' => 'Pea gravel up close: small, rounded and smooth'],
     ['img' => 'pond-excavation-trees',   'wide' => true,  'tag' => 'Ponds',      'alt' => 'Pond basin dug out of grey clay among standing trees', 'cap' => 'A pond basin dug out between mature trees'],
     ['img' => 'crushed-red-granite-closeup', 'wide' => false, 'tag' => 'Granite', 'alt' => 'Close-up of crushed red granite chips', 'cap' => 'Crushed red granite, close up'],
-    ['img' => 'flagstone-patio-fire-pit','wide' => false, 'tag' => 'Hardscape',  'alt' => 'Flagstone patio with a square stone fire pit, joints filled with fine gravel', 'cap' => 'Flagstone patio and fire pit set in fine gravel'],
+    ['img' => 'flagstone-patio-fire-pit','wide' => false, 'tag' => 'Hardscape',  'alt' => 'Flagstone patio with a square stone fire pit, joints filled with decomposed granite', 'cap' => 'A HARDROCK flagstone patio and fire pit, joints filled with decomposed granite'],
     ['img' => 'gravel-stockpiles-job-site', 'wide' => true, 'tag' => 'Delivery', 'alt' => 'Rows of gravel loads dumped across a staked site at sunset', 'cap' => 'Gravel loads dropped in rows across a staked site'],
     ['img' => 'rip-rap-stockpile-closeup', 'wide' => false, 'tag' => 'Rip rap',  'alt' => 'Large grey limestone rip rap with a golf ball resting on it for scale', 'cap' => 'Limestone rip rap, with a golf ball for scale'],
     ['img' => 'excavator-crushed-rock-pad', 'wide' => false, 'tag' => 'Site work', 'alt' => 'Yellow excavator working a pile of crushed rock on a graded pad', 'cap' => 'Excavator spreading crushed rock on a graded pad'],
@@ -78,13 +78,13 @@ $galleryItems = [
 /* ---- FAQ: questions from the research brief that intake can answer truthfully ---------------------------------- */
 $homeFaqs = [
     ['q' => 'Do you deliver sand and gravel to Sherman and the surrounding area?',
-     'a' => 'Yes. Hardrock Sand And Gravel delivers across Sherman, Denison and the rest of Grayson County. Call ' . $homeCall . ' or send the estimate form with your delivery address, the material and roughly how much you need, and we will confirm the area, the price and a delivery day.'],
+     'a' => 'Yes. Hardrock Sand And Gravel delivers across Sherman, Denison and the rest of Grayson County, plus Collin, Denton, Fannin and Cooke counties. Everything is delivered; there is no customer pickup. Call ' . $homeCall . ' or send the estimate form with your delivery address, the material and roughly how much you need, and we will confirm the area, the price and a delivery day.'],
     ['q' => 'How much sand or gravel do I need for my project?',
      'a' => 'Multiply length by width by depth in feet, then divide by 27 to get cubic yards. A 10 ft by 10 ft area 4 inches deep needs about 1.2 cubic yards. Add 5 to 10 percent for compaction and waste, and HARDROCK can check your numbers before you order.'],
     ['q' => 'Which type of sand or gravel should I use?',
      'a' => 'It depends on the job. Road base compacts firm under driveways and house pads, 57 and 67 rock drain well and top driveways, pea gravel and river rock suit walkways and beds, mason sand goes into mortar and paver bedding, and rip rap holds pond banks and culverts. Tell HARDROCK what you are building and we will recommend a material.'],
     ['q' => 'How is sand and gravel priced?',
-     'a' => 'Hardrock Sand And Gravel quotes each order by phone, because the price depends on the material, the amount and the delivery address. Call ' . $homeCall . ' Monday through Thursday from 6 AM, Friday from 9 AM, or Saturday from 9 AM to 2 PM to get a current price for your load.'],
+     'a' => 'Hardrock Sand And Gravel prices material by the ton and by the yard, and a full load is 20 yards or 20 tons. The delivered price depends on the material, the amount and the delivery address, so call ' . $homeCall . ' Monday through Thursday from 6 AM, Friday from 9 AM, or Saturday from 9 AM to 2 PM to get a current price for your load.'],
 ];
 /* FAQPage (AI comprehension aid only). The LocalBusiness + WebSite graph comes from head.php on the homepage. */
 $schemaMarkup = '<script type="application/ld+json">' . json_encode(generateFAQSchema($homeFaqs), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) . '</script>';
@@ -93,7 +93,7 @@ $schemaMarkup = '<script type="application/ld+json">' . json_encode(generateFAQS
 $tickerItems = [
     ['truck', 'Bulk delivery'], ['footprints', 'Pea gravel'], ['layers', 'Decomposed granite'], ['route', 'Road base'],
     ['mountain', '57/67 rock'], ['tractor', 'Fill dirt'], ['waves', 'Rip rap'], ['droplets', 'Ponds'],
-    ['house', 'House pads'], ['trees', 'Land clearing'], ['map-pin', 'Sherman · Denison · Grayson County'],
+    ['house', 'House pads'], ['trees', 'Land clearing'], ['map-pin', 'Grayson · Collin · Denton · Fannin · Cooke counties'],
 ];
 
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
@@ -254,14 +254,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text">
         <span class="eyebrow"><?php echo esc($homeCity); ?>, <?php echo esc($homeState); ?> · Grayson County</span>
         <h1 class="hero-title" id="home-hero-title"><span class="text-accent">Sand and Gravel</span> Delivered Across Sherman, TX</h1>
-        <p class="hero-answer">Hardrock Sand And Gravel delivers gravel, rock, sand and fill dirt across Sherman and Grayson County, and builds the driveways, pads and ponds they go into. Call or send the form with your address and the amount, and HARDROCK prices the load and sets a delivery day by phone.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel delivers gravel, rock, sand and fill dirt across Grayson, Collin, Denton, Fannin and Cooke counties, and takes on the driveways, pads and ponds they go into. Call or send the form with your address and the amount, and HARDROCK prices the load and sets a delivery day by phone.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($homeTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($homeCall); ?></a>
         </div>
         <ul class="hero-chips">
           <li><?php echo icon('calendar-check', 16); ?>Est. <?php echo esc($yearEstablished); ?></li>
-          <li><?php echo icon('hard-hat', 16); ?>Materials + site work</li>
+          <li><?php echo icon('truck', 16); ?>Delivery only · 20 yd / 20 ton loads</li>
           <li><?php echo icon('clock', 16); ?>Open 6 AM Mon–Thu</li>
         </ul>
       </div>
@@ -303,7 +303,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="stats-row">
       <div class="stat-item reveal-up reveal-delay-1"><b class="stat-number"><span><?php echo count($services); ?></span> Services</b><span class="stat-label">Eight bulk materials, plus driveways, pads, ponds and clearing</span></div>
       <div class="stat-item reveal-up reveal-delay-2"><b class="stat-number">Dean <span>Jones</span></b><span class="stat-label">Owner of Hardrock Sand And Gravel</span></div>
-      <div class="stat-item reveal-up reveal-delay-3"><b class="stat-number">Grayson <span>County</span></b><span class="stat-label">Sherman, Denison and the county around them</span></div>
+      <div class="stat-item reveal-up reveal-delay-3"><b class="stat-number">5 <span>Counties</span></b><span class="stat-label">Grayson, Collin, Denton, Fannin and Cooke, delivery only</span></div>
       <div class="stat-item reveal-up reveal-delay-4"><b class="stat-number">Open <span>Sat</span></b><span class="stat-label">Saturdays 9 AM to 2 PM for weekend projects</span></div>
     </div>
   </div>
@@ -318,7 +318,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="section-title">
         <span class="eyebrow">Recent Work</span>
         <h2 id="home-gallery-title">What does HARDROCK's <span class="text-accent">recent work</span> look like?</h2>
-        <p>Hardrock Sand And Gravel's work around Grayson County includes rip rap set by hand over filter fabric, gravel drives across open pasture, a pond basin dug between trees, and close-ups of the rock and gravel HARDROCK sells.</p>
+        <p>Hardrock Sand And Gravel's jobs around Grayson County include rip rap set by hand over filter fabric, gravel drives across open pasture, a pond basin dug between trees, a flagstone patio with decomposed granite joints, and close-ups of the rock and gravel HARDROCK sells.</p>
       </div>
       <p class="gallery-hint"><?php echo icon('arrow-right', 16); ?>Scroll for more</p>
     </div>
@@ -344,7 +344,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow-label">What We Do</span>
       <h2>Which <span class="text-accent">sand, gravel and site work</span> jobs does HARDROCK handle in Sherman?</h2>
-      <p class="hero-answer">Hardrock Sand And Gravel sells and delivers eight bulk materials, from pea gravel and decomposed granite to road base, 57/67 rock, fill dirt, mason sand, river rock and rip rap. The same company also builds driveways and house pads, digs ponds and clears land in Sherman, Denison and Grayson County, so one call covers the material and the work.</p>
+      <p class="hero-answer">Hardrock Sand And Gravel sells and delivers bulk materials, from pea gravel, decomposed granite and pink granite to road base, 57/67 rock, fill dirt, mason sand, river rock and rip rap. The same company also takes on driveways, house pads, ponds and land clearing across Grayson, Collin, Denton, Fannin and Cooke counties, so one call covers the material and the work.</p>
     </div>
 
     <div class="services-grid">
@@ -393,7 +393,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="hr-cta__copy reveal-left">
       <span class="eyebrow">Plan the week</span>
       <h2 id="home-cta-title">Need a load on site this week?</h2>
-      <p>Hardrock Sand And Gravel opens at 6 AM Monday through Thursday, so an early call is the quickest way to get gravel, base or fill on the schedule before your crew or your weekend project needs it. Saturday hours run 9 AM to 2 PM.</p>
+      <p>Hardrock Sand And Gravel opens at 6 AM Monday through Thursday, so an early call is the quickest way to get gravel, base or fill on the schedule before your crew or your weekend project needs it. Same-day delivery is sometimes possible, so say so on the call if you need it. Saturday hours run 9 AM to 2 PM.</p>
       <span class="hr-cta__hours"><?php echo icon('clock', 16); ?>Mon–Thu 6–5 · Fri 9–5 · Sat 9–2</span>
     </div>
     <div class="actions reveal-right">
@@ -417,14 +417,14 @@ if ($homeReviews !== ''): ?>
       <div class="about-left reveal-left">
         <span class="eyebrow">About HARDROCK</span>
         <h2 id="home-about-title">Who is behind <span class="text-accent">Hardrock Sand And Gravel</span>?</h2>
-        <p>Hardrock Sand And Gravel is a Sherman, Texas sand and gravel supplier owned by <?php echo esc($ownerName); ?>, in business since <?php echo esc($yearEstablished); ?>. HARDROCK sells and delivers pea gravel, decomposed granite, road base, 57/67 rock, fill dirt, mason sand, river rock and rip rap to homes, farms and job sites across Sherman, Denison and Grayson County.</p>
-        <p>HARDROCK also does the work the material is for: gravel driveways, house pads, ponds and land clearing. A rural property owner can have the lot cleared, the pad built, the drive laid and the pond dug by the company that hauls the rock, instead of lining up a supplier and a separate contractor for each step.</p>
+        <p>Hardrock Sand And Gravel is a veteran and woman owned Sherman, Texas sand and gravel supplier owned by <?php echo esc($ownerName); ?>, in business since <?php echo esc($yearEstablished); ?>. HARDROCK sells and delivers pea gravel, decomposed granite, pink granite, road base, 57/67 rock, fill dirt, mason sand, river rock and rip rap to homes, farms and job sites across Grayson, Collin, Denton, Fannin and Cooke counties. Everything is delivered; there is no customer pickup.</p>
+        <p>HARDROCK also takes on the work the material is for: gravel driveways, house pads, ponds and land clearing. A rural property owner can have the lot cleared, the pad built, the drive laid and the pond dug through the company that supplies the rock, instead of lining up a supplier and a separate contractor for each step. Contractor accounts are available on Net 30 terms.</p>
         <h3>How does an order with HARDROCK work?</h3>
         <ol class="process-steps">
           <li><b>Tell us the job</b><span>Call or send the form with the material or work you need and the address.</span></li>
-          <li><b>Check the quantity</b><span>Length × width × depth in feet, divided by 27, gives cubic yards. We can check the math.</span></li>
-          <li><b>Get the price and a day</b><span>HARDROCK quotes your load or job by phone and sets the delivery or work date.</span></li>
-          <li><b>Load dropped or job done</b><span>The material is dumped where you need it, or the drive, pad or pond is built.</span></li>
+          <li><b>Check the quantity</b><span>Length × width × depth in feet, divided by 27, gives cubic yards. We can check the math. A full load is 20 yards or 20 tons.</span></li>
+          <li><b>Get the price and a day</b><span>Material is priced by the ton or the yard and quoted by phone. Driveways, pads, ponds and clearing always get a site visit first to check the elevation and soil type.</span></li>
+          <li><b>Load dropped or job done</b><span>The material is dumped where you need it, one material per delivery, or the drive, pad or pond is built.</span></li>
         </ol>
         <div class="hr-about-links">
           <a class="btn btn-primary" href="/about/">More about HARDROCK</a>
@@ -471,7 +471,7 @@ if ($homeReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow">From the Blog</span>
       <h2 id="home-blog-title">What should you know before ordering <span class="text-accent">gravel</span> in Sherman?</h2>
-      <p>Hardrock Sand And Gravel publishes plain-English guides on quantities, driveways and rock choice for Sherman, Denison and Grayson County. The newest one is below.</p>
+      <p>Hardrock Sand And Gravel publishes plain-English guides on quantities, driveways and rock choice for Grayson County and the counties around it. The newest one is below.</p>
     </div>
     <div class="reveal-up"><?php echo blog_card($homePost, '(max-width: 800px) 100vw, 560px', 'blog-card--featured'); ?></div>
     <div class="hr-blog__foot"><a class="btn btn-secondary" href="/blog/">View all articles</a></div>

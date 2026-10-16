@@ -22,22 +22,27 @@ $heroPreload = sp_hero_preload($heroImage);
 $spCall      = formatPhone($phone);
 $spTel       = 'tel:' . $phoneE164;
 
-/* ---- Questions: only what intake, the hours and general material facts support. Anything the client has not
-   confirmed (load sizes, delivery speed or radius, pickup, trade accounts, delivery fees, insurance) is NOT asserted;
-   those answers send the customer to the phone (see content-confirmations.json). --------------------------------- */
+/* ---- Questions: only what intake, the hours, general material facts and the owner's confirmed facts (Dean Jones,
+   2026-10-16: delivery only, five counties, ton/yard pricing, 20 yd / 20 ton full load, same-day "sometimes", separate
+   deliveries per material, site visit before site-work quotes, Net 30 contractor accounts, $1M GL + umbrella, veteran &
+   woman owned, HUB) support. Anything still unconfirmed (delivery fees, minimum order) is NOT asserted. ------------ */
 $faqCats = [
     'general' => [
         'title' => 'About HARDROCK', 'icon' => 'info',
-        'lead'  => 'Hardrock Sand And Gravel is a Sherman, TX supplier that has served Sherman, Denison and Grayson County since ' . $yearEstablished . ' and takes calls Monday through Saturday.',
+        'lead'  => 'Hardrock Sand And Gravel is a veteran and woman owned Sherman, TX supplier that has delivered across Grayson County and its neighbors since ' . $yearEstablished . ' and takes calls Monday through Saturday.',
         'items' => [
             ['q' => 'Where is Hardrock Sand And Gravel and what area does it serve?',
-             'a' => 'Hardrock Sand And Gravel is based in Sherman, Texas and serves Sherman, Denison and the rest of Grayson County. If your address is outside the county, call ' . $spCall . ' before you plan the job around it and HARDROCK will tell you whether it can deliver there.'],
+             'a' => 'Hardrock Sand And Gravel is based in Sherman, Texas and delivers to Grayson, Collin, Denton, Fannin and Cooke counties. That covers Sherman, Denison and the rest of Grayson County plus the four Texas counties around it. If your address is outside those five counties, call ' . $spCall . ' before you plan the job around it.'],
+            ['q' => 'Can I pick up material at the Hardrock Sand And Gravel yard?',
+             'a' => 'No. Hardrock Sand And Gravel is delivery only. Every order is delivered to your address, so there is no customer pickup and no need to drive out. Call ' . $spCall . ' with the delivery address and the material, and the load comes to you.'],
             ['q' => 'How long has Hardrock Sand And Gravel been in business?',
-             'a' => 'Hardrock Sand And Gravel has been in business since ' . $yearEstablished . ', which makes ' . $yearsInBusiness . ' years in ' . date('Y') . '. ' . $ownerName . ' owns the business.'],
+             'a' => 'Hardrock Sand And Gravel has been in business since ' . $yearEstablished . ', which makes ' . $yearsInBusiness . ' years in ' . date('Y') . '. ' . $ownerName . ' owns the business, which is a Veteran & Woman Owned Business and a HUB (Historically Underutilized Business).'],
             ['q' => 'What are the business hours?',
              'a' => 'Hardrock Sand And Gravel is open Monday to Thursday 6:00 AM to 5:00 PM, Friday 9:00 AM to 5:00 PM and Saturday 9:00 AM to 2:00 PM, and closed Sunday. Call ' . $spCall . ' in those hours, or send the estimate form at any time and HARDROCK will call back.'],
             ['q' => 'Who does Hardrock Sand And Gravel work for?',
-             'a' => 'Hardrock Sand And Gravel works with homeowners, farms and contractors in Sherman, Denison and Grayson County. Whether you need material for a garden path or a house pad, describe the job on the phone and HARDROCK will tell you what it recommends.'],
+             'a' => 'Hardrock Sand And Gravel works with homeowners, farms and contractors across Grayson, Collin, Denton, Fannin and Cooke counties. Contractor accounts are available on Net 30 terms. Whether you need material for a garden path or a house pad, describe the job on the phone and HARDROCK will tell you what it recommends.'],
+            ['q' => 'Is Hardrock Sand And Gravel insured?',
+             'a' => 'Yes. Hardrock Sand And Gravel carries $1M general liability and umbrella insurance. Ask on the phone if your job or your builder needs a certificate.'],
         ],
     ],
     'services' => [
@@ -45,7 +50,7 @@ $faqCats = [
         'lead'  => 'Hardrock Sand And Gravel offers ' . count($services) . ' services: eight bulk materials, delivery, and driveways, house pads, ponds and land clearing.',
         'items' => [
             ['q' => 'What materials does Hardrock Sand And Gravel sell?',
-             'a' => 'Hardrock Sand And Gravel sells pea gravel, decomposed granite, road base, 57 and 67 rock, fill dirt, mason sand, rip rap and river rock. Each material has its own page under Services with what it is used for and how to size an order.'],
+             'a' => 'Hardrock Sand And Gravel sells pea gravel, decomposed granite, pink granite, road base, 57 and 67 rock, fill dirt, mason sand, rip rap and river rock. Each material has its own page under Services with what it is used for and how to size an order.'],
             ['q' => 'Does Hardrock Sand And Gravel do more than deliver material?',
              'a' => 'Yes. Besides bulk delivery, Hardrock Sand And Gravel builds driveways and house pads, digs ponds and clears land in Sherman, Denison and Grayson County. Call with the property location and a rough size and HARDROCK will confirm the job is in its area.'],
             ['q' => 'What is the difference between 57 rock and 67 rock?',
@@ -53,19 +58,21 @@ $faqCats = [
             ['q' => 'Which gravel is best for a driveway?',
              'a' => 'A gravel driveway usually takes two layers: road base, which compacts into a firm lower layer, and 57 rock on top, which drains and gives tires grip. Soft ground may need fill dirt first. Tell Hardrock Sand And Gravel the length of the drive and what will drive on it and it will recommend the layers.'],
             ['q' => 'What is the difference between pea gravel and decomposed granite?',
-             'a' => 'Pea gravel is small, rounded stone that stays loose, drains fast and needs edging to stay in place. Decomposed granite is fine crushed granite that packs firm underfoot, which suits paths, patios and xeriscape beds. Hardrock Sand And Gravel sells both.'],
+             'a' => 'Pea gravel is small, rounded stone that stays loose, drains fast and needs edging to stay in place. Decomposed granite is fine crushed granite that packs firm underfoot, which suits paths, patios and xeriscape beds. Hardrock Sand And Gravel sells both, along with pink granite.'],
             ['q' => 'Is fill dirt the same thing as topsoil?',
              'a' => 'No. Fill dirt is subsoil meant to be packed down to build height, while topsoil carries the organic matter that grass needs. Build the height with fill dirt, then finish with a few inches of topsoil only where you want a lawn or garden bed.'],
         ],
     ],
     'pricing' => [
         'title' => 'Pricing and quantities', 'icon' => 'ruler',
-        'lead'  => 'Hardrock Sand And Gravel prices every order by phone. Work out your cubic yards first so the quote matches the job.',
+        'lead'  => 'Hardrock Sand And Gravel prices material by the ton and by the yard, and a full load is 20 yards or 20 tons. Work out your cubic yards first so the quote matches the job.',
         'items' => [
             ['q' => 'How does Hardrock Sand And Gravel price an order?',
-             'a' => 'Hardrock Sand And Gravel prices each order by phone because the material, the amount and the delivery address all change the number. Ask for the delivered price so the quote includes the haul to your address, and ask which unit, ton or cubic yard, it is quoted in.'],
+             'a' => 'Hardrock Sand And Gravel prices material by the ton and by the yard. The delivered price still depends on the material, the amount and the delivery address, so call for the number on your actual load and ask for the delivered price so it includes the haul to your address.'],
+            ['q' => 'How much is a full load?',
+             'a' => 'A full load from Hardrock Sand And Gravel is 20 yards or 20 tons. Smaller orders are delivered as partial loads, so work out your cubic yards and HARDROCK will tell you how many loads the job takes.'],
             ['q' => 'How do I get a price?',
-             'a' => 'Call ' . $spCall . ' or send the form with the material, the delivery address and how much you need. Hardrock Sand And Gravel prices the order from those three details.'],
+             'a' => 'Call ' . $spCall . ' or send the form with the material, the delivery address and how much you need. Hardrock Sand And Gravel prices the order from those three details. Contractors can ask about an account on Net 30 terms.'],
             ['q' => 'How many cubic yards do I need?',
              'a' => 'Multiply length by width by depth in feet, then divide by 27. A 10 ft by 10 ft area covered 4 inches deep needs about 1.2 cubic yards. Add 5 to 10 percent for settling and spillage, and Hardrock Sand And Gravel can check your numbers before you order.'],
             ['q' => 'How far does one cubic yard go?',
@@ -74,16 +81,18 @@ $faqCats = [
     ],
     'process' => [
         'title' => 'Ordering and delivery', 'icon' => 'truck',
-        'lead'  => 'Hardrock Sand And Gravel takes an order by phone or form, checks the quantity with you, then quotes the price and sets a delivery day.',
+        'lead'  => 'Hardrock Sand And Gravel takes an order by phone or form, checks the quantity with you, then quotes the price and sets a delivery day. Everything is delivered; there is no pickup.',
         'items' => [
             ['q' => 'How do I order from Hardrock Sand And Gravel?',
              'a' => 'Call ' . $spCall . ' or send the estimate form with the delivery address, the material and the size of the area in feet. Hardrock Sand And Gravel checks the quantity with you, gives the price and sets a delivery day by phone.'],
             ['q' => 'How soon can HARDROCK deliver?',
-             'a' => 'Hardrock Sand And Gravel sets the delivery day when it confirms your order, because the day depends on the material, the amount and the truck schedule. If you have a firm deadline, say so on the first call.'],
+             'a' => 'Hardrock Sand And Gravel sets the delivery day when it confirms your order, because the day depends on the material, the amount and the delivery schedule. Same-day delivery is sometimes possible, so if you need the load today or have a firm deadline, say so on the first call.'],
+            ['q' => 'Can two materials come on the same delivery?',
+             'a' => 'Normally no. Two materials, such as road base and 57 rock for a driveway, go out as separate deliveries so they do not contaminate each other. Each delivery can be dropped on its own spot, so mark one for each material.'],
             ['q' => 'What should I do before a delivery?',
              'a' => 'Pick the exact spot for the load and make sure a loaded truck can reach it. Check gate width, overhead lines, soft or wet ground and slopes, and tell Hardrock Sand And Gravel about any of them when you call. Mark anything that must be protected, and call 811 before digging.'],
             ['q' => 'How do I get a price on a driveway, house pad, pond or land-clearing job?',
-             'a' => 'Call or send the form with the property location, what you want built and a rough size. Hardrock Sand And Gravel confirms the job is in its area and prices site work by phone once the size and the site are known.'],
+             'a' => 'Call or send the form with the property location, what you want built and a rough size. Hardrock Sand And Gravel always makes a site visit before quoting site work, to check the elevation and the soil type, and the price follows that visit.'],
         ],
     ],
 ];
@@ -155,8 +164,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
       </div>
       <ul class="hero-chips">
-        <li><?php echo icon('layers', 16); ?>8 bulk materials</li>
-        <li><?php echo icon('ruler', 16); ?>Cubic-yard math inside</li>
+        <li><?php echo icon('layers', 16); ?>Bulk materials, delivery only</li>
+        <li><?php echo icon('ruler', 16); ?>Priced by the ton or the yard</li>
         <li><?php echo icon('clock', 16); ?>Open Monday to Saturday</li>
       </ul>
     </div>
@@ -231,6 +240,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
 
 </article>
 
-<?php echo sp_final_cta('Ready to price <span class="text-accent">your load</span>?', 'Call ' . $spCall . ' or send the estimate form. Hardrock Sand And Gravel quotes by phone and sets a delivery day for Sherman, Denison and Grayson County.'); ?>
+<?php echo sp_final_cta('Ready to price <span class="text-accent">your load</span>?', 'Call ' . $spCall . ' or send the estimate form. Hardrock Sand And Gravel quotes by phone and sets a delivery day anywhere in Grayson, Collin, Denton, Fannin and Cooke counties.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

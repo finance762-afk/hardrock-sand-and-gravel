@@ -209,7 +209,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="reveal-left">
         <span class="eyebrow">Find us</span>
         <h2 id="ct-map-title">Where is Hardrock Sand And Gravel located?</h2>
-        <p class="answer-block">Hardrock Sand And Gravel is based in <?php echo esc($ctCity); ?> and serves Sherman, Denison and the rest of Grayson County. Most orders are delivered, so call <?php echo esc($spCall); ?> to ask about visiting before you drive out.</p>
+        <p class="answer-block">Hardrock Sand And Gravel is based in <?php echo esc($ctCity); ?> and delivers to Grayson, Collin, Denton, Fannin and Cooke counties. Every order is delivered: there is no customer pickup, so there is no need to drive out. Call <?php echo esc($spCall); ?> with your delivery address instead.</p>
         <div class="ct-map__actions">
           <a class="btn btn-primary" href="<?php echo esc($gbp['directions']); ?>" target="_blank" rel="noopener"><?php echo icon('map-pin', 18); ?>Get directions</a>
           <a class="btn btn-secondary" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>Call first</a>

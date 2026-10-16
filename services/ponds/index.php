@@ -27,7 +27,7 @@ $faqs = [
     ['q' => 'Does HARDROCK dig ponds outside Sherman?',
      'a' => 'Hardrock Sand And Gravel takes pond work in Sherman, Denison and across Grayson County. Call ' . $spCall . ' with the property location and HARDROCK will confirm the job is in its area before anything is scheduled.'],
     ['q' => 'How is a pond job priced?',
-     'a' => 'Hardrock Sand And Gravel prices pond work over the phone once the rough size, the site and any clearing or rip rap are known. Have a length, width and average depth in mind; the volume math on this page gives a starting number to share.'],
+     'a' => 'Hardrock Sand And Gravel always visits the site before quoting a pond, to check the elevation and the soil type, and then prices the digging along with any clearing or rip rap the site needs. Have a length, width and average depth in mind for the first call; the volume math on this page gives a starting number to share.'],
 ];
 
 $pageSchemas = [
@@ -196,19 +196,19 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="reveal-left">
         <span class="eyebrow">What's included</span>
         <h2 id="pd-breakdown-title">What does pond work with Hardrock Sand And Gravel cover?</h2>
-        <p class="answer-block">Hardrock Sand And Gravel covers pond work from an overgrown spot to a finished basin. That can mean clearing brush where the pond will sit, digging and shaping the basin around standing trees, and armoring banks with rip rap where waves hit. Every piece is priced together on one phone call.</p>
+        <p class="answer-block">Hardrock Sand And Gravel covers pond work from an overgrown spot to a finished basin. That can mean clearing brush where the pond will sit, digging and shaping the basin around standing trees, and armoring banks with rip rap where waves hit. Every piece is priced together after a site visit that checks the elevation and the soil type.</p>
         <ul class="sp-included">
           <li><?php echo icon('check', 18); ?><span>Brush cleared off the pond site</span></li>
           <li><?php echo icon('check', 18); ?><span>Basin dug out and shaped</span></li>
           <li><?php echo icon('check', 18); ?><span>Mature trees worked around, as in the job pictured below</span></li>
           <li><?php echo icon('check', 18); ?><span>Rip rap set over filter fabric on exposed banks</span></li>
-          <li><?php echo icon('check', 18); ?><span>Rock and dirt for the job hauled by the same company</span></li>
+          <li><?php echo icon('check', 18); ?><span>Rock and dirt for the job arranged through the same company</span></li>
         </ul>
       </div>
       <ol class="sp-steps reveal-right">
         <li><b>Tell HARDROCK the plan</b><span>Call or send the form with the property location, the size you have in mind and what the pond is for: stock water, runoff or looks.</span></li>
         <li><b>Check the size</b><span>HARDROCK works through the length, width and depth with you, the same volume math shown above.</span></li>
-        <li><b>Price and a start day</b><span>Both come back by phone, along with any clearing or rip rap the site needs.</span></li>
+        <li><b>Site visit, then a price and a start day</b><span>HARDROCK walks the site to check elevation and soil type, then prices the pond along with any clearing or rip rap it needs.</span></li>
         <li><b>Dig, shape, armor</b><span>The basin is dug and shaped, and rip rap goes on the banks that need it.</span></li>
       </ol>
     </div>
@@ -288,7 +288,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ RELATED SERVICES ============ -->
 <?php echo sp_related_section(['rip-rap', 'land-clearing', 'fill-dirt'],
     'What other work goes with a new <span class="text-accent">pond</span>?',
-    'A new pond usually touches three other jobs. Hardrock Sand And Gravel clears brush and trees off the site before digging, sets rip rap on banks that catch waves, and delivers fill dirt for low spots elsewhere on the property, so one Sherman company can carry the project from overgrown ground to a finished bank.'); ?>
+    'A new pond usually touches three other jobs. Hardrock Sand And Gravel clears brush and trees off the site before digging, arranges rip rap on banks that catch waves, and delivers fill dirt for low spots elsewhere on the property, so one Sherman company can carry the project from overgrown ground to a finished bank.'); ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need a pond dug before the next wet season?',

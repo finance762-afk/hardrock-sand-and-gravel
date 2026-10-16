@@ -30,7 +30,7 @@ $faqs = [
     ['q' => 'Does HARDROCK bring river rock to Denison and other Grayson County towns?',
      'a' => 'Hardrock Sand And Gravel delivers river rock in Sherman, Denison and the rest of Grayson County. Ring ' . $spCall . ' with the address and the rough size of the bed or creek, and HARDROCK confirms what it will cost and which day the rock arrives.'],
     ['q' => 'How does HARDROCK price river rock?',
-     'a' => 'River rock prices from Hardrock Sand And Gravel are given by phone, since the stone size, the amount and the address all move the total. Bring the cubic-yard estimate from the dry creek example on this page to the call, and ask whether the quote is by the ton or the yard.'],
+     'a' => 'Hardrock Sand And Gravel prices river rock by the ton and by the yard, and a full load is 20 yards or 20 tons. The delivered total still moves with the stone size, the amount and the address, so bring the cubic-yard estimate from the dry creek example on this page to the call.'],
 ];
 
 $pageSchemas = [

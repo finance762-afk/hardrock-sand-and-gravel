@@ -11,7 +11,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-helpers.php';
    layer depths (4-6 in compacted road base, 2-3 in top rock, fabric on soft clay) match /services/driveways/ on this site;
    Grayson County blackland prairie and western sandy soil: https://www.co.grayson.tx.us/page/hist.home ;
    average rainfall near 37 in/yr, soil belts: https://www.tshaonline.org/handbook/entries/grayson-county .
-   No HARDROCK prices are quoted: the business prices each load by phone (content-confirmations.json, pricing unit unconfirmed).
+   No HARDROCK prices are quoted. Owner-confirmed facts used (Dean Jones, 2026-10-16): delivery only (no pickup), material priced
+   by the ton and by the yard, a full load is 20 yards or 20 tons, two materials go out as separate deliveries, a site visit
+   (elevation + soil type) always precedes a quote on a built drive, and HARDROCK sells decomposed granite and pink granite.
    ========================================================================== */
 
 /* ---- Page setup ------------------------------------------------------------------------------- */
@@ -33,10 +35,10 @@ $spTel  = 'tel:' . $phoneE164;
 $faqs = [
     ['q' => 'How much extra gravel should I order for a driveway?',
      'a' => 'Add 5 to 10 percent to the calculated cubic yards to cover settling, compaction and spillage. A drive that works out to 7.4 cubic yards is better ordered as about 7.8 to 8.2 cubic yards.'],
-    ['q' => 'How many cubic yards of gravel fit in a pickup truck?',
-     'a' => 'Often only about half a cubic yard of gravel, because a half-ton pickup\'s payload rating limits the weight it can carry. A 7-yard driveway would take about 15 trips, which is why most Grayson County drives are delivered in bulk.'],
+    ['q' => 'How much gravel comes in one delivered load?',
+     'a' => 'A full load from Hardrock Sand And Gravel is 20 cubic yards or 20 tons, delivered to the drive. HARDROCK is delivery only, so there is no pickup: a 7-yard house drive arrives as one partial load, and a 44-yard full build on a 200-foot lane is a little over two full loads.'],
     ['q' => 'Does HARDROCK price driveway gravel by the yard or by the ton?',
-     'a' => 'Hardrock Sand And Gravel prices each load by phone, because the material, the amount and the address all change the number. Work out your cubic yards first, then call ' . $spCall . ' and ask how that material is measured and priced.'],
+     'a' => 'Both. Hardrock Sand And Gravel prices material by the ton and by the yard. The delivered price still depends on the amount and the address, so work out your cubic yards first, then call ' . $spCall . ' for the figure on your load.'],
 ];
 $pageSchemas = [blog_post_schema($blPost, $pageDescription, 'gravel driveway, how much gravel for a driveway, driveway gravel Sherman TX, road base, crushed rock, cubic yards, Grayson County')];
 /* FAQPage mirrors the visible FAQ below (AI comprehension aid only) */
@@ -116,7 +118,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
           </table>
         </div>
         <p class="bl-table-note">Rounded to one decimal. Cubic feet are rounded to the nearest whole number.</p>
-        <p>A cubic yard is a measure of volume, not weight, so how a given material is sold depends on the material. HARDROCK prices each load by phone and says on the call how it is measured, so bring the cubic yards and ask.</p>
+        <p>A cubic yard is a measure of volume, not weight. HARDROCK prices material by the ton and by the yard, and a full delivered load is 20 cubic yards or 20 tons. Everything is delivered, with no pickup, so the 7.4-yard house drive above is one partial load and the 44-yard full build is a little over two full loads. Bring the cubic yards to the call and HARDROCK prices the loads from there.</p>
 
         <h2 id="depth">How deep should driveway gravel be?</h2>
         <p class="answer-block">A drive that lasts is built in layers: a shaped, crowned subgrade, 4 to 6 inches of compacted road base, then 2 to 3 inches of top rock. The total is the number to put in the formula, not the 4 inches of top rock people picture.</p>
@@ -124,14 +126,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
 
         <h2 id="materials">Which gravel goes into a Grayson County driveway?</h2>
         <p class="answer-block">Two materials do most of the work: <a href="/services/road-base/">road base</a> for the compacted lower layer and <a href="/services/57-67-rock/">crushed rock</a> for the top course. Road base packs into one firm layer; crushed stone drains and gives tires grip. Rounded pea gravel and river rock roll underfoot and are a poor top layer for a drive.</p>
-        <p>Split the total between the two. On a 6 inch full build, roughly 4 inches is road base and 2 inches is top rock, so the road base is about two thirds of the order. HARDROCK can deliver both loads in one visit, or build the whole drive; the <a href="/services/delivery/">delivery page</a> explains what happens after the call.</p>
+        <p>Split the total between the two. On a 6 inch full build, roughly 4 inches is road base and 2 inches is top rock, so the road base is about two thirds of the order. The two materials go out as separate deliveries so the base and the top rock do not contaminate each other, so plan a drop spot for each; the <a href="/services/delivery/">delivery page</a> explains what happens after the call. HARDROCK also sells <a href="/services/decomposed-granite/">decomposed granite</a> and pink granite, but those belong on paths and patios, not under tires.</p>
 
         <h2 id="soil">Does Grayson County's soil change how much gravel you need?</h2>
         <p class="answer-block">Yes. Grayson County has blackland prairie across much of its area, sandy Woodbine soil in the west and loamy or sandy Post Oak Belt ground in the north. Clay swells when wet and shrinks when dry, so on blackland a thicker base, and sometimes fabric, keeps the rock from sinking.</p>
         <p>The Handbook of Texas puts average rainfall near 37 inches a year, and a lane that is firm in August can be soft in March. If your lot sits on clay or stays wet after a storm, plan for the 6 inch build, not the 4 inch top-up. Local pages cover the ground in more detail for <a href="/service-areas/sherman/">Sherman</a> and the wider <a href="/service-areas/grayson-county/">Grayson County</a> area.</p>
 
         <h2 id="order">What should you tell HARDROCK when you order driveway gravel?</h2>
-        <p class="answer-block">Give Hardrock Sand And Gravel the address, the length and width of the drive, the depth you plan and where the pile can go. Mention soft ground, a narrow gate or a culvert crossing too. With those details the load is priced and a delivery day set on the same call.</p>
+        <p class="answer-block">Give Hardrock Sand And Gravel the address, the length and width of the drive, the depth you plan and where the pile can go. Mention soft ground, a narrow gate or a culvert crossing too. With those details a material-only load is priced and a delivery day set on the same call. If HARDROCK is building the drive, there is always a site visit first to check the elevation and the soil type, and the quote follows that visit.</p>
         <ul>
           <li><strong>Address and drop spot.</strong> A firm, level place close to the work, clear of wires and buried lines.</li>
           <li><strong>Drive size.</strong> Length, width and the depth you chose, or the cubic yards from the table.</li>
@@ -172,7 +174,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
     <div class="section-title reveal-up">
       <span class="eyebrow">Quick questions</span>
       <h2 id="bl-faq-title">What else do people ask about driveway gravel quantities?</h2>
-      <p>Three follow-up questions come up once the driveway gravel arithmetic is done: how much extra to add for settling, whether a pickup truck can do the hauling, and how HARDROCK prices a delivered load.</p>
+      <p>Three follow-up questions come up once the driveway gravel arithmetic is done: how much extra to add for settling, how much rock comes in one delivered load, and how HARDROCK prices a delivered load.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $faqIdx => $faq): ?>

@@ -29,7 +29,7 @@ $faqs = [
     ['q' => 'How much pea gravel do I need for a garden walkway?',
      'a' => 'Multiply the walkway length by its width and by the depth, all in feet, then divide by 27 for cubic yards. A path 4 feet wide and 30 feet long at 3 inches deep works out to about 1.1 cubic yards. Round up slightly so low spots can be topped off later.'],
     ['q' => 'How is pea gravel priced?',
-     'a' => 'Hardrock Sand And Gravel gives pea gravel prices over the phone instead of posting a rate, since the total depends on the amount and the drop-off address. Have your cubic-yard figure ready when you call ' . $spCall . ', and ask how the load is measured at the same time.'],
+     'a' => 'Hardrock Sand And Gravel prices pea gravel by the ton and by the yard, and a full load is 20 yards or 20 tons. The delivered total depends on the amount and the drop-off address, so have your cubic-yard figure ready when you call ' . $spCall . '.'],
 ];
 
 $pageSchemas = [

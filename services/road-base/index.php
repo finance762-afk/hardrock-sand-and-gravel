@@ -29,7 +29,7 @@ $faqs = [
     ['q' => 'How many cubic yards of road base does a driveway take?',
      'a' => 'Multiply the drive length by its width by the finished base depth, all in feet, then divide by 27. A 150-foot drive that is 12 feet wide with 6 inches of base works out to about 33 cubic yards before any allowance for compaction, which HARDROCK can help you add.'],
     ['q' => 'How is a road base order priced?',
-     'a' => 'Every road base order from Hardrock Sand And Gravel is priced on a phone call, since the total turns on the amount and the haul to your address. Have your measurements ready and call ' . $spCall . ' to get the current figure and how the load is measured.'],
+     'a' => 'Hardrock Sand And Gravel prices road base by the ton and by the yard, and a full load is 20 yards or 20 tons. The delivered total turns on the amount and the haul to your address, so have your measurements ready and call ' . $spCall . ' to get the current figure.'],
 ];
 
 $pageSchemas = [

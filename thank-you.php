@@ -110,7 +110,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow-label">While you wait</span>
       <h2 id="ty-more-title">What else does Hardrock Sand And Gravel deliver?</h2>
-      <p class="answer-block">Hardrock Sand And Gravel delivers eight bulk materials and builds driveways, house pads and ponds across Sherman, Denison and Grayson County. Here are three of the most asked-about materials, or see the full list of <?php echo count($services); ?> services.</p>
+      <p class="answer-block">Hardrock Sand And Gravel delivers eight bulk materials and takes on driveways, house pads and ponds across Grayson, Collin, Denton, Fannin and Cooke counties. Here are three of the most asked-about materials, or see the full list of <?php echo count($services); ?> services.</p>
     </div>
     <div class="services-grid services-grid--3">
       <?php foreach ($tyCards as $tyI => $tySlug) echo sp_card($tySlug, $tyI + 1); ?>

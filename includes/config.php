@@ -1,9 +1,11 @@
 <?php
 /**
  * includes/config.php — single source of site-wide variables (Hardrock Sand And Gravel).
- * Every value below traces to build-plan.json. Nothing here is invented; unknowns stay empty
+ * Every value below traces to build-plan.json or to the owner's confirmed facts (Dean Jones, VP Operations,
+ * 2026-10-16 — see content-confirmations.json "confirmed"). Nothing here is invented; unknowns stay empty
  * and the templates omit anything empty.
- * UNKNOWN at Phase 1: street address + ZIP, logo, brand colors, social links, GA4 ID, review count.
+ * UNKNOWN: logo, brand colors, social links, GA4 ID, review count. The yard street address is deliberately NOT
+ * published: HARDROCK is delivery only (no customer pickup), so no yard address appears anywhere on the site.
  */
 
 // ---- Identity ---------------------------------------------------------------------------------
@@ -24,7 +26,7 @@ $contactEmail   = $email;
 $leadNotificationEmail = 'dean@hardrocksandandgravel.com';
 $leadNotificationPhone = '903-420-0330';
 
-$addressPublic = true;                                   // build-plan address_public; street/zip not yet supplied, templates skip empty parts
+$addressPublic = false;                                  // owner 2026-10-16: delivery only, no customer pickup — never show a yard street address
 $address = ['street' => '', 'city' => 'Sherman', 'state' => 'TX', 'zip' => ''];
 
 // ---- Domain / URLs ----------------------------------------------------------------------------
@@ -45,7 +47,7 @@ $targetRadiusMiles = 25;                                 // build-plan seo.targe
 // ---- Services (13 — one page each under /services/{slug}/) ------------------------------------
 $services = [
     ['name' => 'Delivery', 'slug' => 'delivery',
-     'description' => 'Bulk sand, gravel, rock and dirt delivered to homes and job sites in Sherman, Denison and Grayson County.',
+     'description' => 'Bulk sand, gravel, rock and dirt delivered to homes and job sites in Grayson, Collin, Denton, Fannin and Cooke counties. Delivery only.',
      'keywords' => ['delivery sherman tx', 'gravel delivery sherman tx', 'sand delivery sherman tx']],
     ['name' => 'Driveways', 'slug' => 'driveways',
      'description' => 'Gravel driveways for homes and rural properties in Sherman and Grayson County.',
@@ -63,7 +65,7 @@ $services = [
      'description' => 'Small, rounded pea gravel for walkways, landscape beds, play areas and drainage.',
      'keywords' => ['pea gravel sherman tx', 'pea gravel', 'pea gravel delivery']],
     ['name' => 'Decomposed granite', 'slug' => 'decomposed-granite',
-     'description' => 'Fine crushed decomposed granite for paths, patios and xeriscape landscaping.',
+     'description' => 'Fine crushed decomposed granite and pink granite for paths, patios and xeriscape landscaping.',
      'keywords' => ['decomposed granite sherman tx', 'decomposed granite', 'dg gravel']],
     ['name' => 'Road base', 'slug' => 'road-base',
      'description' => 'Crushed road base that compacts firm under driveways, pads and parking areas.',
@@ -86,7 +88,23 @@ $services = [
 ];
 
 // ---- Service areas ----------------------------------------------------------------------------
+// $serviceAreas = the areas with a page on disk (nav, footer, hub cards, sitemap). Do not add an entry without building its page.
 $serviceAreas = ['Sherman, TX', 'Denison, TX', 'Grayson County, TX'];
+// Owner-confirmed delivery area (2026-10-16): five Texas counties, no Oklahoma. Used for schema areaServed and service-area copy only — no pages.
+$serviceCounties = ['Grayson County, TX', 'Collin County, TX', 'Denton County, TX', 'Fannin County, TX', 'Cooke County, TX'];
+$serviceCountiesText = 'Grayson, Collin, Denton, Fannin and Cooke counties';
+
+// ---- Owner-confirmed business facts (Dean Jones, VP Operations, 2026-10-16) — the ONLY source for these claims ----
+$deliveryOnly        = true;                               // no customer pickup, no yard visits, no published yard address
+$pricingUnits        = 'by the ton and by the yard';       // material is priced per ton and per cubic yard
+$fullLoad            = '20 yards or 20 tons';              // one full load
+$sameDayNote         = 'Same-day delivery is sometimes possible';   // "sometimes" — never a promise
+$separateDeliveries  = true;                               // two materials normally go out as separate deliveries so they do not contaminate each other
+$siteVisitBeforeQuote = true;                              // driveways, pads, ponds, clearing: always a site visit (elevation + soil type) before a quote
+$contractorTerms     = 'Net 30';                           // contractor accounts available on Net 30 terms
+$insuranceSummary    = '$1M general liability and umbrella insurance';
+$credentials         = ['Veteran & Woman Owned Business', 'HUB (Historically Underutilized Business)'];   // no certification numbers
+// Equipment and hauling are subcontracted / rented: never claim "our trucks", "our crew", "our fleet" or "our equipment" anywhere on the site.
 
 // ---- Hours (build-plan business_hours: Mon-Thu 6-5, Fri 9-5, Sat 9-2, Sun closed) ---------------
 $hours = [
@@ -109,7 +127,7 @@ $yearEstablished = 2016;                                  // GBP: "Established i
 $yearsInBusiness = (int) date('Y') - $yearEstablished;    // 10 in 2026
 
 // Factual description for schema / AEO (build-plan content.description)
-$businessDescription = 'Hardrock Sand And Gravel is a local sand and gravel supplier serving Sherman, Denison and Grayson County, TX, in business since 2016. Services include delivery, pea gravel, 57 rock and 67 rock.';
+$businessDescription = 'Hardrock Sand And Gravel is a veteran and woman owned sand and gravel supplier based in Sherman, TX, in business since 2016, delivering to Grayson, Collin, Denton, Fannin and Cooke counties. Delivery only, no customer pickup. Services include delivery, pea gravel, decomposed granite, pink granite, 57 rock and 67 rock.';
 
 // ---- Google Business Profile ------------------------------------------------------------------
 $gbp = [

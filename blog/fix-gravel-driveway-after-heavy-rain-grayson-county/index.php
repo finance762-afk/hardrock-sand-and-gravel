@@ -13,6 +13,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-helpers.php';
    blackland prairie "a dominant feature for much of the county": https://www.co.grayson.tx.us/page/hist.home ;
    average annual precipitation of 37 inches (Handbook) vs 43.6 inches in 2019 (Texas Almanac) — the post says "near 37 inches" and notes wet years run higher.
    No HARDROCK prices or response times are quoted. Rip rap is described as general practice (filter fabric, interlocking stone); the method is not claimed as HARDROCK's own.
+   Owner-confirmed facts used (Dean Jones, 2026-10-16): delivery only (no pickup), a full load is 20 yards or 20 tons, a site visit
+   (elevation + soil type) always precedes a quote on a rebuilt drive, and HARDROCK sells decomposed granite and pink granite.
    ========================================================================== */
 
 /* ---- Page setup ------------------------------------------------------------------------------- */
@@ -35,9 +37,9 @@ $faqs = [
     ['q' => 'How long should I wait before regrading a wet gravel driveway?',
      'a' => 'Wait until the surface is firm enough that a boot no longer sinks and the rock stops rolling under a vehicle. Working soaked gravel and clay together smears the two into mud, so patience saves material. How long that takes depends on the soil and the weather.'],
     ['q' => 'Can I fix a washed-out driveway with pea gravel?',
-     'a' => 'Pea gravel is a poor repair for a drive. The stones are rounded, so they shift under tires instead of locking together. Packed road base fills the washout, and crushed rock goes on top.'],
+     'a' => 'Pea gravel is a poor repair for a drive. The stones are rounded, so they shift under tires instead of locking together. The same goes for the decomposed granite and pink granite HARDROCK sells, which belong on paths and patios. Packed road base fills the washout, and crushed rock goes on top.'],
     ['q' => 'Can HARDROCK deliver rock to repair a washout?',
-     'a' => 'Yes. Hardrock Sand And Gravel delivers road base, crushed rock and rip rap in Sherman, Denison and Grayson County, and also builds gravel driveways. Call ' . $spCall . ' with the address and the size of the damage and the load is priced by phone.'],
+     'a' => 'Yes. Hardrock Sand And Gravel delivers road base, crushed rock and rip rap in Sherman, Denison and Grayson County and the neighboring counties, and also takes on gravel driveway rebuilds. Delivery only, no pickup. Call ' . $spCall . ' with the address and the size of the damage and the load is priced by phone.'],
 ];
 $pageSchemas = [blog_post_schema($blPost, $pageDescription, 'gravel driveway repair, washed out gravel driveway, driveway after heavy rain, road base, rip rap, culvert, Grayson County TX')];
 /* FAQPage mirrors the visible FAQ below (AI comprehension aid only) */
@@ -130,11 +132,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
 
         <h2 id="quantity">How much rock does a repair need?</h2>
         <p class="answer-block">A repair needs rock in proportion to the damage: multiply the length, width and depth of the damaged area in feet and divide by 27. A 4 by 10 foot rut filled 4 inches deep is 13.3 cubic feet, about half a cubic yard of rock. Add 5 to 10 percent for settling.</p>
-        <p>Whole-drive numbers are in <a href="<?php echo esc(blog_url('how-much-gravel-for-a-driveway-sherman-tx')); ?>">the driveway quantity guide</a>, with worked examples from a house drive to a 200 foot lane. For patching, a half yard here and a yard there add up quickly, so list every bad stretch before you call.</p>
+        <p>Whole-drive numbers are in <a href="<?php echo esc(blog_url('how-much-gravel-for-a-driveway-sherman-tx')); ?>">the driveway quantity guide</a>, with worked examples from a house drive to a 200 foot lane. For patching, a half yard here and a yard there add up quickly, so list every bad stretch before you call. HARDROCK is delivery only, priced by the ton or the yard; a full load is 20 cubic yards or 20 tons, so most repairs arrive as a partial load, and road base and crushed rock come as separate deliveries.</p>
 
         <h2 id="call">When should you call a supplier instead of patching?</h2>
         <p class="answer-block">Call when damage runs over a long stretch, the same spot washes out after every storm, a culvert is undermined, or the base underneath has failed. At that point the repair is a rebuild: shaped subgrade, compacted road base and fresh top rock, sized in cubic yards.</p>
-        <p>Hardrock Sand And Gravel delivers the material or builds the drive; see <a href="/services/delivery/">delivery</a> for how an order works. Tell HARDROCK the address, the length of the damaged stretch and where the water goes, and the load is priced by phone. Call <a href="<?php echo esc($spTel); ?>"><?php echo esc($spCall); ?></a> Monday to Thursday from 6:00 AM, Friday from 9:00 AM or Saturday from 9:00 AM to 2:00 PM.</p>
+        <p>Hardrock Sand And Gravel delivers the material or takes on the rebuild; see <a href="/services/delivery/">delivery</a> for how an order works. Tell HARDROCK the address, the length of the damaged stretch and where the water goes, and a material load is priced by phone. A rebuilt drive always gets a site visit first, to check the elevation and the soil type, before the quote. Call <a href="<?php echo esc($spTel); ?>"><?php echo esc($spCall); ?></a> Monday to Thursday from 6:00 AM, Friday from 9:00 AM or Saturday from 9:00 AM to 2:00 PM.</p>
 
       </div>
 

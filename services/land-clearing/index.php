@@ -25,7 +25,7 @@ $spTel       = 'tel:' . $phoneE164;
 /* FAQ: research-brief questions this page can answer truthfully (service area, which material) */
 $faqs = [
     ['q' => 'Do you clear land outside Sherman?',
-     'a' => 'Hardrock Sand And Gravel clears land in Sherman, Denison and the rest of Grayson County. Call ' . $spCall . ' with the property location and what is growing on it, and HARDROCK will confirm the job and set a day.'],
+     'a' => 'Hardrock Sand And Gravel clears land in Sherman, Denison and the rest of Grayson County, and in Collin, Denton, Fannin and Cooke counties. Call ' . $spCall . ' with the property location and what is growing on it. There is always a site visit to check the elevation and the soil type before the job is priced.'],
     ['q' => 'Which material goes on the ground after clearing?',
      'a' => 'That depends on what is being built. A gravel driveway goes down as a base layer with rock on top, a house pad is raised with fill and base, and soft or low spots are leveled with fill dirt. Hardrock Sand And Gravel sells and delivers each of those, so describe the project and HARDROCK will match the material to it.'],
 ];
@@ -184,7 +184,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
     <div class="sp-table-wrap reveal-up">
       <table class="sp-table">
-        <caption>General planning guide. HARDROCK talks through the area by phone before pricing.</caption>
+        <caption>General planning guide. HARDROCK always visits the site to check the elevation and the soil type before pricing a clearing job.</caption>
         <thead>
           <tr><th scope="col">Project</th><th scope="col">Area to clear</th><th scope="col">Why the extra room</th><th scope="col">What follows</th></tr>
         </thead>

@@ -138,7 +138,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <span class="eyebrow">Where HARDROCK delivers</span>
       <h2 id="sa-areas-title">Which Texoma-area towns does Hardrock Sand And Gravel serve?</h2>
       <p class="answer-block">Hardrock Sand And Gravel serves three areas from its Sherman, TX base: the city of Sherman, the city of Denison about 11 miles north, and the rest of Grayson County. Each page below covers that area's roads, ground and the materials that suit it, and every order is priced by phone at <?php echo esc($spCall); ?>.</p>
-      <p>Coverage here follows HARDROCK's own service area. If your address sits outside Grayson County, call before planning a job around it and HARDROCK will say whether it can reach you.</p>
+      <p>These three pages cover Grayson County, where HARDROCK is based. The delivery area also takes in Collin, Denton, Fannin and Cooke counties, and every order is delivered (there is no customer pickup). If your address sits outside those five Texas counties, call before planning a job around it.</p>
     </div>
     <ul class="sa-grid">
       <?php foreach ($hubAreas as $hubIdx => $hubA): ?>
@@ -171,12 +171,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="sa-map__lead reveal-left">
         <span class="eyebrow">Coverage</span>
         <h2 id="sa-map-title">How far does HARDROCK's delivery area reach?</h2>
-        <p class="answer-block">Hardrock Sand And Gravel's delivery area is Grayson County, Texas, which spans 979 square miles from the Red River and Lake Texoma in the north toward Collin County in the south. The Sherman base sits near the middle, with Denison about 11 miles to the north.</p>
+        <p class="answer-block">Hardrock Sand And Gravel's delivery area is five Texas counties: Grayson, Collin, Denton, Fannin and Cooke. Grayson County, the home county, spans 979 square miles from the Red River and Lake Texoma in the north toward Collin County in the south, with the Sherman base near the middle and Denison about 11 miles to the north. Delivery only; there is no customer pickup.</p>
         <ul class="sa-ladder">
           <li><b>Sherman</b><span>The home base and county seat. Orders in town start here.</span></li>
           <li><b>Denison</b><span>About 11 miles north by city center, on the Red River and Lake Texoma side.</span></li>
-          <li><b>County</b><span>Rural lots, small towns and acreage across the rest of Grayson County.</span></li>
-          <li><b>Beyond</b><span>Call and ask. The edge of the delivery area depends on the load and the road.</span></li>
+          <li><b>Grayson County</b><span>Rural lots, small towns and acreage across the rest of the county.</span></li>
+          <li><b>Neighboring counties</b><span>Collin, Denton, Fannin and Cooke counties. Call with the address and HARDROCK sets the delivery day.</span></li>
         </ul>
         <div class="sa-map__actions">
           <a class="btn btn-accent" href="<?php echo esc($gbp['directions']); ?>" target="_blank" rel="noopener"><?php echo icon('map-pin', 18); ?>Get directions</a>
@@ -184,7 +184,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
       </div>
       <div class="map-embed reveal-right">
-        <iframe title="Map of Grayson County, Texas, the Hardrock Sand And Gravel service area" src="<?php echo esc($hubMapSrc); ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Map of Grayson County, Texas, the home county of the Hardrock Sand And Gravel delivery area" src="<?php echo esc($hubMapSrc); ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
@@ -222,6 +222,6 @@ if ($saReviews !== ''): ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Get a Free Estimate in Your Area',
-    'Call Hardrock Sand And Gravel or send the form with your address in Sherman, Denison or anywhere in Grayson County. HARDROCK prices the load by phone and sets a delivery day.'); ?>
+    'Call Hardrock Sand And Gravel or send the form with your address in Sherman, Denison, Grayson County or the neighboring Collin, Denton, Fannin and Cooke counties. HARDROCK prices the load by phone and sets a delivery day.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

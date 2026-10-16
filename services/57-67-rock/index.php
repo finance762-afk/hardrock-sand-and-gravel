@@ -27,9 +27,9 @@ $faqs = [
     ['q' => 'Should I order 57 rock or 67 rock?',
      'a' => 'Order 57 rock for French drains, culvert bedding and the finish layer on a gravel drive, where the larger stone keeps open gaps for water. Order 67 rock for a concrete mix, a finer drainage layer or anywhere a smoother, tighter surface matters. If the job could go either way, describe it to HARDROCK on the phone first.'],
     ['q' => 'Does HARDROCK bring 57 and 67 rock out to Denison and the rest of the county?',
-     'a' => 'Yes. Hardrock Sand And Gravel trucks crushed rock to homes, farms and job sites in Sherman, Denison and the other Grayson County towns. Call ' . $spCall . ' with the address and the size you want, and HARDROCK will quote the load and set a delivery day by phone.'],
+     'a' => 'Yes. Hardrock Sand And Gravel delivers crushed rock to homes, farms and job sites in Sherman, Denison and the other Grayson County towns, and into Collin, Denton, Fannin and Cooke counties. Call ' . $spCall . ' with the address and the size you want, and HARDROCK will quote the load and set a delivery day by phone.'],
     ['q' => 'What does a load of 57 or 67 rock cost?',
-     'a' => 'Hardrock Sand And Gravel gives crushed rock prices over the phone, because the figure depends on the size, the quantity and the distance to your site. Work out your cubic yards first, then call ' . $spCall . ' to hear the current price and the unit it is sold by.'],
+     'a' => 'Hardrock Sand And Gravel prices 57 and 67 rock by the ton and by the yard, and a full load is 20 yards or 20 tons. The delivered figure depends on the size, the quantity and the distance to your site, so work out your cubic yards first, then call ' . $spCall . ' to hear the current price.'],
 ];
 
 $pageSchemas = [

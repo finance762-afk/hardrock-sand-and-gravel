@@ -30,7 +30,11 @@ $footHasText = strlen($footText) >= 10;
           <p><?php echo esc($businessDescription); ?></p>
           <div class="footer-badges">
             <span>Since <?php echo esc($yearEstablished); ?></span>
-            <span>Bulk delivery</span>
+            <span>Delivery only</span>
+            <?php foreach ((array) ($credentials ?? []) as $footCred): ?>
+            <span><?php echo esc($footCred); ?></span>
+            <?php endforeach; ?>
+            <span>Insured</span>
             <span><?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
           </div>
           <?php if (!empty($socialLinks)): ?>
@@ -96,7 +100,7 @@ $footHasText = strlen($footText) >= 10;
           <meta itemprop="addressLocality" content="<?php echo esc($address['city']); ?>">
           <meta itemprop="addressRegion" content="<?php echo esc($address['state']); ?>">
         </span>
-        <p><?php echo esc($siteName); ?> is a sand and gravel supplier in <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?>, in business since <?php echo esc($yearEstablished); ?>. <?php echo esc($siteName); ?> delivers pea gravel, 57 and 67 rock, road base, decomposed granite, mason sand, river rock, rip rap and fill dirt to <?php echo esc(implode(', ', array_map(fn($footA) => preg_replace('/,\s*[A-Za-z]{2}$/', '', $footA), $serviceAreas))); ?>, and also handles driveways, house pads, ponds and land clearing. Call <a href="<?php echo esc($footTel); ?>"><?php echo esc($footCall); ?></a> for availability and pricing.</p>
+        <p><?php echo esc($siteName); ?> is a veteran and woman owned sand and gravel supplier based in <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?>, in business since <?php echo esc($yearEstablished); ?>. <?php echo esc($siteName); ?> delivers pea gravel, 57 and 67 rock, road base, decomposed granite, pink granite, mason sand, river rock, rip rap and fill dirt to <?php echo esc($serviceCountiesText ?? implode(', ', array_map(fn($footA) => preg_replace('/,\s*[A-Za-z]{2}$/', '', $footA), $serviceAreas))); ?>, Texas, and also handles driveways, house pads, ponds and land clearing. Delivery only, no customer pickup. Material is priced <?php echo esc($pricingUnits ?? 'by the ton and by the yard'); ?>; a full load is <?php echo esc($fullLoad ?? '20 yards or 20 tons'); ?>. Call <a href="<?php echo esc($footTel); ?>"><?php echo esc($footCall); ?></a> for availability and pricing.</p>
       </div>
     </div>
   </div>

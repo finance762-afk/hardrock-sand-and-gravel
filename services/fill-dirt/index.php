@@ -29,7 +29,7 @@ $faqs = [
     ['q' => 'Is fill dirt the same thing as topsoil?',
      'a' => 'No. Fill dirt is subsoil meant to be packed down to build height, while topsoil carries the organic matter grass needs. Build the height with fill dirt, then finish with a few inches of topsoil only where you want a lawn or garden bed.'],
     ['q' => 'Is fill dirt priced by the ton or the cubic yard?',
-     'a' => 'Hardrock Sand And Gravel gives fill dirt prices over the phone. Bring your cubic-yard figure from the low-spot math on this page when you call ' . $spCall . ', and HARDROCK will explain the current price and how the load is measured.'],
+     'a' => 'Both. Hardrock Sand And Gravel prices fill dirt by the ton and by the yard, and a full load is 20 yards or 20 tons. Bring your cubic-yard figure from the low-spot math on this page when you call ' . $spCall . ', and HARDROCK will give you the current delivered price.'],
 ];
 
 $pageSchemas = [

@@ -22,12 +22,18 @@ $heroPreload = sp_hero_preload($heroImage);
 $spCall      = formatPhone($phone);
 $spTel       = 'tel:' . $phoneE164;
 
-/* FAQ: research-brief questions this page can answer truthfully (delivery area, pricing unit) */
+/* FAQ: research-brief questions this page can answer truthfully (delivery area, pricing unit, load size, pickup, mixed loads, timing — owner-confirmed 2026-10-16) */
 $faqs = [
     ['q' => 'Do you deliver to Sherman and the surrounding area?',
-     'a' => 'Yes. Hardrock Sand And Gravel delivers bulk material in Sherman, Denison and the rest of Grayson County. If the address sits outside the county, call ' . $spCall . ' and ask before you plan the job around it.'],
+     'a' => 'Yes. Hardrock Sand And Gravel delivers bulk material in Sherman, Denison and the rest of Grayson County, and into Collin, Denton, Fannin and Cooke counties. If the address sits outside those five Texas counties, call ' . $spCall . ' and ask before you plan the job around it.'],
     ['q' => 'Do you sell delivered material by the ton or the cubic yard?',
-     'a' => 'Hardrock Sand And Gravel prices each delivery by phone, since the material, the amount and the distance all move the number. Work out your cubic yards with the formula on this page, then call ' . $spCall . ' for the current price and how that material is measured.'],
+     'a' => 'Both. Hardrock Sand And Gravel prices material by the ton and by the yard, and a full load is 20 yards or 20 tons. The delivered price still depends on the material, the amount and the distance, so work out your cubic yards with the formula on this page, then call ' . $spCall . ' for the current price.'],
+    ['q' => 'Can I pick up material instead of having it delivered?',
+     'a' => 'No. Hardrock Sand And Gravel is delivery only. Every order is delivered to the address you give, so there is no customer pickup and nothing to drive out to.'],
+    ['q' => 'Can two materials come on the same truck?',
+     'a' => 'Normally no. Two materials, such as road base and 57 rock, go out as separate deliveries so they do not contaminate each other. Mark a drop spot for each one.'],
+    ['q' => 'Can HARDROCK deliver the same day?',
+     'a' => 'Sometimes. Same-day delivery is sometimes possible depending on the material, the amount and the delivery schedule, so say on the call if you need the load today. Otherwise HARDROCK sets the delivery day when it confirms the order.'],
 ];
 
 $pageSchemas = [
@@ -88,7 +94,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Bulk delivery · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title">Sand and Gravel <span class="text-accent">Delivery</span> in Sherman, TX</h1>
-        <p class="hero-answer">Hardrock Sand And Gravel delivers bulk pea gravel, decomposed granite, road base, 57 and 67 rock, fill dirt, mason sand, rip rap and river rock to homes, farms and job sites in Sherman, Denison and across Grayson County. Call or send the form with the address and the amount, and HARDROCK prices the load by phone.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel delivers bulk pea gravel, decomposed granite, pink granite, road base, 57 and 67 rock, fill dirt, mason sand, rip rap and river rock to homes, farms and job sites across Grayson, Collin, Denton, Fannin and Cooke counties. Delivery only, no pickup. Call or send the form with the address and the amount, and HARDROCK prices the load by the ton or the yard over the phone.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -149,7 +155,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="reveal-left">
         <span class="eyebrow">How ordering works</span>
         <h2 id="dl-process-title">What happens after you call HARDROCK about a delivery?</h2>
-        <p class="answer-block">After the call, HARDROCK checks the quantity, quotes the price and sets a delivery day, all by phone. Have three things ready: the delivery address, the material, and the size of the area in feet. If the size is a guess, HARDROCK works the cubic yards out with you before anything is loaded.</p>
+        <p class="answer-block">After the call, HARDROCK checks the quantity, quotes the price and sets a delivery day, all by phone. Material is priced by the ton and by the yard, and a full load is 20 yards or 20 tons. Have three things ready: the delivery address, the material, and the size of the area in feet. If the size is a guess, HARDROCK works the cubic yards out with you before anything is loaded. Same-day delivery is sometimes possible, so say so if you need it.</p>
         <ul class="sp-included">
           <li><?php echo icon('clock', 18); ?><span>Monday to Thursday: 6:00 AM to 5:00 PM</span></li>
           <li><?php echo icon('clock', 18); ?><span>Friday: 9:00 AM to 5:00 PM</span></li>
@@ -161,7 +167,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <li><b>Call or send the form</b><span>Give the address, the material and what it is for. A note on gate width or soft ground helps.</span></li>
         <li><b>Check the quantity</b><span>The area in feet becomes cubic yards, with a little extra for settling.</span></li>
         <li><b>Price and a day by phone</b><span>HARDROCK gives you the price and a delivery day over the phone.</span></li>
-        <li><b>Load dropped</b><span>The material is dumped at the spot you marked, ready for a shovel, a tractor or a crew.</span></li>
+        <li><b>Load dropped</b><span>The material is dumped at the spot you marked, ready for a shovel, a tractor or a crew. Two materials arrive as separate deliveries so they do not mix.</span></li>
       </ol>
     </div>
   </div>
@@ -198,18 +204,17 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Bulk or bagged</span>
       <h2 id="dl-compare-title">Is bulk delivery worth it over bagged gravel from a store?</h2>
-      <p class="answer-block">Bulk delivery starts to make sense once a job passes about one cubic yard, since a single yard equals 54 of the common half-cubic-foot bags. The 4-yard play area above would take about 216 bags from a store, or a long string of pickup trips, compared with bulk material dumped where you need it.</p>
+      <p class="answer-block">Bulk delivery starts to make sense once a job passes about one cubic yard, since a single yard equals 54 of the common half-cubic-foot bags. The 4-yard play area above would take about 216 bags from a store, compared with bulk material dumped where you need it. A full HARDROCK load is 20 yards or 20 tons, and smaller jobs go out as partial loads.</p>
     </div>
     <div class="sp-table-wrap reveal-up">
       <table class="sp-table">
-        <caption>Bag counts assume the common 0.5 cubic foot bag; 27 cubic feet make one cubic yard. Pickup loads vary with the truck's payload rating.</caption>
+        <caption>Bag counts assume the common 0.5 cubic foot bag; 27 cubic feet make one cubic yard. HARDROCK is delivery only.</caption>
         <thead>
           <tr><th scope="col">Option</th><th scope="col">How it arrives</th><th scope="col">For the 4-yard job</th><th scope="col">Best fit</th></tr>
         </thead>
         <tbody>
-          <tr class="is-this"><th scope="row">Bulk delivery</th><td>Dumped loose at the spot you mark</td><td>Priced by HARDROCK over the phone, no loading on your end</td><td>Jobs of a yard or more: drives, pads, play areas, beds</td></tr>
+          <tr class="is-this"><th scope="row">Bulk delivery from HARDROCK</th><td>Dumped loose at the spot you mark; a full load is 20 yards or 20 tons</td><td>One partial load, priced by the ton or the yard over the phone, no loading on your end</td><td>Jobs of a yard or more: drives, pads, play areas, beds</td></tr>
           <tr><th scope="row">Bagged, from a store</th><td>Half-cubic-foot bags you load, haul and unload</td><td>About 216 bags, each lifted at least twice</td><td>Touch-ups and small beds under a yard</td></tr>
-          <tr><th scope="row">Pickup truck trips</th><td>Loose, loaded and hauled by you</td><td>Around 8 trips; a half-ton pickup often carries only about half a yard of gravel within its payload</td><td>A small top-up close to home</td></tr>
         </tbody>
       </table>
     </div>
@@ -269,7 +274,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Questions</span>
       <h2 id="dl-faq-title">What do customers ask before ordering a delivery?</h2>
-      <p>Two questions come up on almost every HARDROCK delivery call: whether the truck reaches a particular address, and how the material on it is measured and priced. The short answers are below, and the full picture comes on the phone.</p>
+      <p>The same questions come up on almost every HARDROCK delivery call: whether the truck reaches a particular address, how the material is measured and priced, whether you can pick it up, whether two materials share a truck, and how soon it can come. The short answers are below, and the full picture comes on the phone.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $faqIdx => $faq): ?>

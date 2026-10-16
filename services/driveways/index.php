@@ -29,7 +29,7 @@ $faqs = [
     ['q' => 'Which type of gravel should I use for a driveway?',
      'a' => 'A common build is compacted road base underneath with an angular crushed rock such as 57 or 67 on top. Leave pea gravel and river rock off the drive, because round stones roll under tires. Tell Hardrock Sand And Gravel what will use the drive, from a family car to a loaded stock trailer, and HARDROCK will suggest a mix.'],
     ['q' => 'Do you sell driveway gravel by the ton or the cubic yard?',
-     'a' => 'Hardrock Sand And Gravel quotes every driveway by phone, because the length, the layers and the material all change the price. Bring your cubic-yard figures for the base and the top rock to the call, and HARDROCK will give you the current price and how the material is measured.'],
+     'a' => 'Both. Hardrock Sand And Gravel prices driveway base and rock by the ton and by the yard, and a full load is 20 yards or 20 tons. Bring your cubic-yard figures for the base and the top rock to the call for a delivered-material price. A finished drive is always quoted after a site visit to check the elevation and the soil type.'],
 ];
 
 $pageSchemas = [
@@ -231,7 +231,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="reveal-left">
         <span class="eyebrow">Ordering a drive</span>
         <h2 id="dw-breakdown-title">How does a driveway job with HARDROCK get started?</h2>
-        <p class="answer-block">A HARDROCK driveway job starts with a phone call or the form: the length, the width, the address and what the route looks like now. HARDROCK checks the quantities for each layer, then gives you a price and a day by phone, for the materials alone or for the finished drive.</p>
+        <p class="answer-block">A HARDROCK driveway job starts with a phone call or the form: the length, the width, the address and what the route looks like now. For materials alone, HARDROCK checks the quantities for each layer and prices the loads by phone. For the finished drive there is always a site visit first, to check the elevation and the soil type, and the price follows that visit.</p>
         <ul class="sp-included">
           <li><?php echo icon('ruler', 18); ?><span>Length and width of the drive, plus any turnaround</span></li>
           <li><?php echo icon('map', 18); ?><span>What is there now: pasture, a dirt track or worn gravel</span></li>
@@ -243,8 +243,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
       <ol class="sp-steps reveal-right">
         <li><b>Measure the route</b><span>Length, width, and a note on any soft or low spots along the way.</span></li>
-        <li><b>Quantities per layer</b><span>Base and top rock are figured separately, in cubic yards.</span></li>
-        <li><b>Price and a day</b><span>HARDROCK quotes by phone and books the work or the delivery.</span></li>
+        <li><b>Quantities per layer</b><span>Base and top rock are figured separately, in cubic yards, and delivered as separate loads so they do not mix.</span></li>
+        <li><b>Site visit, then a price</b><span>Material-only loads are quoted by phone. A built drive gets a site visit to check elevation and soil type before the quote.</span></li>
         <li><b>Drive built or loads dropped</b><span>The drive is finished, or the material lands along the route, depending on the job you chose.</span></li>
       </ol>
     </div>

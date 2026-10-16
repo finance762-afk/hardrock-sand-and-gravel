@@ -27,7 +27,7 @@ $faqs = [
     ['q' => 'Do you deliver rip rap to Sherman and the surrounding area?',
      'a' => 'Yes. Hardrock Sand And Gravel delivers rip rap across Sherman, Denison and the rest of Grayson County. Call ' . $spCall . ' with the address and the length of bank you need to cover, and HARDROCK will confirm the delivery, the price and a day.'],
     ['q' => 'Do you sell rip rap by the ton or the cubic yard?',
-     'a' => 'Hardrock Sand And Gravel quotes every rip rap order by phone, because the price depends on the rock size, the amount and how far the load travels. Work out the cubic yards with the bank math above, then call ' . $spCall . ' for the current price and how the load is measured.'],
+     'a' => 'Both. Hardrock Sand And Gravel prices rip rap by the ton and by the yard, and a full load is 20 yards or 20 tons. The delivered price still depends on the rock size, the amount and how far the load travels, so work out the cubic yards with the bank math above, then call ' . $spCall . ' for the current price.'],
 ];
 
 $pageSchemas = [
@@ -131,12 +131,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="sp-expert__copy reveal-left">
         <span class="eyebrow">How it goes in</span>
         <h2 id="rr-expert-title">How does HARDROCK set <span class="text-accent">rip rap</span> so it stays put?</h2>
-        <p class="answer-block">HARDROCK sets rip rap over filter fabric. The bank is cleared, fabric is rolled down the slope, then a skid steer feeds rock to the bank and workers hand-set the stones so they lock together. The fabric lets water drain out while holding the soil behind the rock in place.</p>
-        <div class="sp-figure"><b>Fabric first</b><span>under the rock on every HARDROCK rip rap job pictured here</span></div>
+        <p class="answer-block">On a HARDROCK rip rap job the rock goes over filter fabric. The bank is cleared, fabric is rolled down the slope, then a skid steer feeds rock to the bank and the stones are hand-set so they lock together. The fabric lets water drain out while holding the soil behind the rock in place.</p>
+        <div class="sp-figure"><b>Fabric first</b><span>under the rock on the rip rap job pictured here</span></div>
         <ul class="sp-points">
           <li><?php echo icon('layers', 20); ?><span><b>Fabric under the rock.</b> Without it, waves pull fine clay out through the gaps between stones and the rock slowly sinks into the bank.</span></li>
           <li><?php echo icon('hard-hat', 20); ?><span><b>Hand-set, not just dumped.</b> Stones set by hand sit tight against each other, with fewer open pockets for water to work into.</span></li>
-          <li><?php echo icon('truck', 20); ?><span><b>Rock and labor from one company.</b> The company hauling the rip rap is the one placing it, so nobody waits on a separate supplier.</span></li>
+          <li><?php echo icon('truck', 20); ?><span><b>Rock and placing in one order.</b> HARDROCK arranges both the rip rap and the setting, so you are not lining up a supplier and a separate installer.</span></li>
         </ul>
         <p>If the bank belongs to a new pond, the digging and the armor can happen as one job; see <a href="/services/ponds/">how HARDROCK digs and shapes ponds</a>.</p>
       </div>
@@ -156,7 +156,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="reveal-left">
         <span class="eyebrow">What's included</span>
         <h2 id="rr-breakdown-title">What does a rip rap job with HARDROCK include?</h2>
-        <p class="answer-block">A HARDROCK rip rap job covers the rock, the filter fabric and the placing. The bank is cleared and shaped, fabric goes down, and the rock is set over it. If your own crew is doing the work, HARDROCK can deliver the rip rap and leave the installation to you.</p>
+        <p class="answer-block">A HARDROCK rip rap job covers the rock, the filter fabric and the placing. The bank is cleared and shaped, fabric goes down, and the rock is set over it. If your own crew is doing the work, HARDROCK can deliver the rip rap and leave the installation to you. Either way, delivery only: rip rap is not available for pickup.</p>
         <ul class="sp-included">
           <li><?php echo icon('check', 18); ?><span>Brush and loose soil cleared off the bank</span></li>
           <li><?php echo icon('check', 18); ?><span>Slope shaped so the rock has a firm bed</span></li>
@@ -167,7 +167,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       </div>
       <ol class="sp-steps reveal-right">
         <li><b>Describe the bank</b><span>Call or send the form with the address, roughly how long the bank is, and whether it is a pond, creek, culvert or ditch.</span></li>
-        <li><b>Get the price and a day</b><span>HARDROCK quotes the rock and the work by phone and sets a date.</span></li>
+        <li><b>Get the price and a day</b><span>Delivered rock is quoted by phone. A placed bank gets a site visit first to check the elevation and the soil, then a price and a date.</span></li>
         <li><b>Bank prepped, fabric down</b><span>The slope is cleared and shaped, then filter fabric is rolled down it.</span></li>
         <li><b>Rock set</b><span>Rip rap goes over the fabric and the stones are set by hand until the bank is covered.</span></li>
       </ol>
@@ -229,7 +229,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <div class="section-title reveal-up">
       <span class="eyebrow">Recent Work</span>
-      <h2 id="rr-proof-title">What rip rap jobs has HARDROCK set recently?</h2>
+      <h2 id="rr-proof-title">What does a HARDROCK rip rap job look like on the bank?</h2>
       <p>These HARDROCK rip rap photos show the same job in order: filter fabric rolled down a cleared bank, a skid steer bringing rock to the slope while two workers hand-set it, and the rip rap stone itself up close.</p>
     </div>
     <div class="sp-gallery-grid" data-p1-dynamic>
