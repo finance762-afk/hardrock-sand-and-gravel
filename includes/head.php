@@ -24,6 +24,7 @@ if ($headImage !== '' && $headImage[0] === '/') $headImage = rtrim($siteUrl, '/'
 $headType  = $ogType ?? 'website';
 $pageType  = $pageType ?? p1_page_type_from_path(strtok((string) ($_SERVER['REQUEST_URI'] ?? '/'), '?') ?: '/');
 $headCss   = '?v=' . ($cssVersion ?? '1');
+ob_start('p1_linkify_contact');   // tel:/mailto: links for plain-text phone/email in the body (flushed at script end)
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -160,6 +160,39 @@ if (!function_exists('logoMarkup')) {
     }
 }
 
+if (!function_exists('p1_linkify_contact')) {
+    /**
+     * Output-buffer callback (started in head.php): wraps the site phone number and email address in tel:/mailto: links
+     * wherever they appear as plain text in the page body. Copy stays free of hand-written anchors; one rule covers every
+     * page. Skips existing links, buttons, <summary>, form controls, <script> (JSON-LD), <style>, comments and <head>.
+     */
+    function p1_linkify_contact(string $fnHtml): string {
+        global $phone, $phoneE164, $email;
+        $fnBody = stripos($fnHtml, '<body');
+        if ($fnBody === false || empty($phone) || empty($phoneE164) || empty($email)) return $fnHtml;
+        $fnParts = preg_split('/(<!--.*?-->|<script\b.*?<\/script>|<style\b.*?<\/style>|<[^>]+>)/is', substr($fnHtml, $fnBody), -1, PREG_SPLIT_DELIM_CAPTURE);
+        $fnShown = formatPhone($phone);
+        $fnPat   = '/(?<![\w@.+-])(' . preg_quote($fnShown, '/') . '|' . preg_quote($email, '/') . ')(?![\w@-])/i';
+        $fnSkip  = ['a', 'button', 'summary', 'textarea', 'option', 'select', 'title'];
+        $fnDepth = 0;
+        foreach ($fnParts as $fnI => $fnPart) {
+            if ($fnPart === '') continue;
+            if ($fnPart[0] === '<') {
+                if (preg_match('/^<(\/?)([a-z0-9]+)/i', $fnPart, $fnM) && in_array(strtolower($fnM[2]), $fnSkip, true)) {
+                    $fnDepth = max(0, $fnDepth + ($fnM[1] === '/' ? -1 : 1));
+                }
+                continue;
+            }
+            if ($fnDepth > 0) continue;
+            $fnParts[$fnI] = preg_replace_callback($fnPat, function ($fnHit) use ($fnShown, $phoneE164) {
+                $fnHref = strcasecmp($fnHit[1], $fnShown) === 0 ? 'tel:' . $phoneE164 : 'mailto:' . $fnHit[1];
+                return '<a class="contact-link" href="' . $fnHref . '">' . $fnHit[1] . '</a>';
+            }, $fnPart);
+        }
+        return substr($fnHtml, 0, $fnBody) . implode('', $fnParts);
+    }
+}
+
 if (!function_exists('requestCanonical')) {
     /** Canonical URL from the request path: query string dropped, index.php dropped, directories get a trailing slash. */
     function requestCanonical(): string {

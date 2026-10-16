@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-helpers.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $pageTitle       = 'Sand and Gravel Delivery in Sherman, TX | HARDROCK';
-$pageDescription = 'HARDROCK Sand and Gravel delivers pea gravel, road base, 57/67 rock, fill dirt and rip rap in Sherman, Denison and Grayson County. Call ' . formatPhone($phone) . '.';
+$pageDescription = 'HARDROCK Sand and Gravel delivers pea gravel, road base, 57/67 rock, fill dirt and rip rap in Sherman, Denison and Grayson County, TX. Call ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $schemaImage     = $siteUrl . '/assets/images/rip-rap-crew-skid-steer.jpg';
@@ -254,7 +254,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text">
         <span class="eyebrow"><?php echo esc($homeCity); ?>, <?php echo esc($homeState); ?> · Grayson County</span>
         <h1 class="hero-title" id="home-hero-title"><span class="text-accent">Sand and Gravel</span> Delivered Across Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel delivers gravel, rock, sand and fill dirt across Sherman and Grayson County, and builds the driveways, pads and ponds they go into.</p>
+        <p class="hero-answer">HARDROCK Sand and Gravel delivers gravel, rock, sand and fill dirt across Sherman and Grayson County, and builds the driveways, pads and ponds they go into. Call or send the form with your address and the amount, and HARDROCK prices the load and sets a delivery day by phone.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($homeTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($homeCall); ?></a>

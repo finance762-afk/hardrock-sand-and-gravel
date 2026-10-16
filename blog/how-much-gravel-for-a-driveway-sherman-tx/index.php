@@ -18,7 +18,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-helpers.php';
 $blSlug          = 'how-much-gravel-for-a-driveway-sherman-tx';
 $blPost          = blog_post($blSlug);
 $pageTitle       = $blPost['title'];
-$pageDescription = 'A gravel driveway needs about 1 cubic yard per 80 sq ft at 4 inches deep. See the formula, worked examples and layers for a Sherman, TX lot.';
+$pageDescription = 'A gravel driveway needs about 1 cubic yard per 80 sq ft at 4 inches deep. See the formula, worked examples and layers for a Sherman, TX lot from HARDROCK.';
 $canonicalUrl    = $siteUrl . blog_url($blSlug);
 $ogImage         = '/assets/images/' . blog_image_base($blPost['image']) . '.jpg';
 $ogType          = 'article';

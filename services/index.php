@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $pageTitle       = 'Sand, Gravel and Site Work in Sherman, TX | HARDROCK';
-$pageDescription = 'All 13 HARDROCK Sand and Gravel services in one place: pea gravel, road base, 57/67 rock, fill dirt, rip rap, driveways, house pads, ponds and land clearing in Sherman, TX.';
+$pageDescription = 'All 13 HARDROCK Sand and Gravel services: pea gravel, road base, 57/67 rock, fill dirt, rip rap, driveways, house pads, ponds and land clearing in Sherman, TX.';
 $canonicalUrl    = $siteUrl . '/services/';
 $ogImage         = '/assets/images/gravel-stockpiles-job-site.jpg';
 $currentPage     = 'services';

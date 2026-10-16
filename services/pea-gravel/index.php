@@ -8,7 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('pea-gravel');
 $pageTitle       = 'Pea Gravel in Sherman, TX | HARDROCK Sand and Gravel';
-$pageDescription = 'Pea gravel for walkways, play areas, dog runs and drainage, delivered across Sherman, Denison and Grayson County. Call HARDROCK at ' . formatPhone($phone) . '.';
+$pageDescription = 'Small, rounded pea gravel for walkways, play areas, dog runs and drainage, delivered across Sherman, Denison and Grayson County. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/pea-gravel/';
 $ogImage         = '/assets/images/pea-gravel-closeup.jpg';
 $currentPage     = 'services';

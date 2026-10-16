@@ -60,6 +60,7 @@
   --color-card-tint-2: color-mix(in srgb, var(--color-secondary) 9%, white);
   --color-card-tint-3: color-mix(in srgb, var(--color-accent) 10%, white);
   --color-card-tint-neutral: var(--color-paper-2);
+  --bg-alt: var(--color-paper-2); --text-light: var(--color-muted); --container-max: 1180px; --ba-pos: 50%;   /* tokens the v8 components reference with fallbacks; same values as those fallbacks */
   --color-neutral-warm: var(--color-paper-2);
 
   /* Type — 3-font system */
@@ -105,6 +106,7 @@ p, li { text-wrap: pretty; }
 p { margin: 0 0 1rem; }
 ul, ol { margin: 0 0 1rem; padding-left: 1.25rem; }
 a { color: inherit; }
+a.contact-link { font-weight: 600; text-decoration: underline; text-decoration-thickness: .08em; text-underline-offset: .18em; }
 img, svg, video { max-width: 100%; height: auto; display: block; }
 .photo, .hero img, .gallery-item img, .service-card__image img, .about-image img, .sp-gallery-item img { filter: var(--photo-grade); }
 :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }

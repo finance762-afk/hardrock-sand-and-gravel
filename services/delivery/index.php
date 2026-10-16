@@ -8,7 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('delivery');
 $pageTitle       = 'Gravel Delivery in Sherman, TX | HARDROCK Sand and Gravel';
-$pageDescription = 'Bulk sand, gravel, rock and fill dirt delivered to homes, farms and job sites in Sherman, Denison and Grayson County. Call HARDROCK at ' . formatPhone($phone) . '.';
+$pageDescription = 'Bulk sand, gravel, rock and fill dirt delivered to homes, farms and job sites in Sherman, Denison and Grayson County, TX. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/delivery/';
 $ogImage         = '/assets/images/gravel-stockpiles-job-site.jpg';
 $currentPage     = 'services';

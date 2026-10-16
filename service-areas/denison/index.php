@@ -27,7 +27,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/area-page.php';
 $apSlug          = 'denison';
 $apRow           = ap_area($apSlug);
 $pageTitle       = 'Sand and Gravel Delivery in Denison, TX | HARDROCK';
-$pageDescription = 'HARDROCK Sand and Gravel delivers rip rap, road base, pea gravel and fill dirt to Denison, TX, about 11 miles north of Sherman. Call ' . formatPhone($phone) . '.';
+$pageDescription = 'HARDROCK Sand and Gravel delivers rip rap, road base, pea gravel and fill dirt to Denison, TX, about 11 miles north of Sherman. Call us at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . ap_url($apSlug);
 $ogImage         = '/assets/images/' . $apRow['photo'] . '.jpg';
 $currentPage     = 'areas';

@@ -8,7 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('decomposed-granite');
 $pageTitle       = 'Decomposed Granite in Sherman, TX | HARDROCK Sand and Gravel';
-$pageDescription = 'Decomposed granite for firm garden paths, patios and xeriscape beds, delivered in Sherman, Denison and Grayson County. Call HARDROCK at ' . formatPhone($phone) . '.';
+$pageDescription = 'Decomposed granite for firm garden paths, patios and xeriscape beds, delivered in Sherman, Denison and Grayson County, TX. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/decomposed-granite/';
 $ogImage         = '/assets/images/crushed-red-granite-closeup.jpg';
 $currentPage     = 'services';

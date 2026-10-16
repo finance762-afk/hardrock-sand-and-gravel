@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('57-67-rock');
-$pageTitle       = '57 and 67 Rock in Sherman, TX | HARDROCK';
+$pageTitle       = '57 and 67 Rock Delivered in Sherman, TX | HARDROCK';
 $pageDescription = '#57 and #67 crushed rock delivered in Sherman, Denison and Grayson County for French drains, driveway top course and concrete. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/57-67-rock/';
 $ogImage         = '/assets/images/gravel-stockpiles-job-site.jpg';

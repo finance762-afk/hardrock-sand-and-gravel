@@ -19,7 +19,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-helpers.php';
 $blSlug          = 'fix-gravel-driveway-after-heavy-rain-grayson-county';
 $blPost          = blog_post($blSlug);
 $pageTitle       = $blPost['title'];
-$pageDescription = 'Let a rain-soaked gravel driveway dry, rake it back, fill ruts with road base and armor the culvert. A Grayson County, TX repair guide from HARDROCK.';
+$pageDescription = 'Let a rain-soaked gravel driveway dry, rake it back, fill ruts with road base and armor the culvert. A Grayson County, Texas repair guide from HARDROCK.';
 $canonicalUrl    = $siteUrl . blog_url($blSlug);
 $ogImage         = '/assets/images/' . blog_image_base($blPost['image']) . '.jpg';
 $ogType          = 'article';

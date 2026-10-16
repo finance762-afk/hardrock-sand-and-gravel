@@ -8,8 +8,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/p1-form-helpers.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/inner-page.php';
 
-$pageTitle       = 'Sand and Gravel FAQ | HARDROCK, Sherman TX';
-$pageDescription = 'Answers on gravel and sand pricing, delivery, cubic yards, 57 vs 67 rock, driveways and site work from HARDROCK Sand and Gravel in Sherman, TX.';
+$pageTitle       = 'Sand and Gravel FAQ: Pricing and Delivery | HARDROCK';
+$pageDescription = 'Straight answers on gravel and sand pricing, delivery, cubic yards, 57 vs 67 rock, driveways and site work from HARDROCK Sand and Gravel in Sherman, TX.';
 $canonicalUrl    = $siteUrl . '/faq/';
 $ogImage         = '/assets/images/rip-rap-stockpile-closeup.jpg';
 $currentPage     = 'faq';
@@ -60,12 +60,12 @@ $faqCats = [
     ],
     'pricing' => [
         'title' => 'Pricing and quantities', 'icon' => 'ruler',
-        'lead'  => 'HARDROCK Sand and Gravel prices every order by phone, and the estimate is free. Work out your cubic yards first so the quote matches the job.',
+        'lead'  => 'HARDROCK Sand and Gravel prices every order by phone. Work out your cubic yards first so the quote matches the job.',
         'items' => [
             ['q' => 'How does HARDROCK Sand and Gravel price an order?',
              'a' => 'HARDROCK Sand and Gravel prices each order by phone because the material, the amount and the delivery address all change the number. Ask for the delivered price so the quote includes the haul to your address, and ask which unit, ton or cubic yard, it is quoted in.'],
-            ['q' => 'Is the estimate free?',
-             'a' => 'Yes. HARDROCK Sand and Gravel gives free estimates with no obligation. Call ' . $spCall . ' or send the form with the material, the delivery address and how much you need.'],
+            ['q' => 'How do I get a price?',
+             'a' => 'Call ' . $spCall . ' or send the form with the material, the delivery address and how much you need. HARDROCK Sand and Gravel prices the order from those three details.'],
             ['q' => 'How many cubic yards do I need?',
              'a' => 'Multiply length by width by depth in feet, then divide by 27. A 10 ft by 10 ft area covered 4 inches deep needs about 1.2 cubic yards. Add 5 to 10 percent for settling and spillage, and HARDROCK Sand and Gravel can check your numbers before you order.'],
             ['q' => 'How far does one cubic yard go?',

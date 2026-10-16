@@ -8,7 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('house-pads');
 $pageTitle       = 'House Pads in Sherman, TX | HARDROCK Sand and Gravel';
-$pageDescription = 'House pads raised and leveled with fill and base material for new slabs in Sherman, Denison and Grayson County. Call HARDROCK at ' . formatPhone($phone) . ' with your pad spec.';
+$pageDescription = 'House pads raised and leveled with fill and base for new slabs in Sherman, Denison and Grayson County. Call HARDROCK at ' . formatPhone($phone) . ' with your pad spec.';
 $canonicalUrl    = $siteUrl . '/services/house-pads/';
 $ogImage         = '/assets/images/excavator-crushed-rock-pad.jpg';
 $currentPage     = 'services';

@@ -8,7 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('mason-sand');
 $pageTitle       = 'Mason Sand in Sherman, TX | HARDROCK Sand and Gravel';
-$pageDescription = 'Mason sand delivered in Sherman, Denison and Grayson County for mortar, flagstone and paver bedding, and sandboxes. Call HARDROCK at ' . formatPhone($phone) . '.';
+$pageDescription = 'Mason sand delivered in Sherman, Denison and Grayson County, TX for mortar, flagstone and paver bedding, and sandboxes. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/mason-sand/';
 $ogImage         = '/assets/images/flagstone-patio-fire-pit.jpg';
 $currentPage     = 'services';

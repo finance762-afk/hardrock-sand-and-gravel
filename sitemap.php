@@ -29,21 +29,21 @@ $smAdd = function (string $path, string $file, string $freq, string $prio, array
 };
 
 $smAdd('/', 'index.php', 'weekly', '1.0', [$smImg('hero-rip-rap-v1', 'Close-up of rip rap rock for HARDROCK Sand and Gravel in Sherman, TX')]);
-$smAdd('/services/', 'services/index.php', 'monthly', '0.9');
+$smAdd('/services/', 'services/index.php', 'monthly', '0.8');
 foreach ($services as $smSvc) {
     $smCard = $spCards[$smSvc['slug']] ?? null;
-    $smAdd('/services/' . $smSvc['slug'] . '/', 'services/' . $smSvc['slug'] . '/index.php', 'monthly', '0.9', $smCard ? [$smImg($smCard['photo'], $smCard['alt'])] : []);
+    $smAdd('/services/' . $smSvc['slug'] . '/', 'services/' . $smSvc['slug'] . '/index.php', 'monthly', '0.8', $smCard ? [$smImg($smCard['photo'], $smCard['alt'])] : []);
 }
-$smAdd('/service-areas/', 'service-areas/index.php', 'monthly', '0.8');
+$smAdd('/service-areas/', 'service-areas/index.php', 'monthly', '0.6');
 foreach ($serviceAreas as $smArea) {
     $smSlug = getAreaSlug($smArea);
     $smRow = $apAreas[$smSlug] ?? null;
-    $smAdd('/service-areas/' . $smSlug . '/', 'service-areas/' . $smSlug . '/index.php', 'monthly', '0.8', $smRow ? [$smImg($smRow['photo'], $smRow['alt'])] : []);
+    $smAdd('/service-areas/' . $smSlug . '/', 'service-areas/' . $smSlug . '/index.php', 'monthly', '0.6', $smRow ? [$smImg($smRow['photo'], $smRow['alt'])] : []);
 }
-$smAdd('/about/', 'about/index.php', 'monthly', '0.7');
-$smAdd('/contact/', 'contact/index.php', 'monthly', '0.7');
+$smAdd('/about/', 'about/index.php', 'monthly', '0.6');
+$smAdd('/contact/', 'contact/index.php', 'monthly', '0.6');
 $smAdd('/faq/', 'faq/index.php', 'monthly', '0.6');
-$smAdd('/blog/', 'blog/index.php', 'weekly', '0.7');
+$smAdd('/blog/', 'blog/index.php', 'weekly', '0.6');
 foreach ((array) $blogPosts as $smPost) {
     $smPath = blog_url($smPost['slug']);
     if (!is_file($smRoot . $smPath . 'index.php')) continue;

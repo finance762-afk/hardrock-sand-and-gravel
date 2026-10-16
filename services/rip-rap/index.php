@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('rip-rap');
-$pageTitle       = 'Rip Rap in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'Rip Rap Delivery in Sherman, TX | HARDROCK Sand and Gravel';
 $pageDescription = 'Rip rap delivered and set over filter fabric on pond banks, creek slopes and culverts in Sherman, Denison and Grayson County. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/rip-rap/';
 $ogImage         = '/assets/images/rip-rap-crew-skid-steer.jpg';

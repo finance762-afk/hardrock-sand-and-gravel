@@ -9,8 +9,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/inner-page.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';   /* legal_address() for the reach panel */
 
-$pageTitle       = 'Contact HARDROCK Sand and Gravel | Sherman, TX';
-$pageDescription = 'Call ' . formatPhone($phone) . ' or send the form to get a price and delivery day for gravel, sand, rock or fill dirt in Sherman, Denison and Grayson County, TX.';
+$pageTitle       = 'Contact HARDROCK Sand and Gravel in Sherman, Texas';
+$pageDescription = 'Call ' . formatPhone($phone) . ' or send the form to get a price and delivery day on bulk gravel, sand, rock or fill dirt in Sherman, Denison and Grayson County, TX.';
 $canonicalUrl    = $siteUrl . '/contact/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'contact';
