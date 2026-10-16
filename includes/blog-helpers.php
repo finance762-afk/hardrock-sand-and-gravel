@@ -79,7 +79,7 @@ if (!function_exists('blog_breadcrumb_schema')) {
 
 if (!function_exists('blog_post_schema')) {
     /**
-     * @graph for one post: BlogPosting (author and publisher = the homepage #organization, never an invented person),
+     * @graph for one post: BlogPosting (author = Page One Insights LLC organization, publisher = the homepage #organization, never an invented person),
      * BreadcrumbList; the post appends its own FAQPage node mirroring the visible FAQ. $keywords is a comma-separated string describing THIS post.
      */
     function blog_post_schema(array $post, string $description, string $keywords): array {
@@ -87,12 +87,13 @@ if (!function_exists('blog_post_schema')) {
         $blBase = rtrim((string) $siteUrl, '/');
         $blUrl  = $blBase . blog_url($post['slug']);
         $blOrg  = ['@id' => $blBase . '/#organization'];
+        $blAuthor = ['@type' => 'Organization', 'name' => 'Page One Insights LLC', 'url' => 'https://pageoneinsights.com/'];
         return ['@context' => 'https://schema.org', '@graph' => [
             [
                 '@type' => 'BlogPosting', '@id' => $blUrl . '#post', 'headline' => $post['title'], 'description' => $description,
                 'image' => $blBase . '/assets/images/' . blog_image_base($post['image']) . '.jpg',
                 'datePublished' => $post['dateISO'], 'dateModified' => $post['dateISO'], 'keywords' => $keywords,
-                'author' => $blOrg, 'publisher' => $blOrg, 'mainEntityOfPage' => $blUrl, 'url' => $blUrl, 'inLanguage' => 'en-US',
+                'author' => $blAuthor, 'publisher' => $blOrg, 'mainEntityOfPage' => $blUrl, 'url' => $blUrl, 'inLanguage' => 'en-US',
                 'isPartOf' => ['@type' => 'Blog', '@id' => $blBase . '/blog/#blog', 'name' => 'Hardrock Sand And Gravel Blog', 'url' => $blBase . '/blog/'],
             ],
             blog_breadcrumb_schema($post['title'], $post['slug']),

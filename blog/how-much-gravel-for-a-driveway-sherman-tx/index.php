@@ -38,7 +38,7 @@ $faqs = [
     ['q' => 'Does HARDROCK price driveway gravel by the yard or by the ton?',
      'a' => 'Hardrock Sand And Gravel prices each load by phone, because the material, the amount and the address all change the number. Work out your cubic yards first, then call ' . $spCall . ' and ask how that material is measured and priced.'],
 ];
-$pageSchemas = [blog_post_schema($blPost, $pageDescription, 'gravel driveway, how much gravel for a driveway, driveway gravel Sherman TX, road base, 57 rock, cubic yards, Grayson County')];
+$pageSchemas = [blog_post_schema($blPost, $pageDescription, 'gravel driveway, how much gravel for a driveway, driveway gravel Sherman TX, road base, crushed rock, cubic yards, Grayson County')];
 /* FAQPage mirrors the visible FAQ below (AI comprehension aid only) */
 $pageSchemas[0]['@graph'][] = array_diff_key(generateFAQSchema($faqs), ['@context' => 1]);
 
@@ -66,7 +66,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <header class="blog-post__header">
       <span class="blog-card__category"><?php echo esc($blPost['category']); ?></span>
       <h1 id="bl-title"><?php echo esc($blPost['title']); ?></h1>
-      <p class="blog-post__meta">By <?php echo esc($siteName); ?> · <time datetime="<?php echo esc($blPost['dateISO']); ?>"><?php echo esc($blPost['date']); ?></time> · <?php echo esc($blPost['readtime']); ?></p>
+      <p class="blog-post__meta">Published by Page One Insights LLC · <time datetime="<?php echo esc($blPost['dateISO']); ?>"><?php echo esc($blPost['date']); ?></time> · <?php echo esc($blPost['readtime']); ?></p>
     </header>
   </div>
 </section>
@@ -123,7 +123,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
         <p>That layering is why the table above ends with a 6 inch row for a full build. On soft clay, many builders also roll out geotextile fabric between the dirt and the base, so the base cannot work down into the mud. Our <a href="/services/driveways/">gravel driveway page</a> walks through the full build, and the quantity changes when you only top up an existing surface.</p>
 
         <h2 id="materials">Which gravel goes into a Grayson County driveway?</h2>
-        <p class="answer-block">Two materials do most of the work: <a href="/services/road-base/">road base</a> for the compacted lower layer and <a href="/services/57-67-rock/">57 rock</a> for the top course. Road base packs into one firm layer; 57 stone drains and gives tires grip. Rounded pea gravel and river rock roll underfoot and are a poor top layer for a drive.</p>
+        <p class="answer-block">Two materials do most of the work: <a href="/services/road-base/">road base</a> for the compacted lower layer and <a href="/services/57-67-rock/">crushed rock</a> for the top course. Road base packs into one firm layer; crushed stone drains and gives tires grip. Rounded pea gravel and river rock roll underfoot and are a poor top layer for a drive.</p>
         <p>Split the total between the two. On a 6 inch full build, roughly 4 inches is road base and 2 inches is top rock, so the road base is about two thirds of the order. HARDROCK can deliver both loads in one visit, or build the whole drive; the <a href="/services/delivery/">delivery page</a> explains what happens after the call.</p>
 
         <h2 id="soil">Does Grayson County's soil change how much gravel you need?</h2>
@@ -156,7 +156,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
         </nav>
         <div class="bl-side-cta">
           <h2>Price my drive</h2>
-          <p>Hardrock Sand And Gravel delivers road base and 57 rock in Sherman, Denison and Grayson County.</p>
+          <p>Hardrock Sand And Gravel delivers road base and crushed rock in Sherman, Denison and Grayson County.</p>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>Call <?php echo esc($spCall); ?></a>
           <button type="button" class="btn btn-accent" data-open-estimate>Get a free estimate</button>
         </div>
@@ -197,7 +197,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
       <ul class="bl-links">
         <li><a href="/services/driveways/"><?php echo icon('route', 22); ?><b>Gravel driveways</b><span>The full build, layer by layer</span></a></li>
         <li><a href="/services/road-base/"><?php echo icon('milestone', 22); ?><b>Road base</b><span>The compacted lower layer</span></a></li>
-        <li><a href="/services/57-67-rock/"><?php echo icon('mountain', 22); ?><b>57 and 67 rock</b><span>The drainage and top course</span></a></li>
+        <li><a href="/services/57-67-rock/"><?php echo icon('mountain', 22); ?><b>Crushed rock</b><span>The drainage and top course</span></a></li>
         <li><a href="/service-areas/sherman/"><?php echo icon('map-pin', 22); ?><b>Sherman delivery</b><span>Roads and ground in town</span></a></li>
         <li><a href="/contact/"><?php echo icon('phone', 22); ?><b>Contact HARDROCK</b><span>Call or send the form</span></a></li>
       </ul>

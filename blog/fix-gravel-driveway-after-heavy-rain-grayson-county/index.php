@@ -8,11 +8,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-helpers.php';
 <?php
 /* ==========================================================================
    Post sources (2026-10-15): repair quantity arithmetic is worked in the text (27 cubic feet per cubic yard);
-   the road base / 57 rock / fabric method matches /services/driveways/, /services/road-base/ and /services/rip-rap/ on this site;
+   the road base / crushed rock / fabric method matches /services/driveways/, /services/road-base/ and /services/rip-rap/ on this site;
    Grayson County soils and drainage (blackland south, Post Oak Belt north, creeks): https://www.tshaonline.org/handbook/entries/grayson-county ;
    blackland prairie "a dominant feature for much of the county": https://www.co.grayson.tx.us/page/hist.home ;
    average annual precipitation of 37 inches (Handbook) vs 43.6 inches in 2019 (Texas Almanac) — the post says "near 37 inches" and notes wet years run higher.
-   No HARDROCK prices or response times are quoted. The rip rap method (fabric, skid steer, hand-set stone) is described on /services/rip-rap/.
+   No HARDROCK prices or response times are quoted. Rip rap is described as general practice (filter fabric, interlocking stone); the method is not claimed as HARDROCK's own.
    ========================================================================== */
 
 /* ---- Page setup ------------------------------------------------------------------------------- */
@@ -35,9 +35,9 @@ $faqs = [
     ['q' => 'How long should I wait before regrading a wet gravel driveway?',
      'a' => 'Wait until the surface is firm enough that a boot no longer sinks and the rock stops rolling under a vehicle. Working soaked gravel and clay together smears the two into mud, so patience saves material. How long that takes depends on the soil and the weather.'],
     ['q' => 'Can I fix a washed-out driveway with pea gravel?',
-     'a' => 'Pea gravel is a poor repair for a drive. The stones are rounded, so they shift under tires instead of locking together. Packed road base fills the washout, and crushed 57 rock goes on top; both are on HARDROCK\'s product list.'],
+     'a' => 'Pea gravel is a poor repair for a drive. The stones are rounded, so they shift under tires instead of locking together. Packed road base fills the washout, and crushed rock goes on top.'],
     ['q' => 'Can HARDROCK deliver rock to repair a washout?',
-     'a' => 'Yes. Hardrock Sand And Gravel delivers road base, 57 and 67 rock and rip rap in Sherman, Denison and Grayson County, and also builds gravel driveways. Call ' . $spCall . ' with the address and the size of the damage and the load is priced by phone.'],
+     'a' => 'Yes. Hardrock Sand And Gravel delivers road base, crushed rock and rip rap in Sherman, Denison and Grayson County, and also builds gravel driveways. Call ' . $spCall . ' with the address and the size of the damage and the load is priced by phone.'],
 ];
 $pageSchemas = [blog_post_schema($blPost, $pageDescription, 'gravel driveway repair, washed out gravel driveway, driveway after heavy rain, road base, rip rap, culvert, Grayson County TX')];
 /* FAQPage mirrors the visible FAQ below (AI comprehension aid only) */
@@ -70,7 +70,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <header class="blog-post__header">
       <span class="blog-card__category"><?php echo esc($blPost['category']); ?></span>
       <h1 id="bl-title"><?php echo esc($blPost['title']); ?></h1>
-      <p class="blog-post__meta">By <?php echo esc($siteName); ?> · <time datetime="<?php echo esc($blPost['dateISO']); ?>"><?php echo esc($blPost['date']); ?></time> · <?php echo esc($blPost['readtime']); ?></p>
+      <p class="blog-post__meta">Published by Page One Insights LLC · <time datetime="<?php echo esc($blPost['dateISO']); ?>"><?php echo esc($blPost['date']); ?></time> · <?php echo esc($blPost['readtime']); ?></p>
     </header>
   </div>
 </section>
@@ -110,13 +110,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
         <p>The rock also gets pushed into the mud. Our <a href="/services/driveways/">gravel driveway page</a> explains why a drive with no firm base keeps losing rock into soft ground, and why the repair below starts with the base.</p>
 
         <h2 id="repair">How do you repair ruts and potholes in order?</h2>
-        <p class="answer-block">Work in this order: wait for the surface to firm up, rake displaced rock back, cut out any soft spot, fill it with road base packed in thin layers, then top with crushed 57 rock. Skipping the base and topping up loose stone is the repair that fails again.</p>
+        <p class="answer-block">Work in this order: wait for the surface to firm up, rake displaced rock back, cut out any soft spot, fill it with road base packed in thin layers, then top with crushed rock. Skipping the base and topping up loose stone is the repair that fails again.</p>
         <ol class="bl-steps">
           <li><b>Wait for firm ground.</b> Working soaked gravel and clay together smears them into mud. Start once a boot no longer sinks.</li>
           <li><b>Rake the edges back.</b> Pull rock that was pushed to the sides or down the lane back toward the middle, and set aside what is clean.</li>
           <li><b>Dig out the soft spot.</b> Remove mud and loose fines from a pothole or rut down to firm ground, so you build on something solid.</li>
           <li><b>Fill with <a href="/services/road-base/">road base</a>.</b> Add it in thin layers, wet and compact each one. This is the layer that carries weight.</li>
-          <li><b>Top with <a href="/services/57-67-rock/">57 rock</a>.</b> The crushed angular stone locks together, drains and gives tires grip. Rake it level with a slight crown so water runs off.</li>
+          <li><b>Top with <a href="/services/57-67-rock/">crushed rock</a>.</b> The crushed angular stone locks together, drains and gives tires grip. Rake it level with a slight crown so water runs off.</li>
         </ol>
         <figure class="bl-figure">
           <?php echo pictureTag('rip-rap-crew-skid-steer', 'Two workers setting rip rap on filter fabric while a skid steer brings more rock', '(max-width: 1000px) 100vw, 640px'); ?>
@@ -125,7 +125,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
 
         <h2 id="water">How do you stop the next storm from washing the drive out again?</h2>
         <p class="answer-block">Give water somewhere to go. Keep a slight crown on the driveway so rain sheds to the sides, keep the ditch and culvert clear, and cover the culvert outlet and any cut bank with rip rap over filter fabric. Rock that heavy stays put where small gravel would travel downstream.</p>
-        <p>The outlet is where many drives fail. Water leaving a culvert at speed digs a hole and undermines the road above it. <a href="/services/rip-rap/">Rip rap</a> set over fabric at that spot takes the energy out of the flow. HARDROCK sets rip rap on its own jobs the same way: the bank is cleared, fabric is rolled down the slope, rock is fed to the bank and the stones are hand-set so they lock together.</p>
+        <p>The outlet is where many drives fail. Water leaving a culvert at speed digs a hole and undermines the road above it. <a href="/services/rip-rap/">Rip rap</a> set over fabric at that spot takes the energy out of the flow. Rip rap is typically laid over filter fabric, with the stones placed so they interlock and stay put when the water runs hard.</p>
         <p>Drives near the river and lake in northern Grayson County deal with more moving water; the <a href="/service-areas/denison/">Denison page</a> covers bank and drainage work there.</p>
 
         <h2 id="quantity">How much rock does a repair need?</h2>
@@ -152,7 +152,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
         </nav>
         <div class="bl-side-cta">
           <h2>Need repair rock?</h2>
-          <p>Hardrock Sand And Gravel delivers road base, 57 rock and rip rap in Sherman, Denison and Grayson County.</p>
+          <p>Hardrock Sand And Gravel delivers road base, crushed rock and rip rap in Sherman, Denison and Grayson County.</p>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>Call <?php echo esc($spCall); ?></a>
           <button type="button" class="btn btn-accent" data-open-estimate>Get a free estimate</button>
         </div>
