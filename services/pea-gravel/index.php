@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('pea-gravel');
-$pageTitle       = 'Pea Gravel in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'Pea Gravel in Sherman, TX | Hardrock Sand And Gravel';
 $pageDescription = 'Small, rounded pea gravel for walkways, play areas, dog runs and drainage, delivered across Sherman, Denison and Grayson County. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/pea-gravel/';
 $ogImage         = '/assets/images/pea-gravel-closeup.jpg';
@@ -25,11 +25,11 @@ $spTel       = 'tel:' . $phoneE164;
 /* FAQ: research-brief questions this page can answer truthfully (delivery area, quantity, pricing unit) */
 $faqs = [
     ['q' => 'Does HARDROCK deliver pea gravel to Sherman and nearby towns?',
-     'a' => 'Yes. HARDROCK Sand and Gravel delivers pea gravel in Sherman, Denison and across Grayson County. Give the address and the size of the area when you call ' . $spCall . ', and the price and the delivery day get settled on that call.'],
+     'a' => 'Yes. Hardrock Sand And Gravel delivers pea gravel in Sherman, Denison and across Grayson County. Give the address and the size of the area when you call ' . $spCall . ', and the price and the delivery day get settled on that call.'],
     ['q' => 'How much pea gravel do I need for a garden walkway?',
      'a' => 'Multiply the walkway length by its width and by the depth, all in feet, then divide by 27 for cubic yards. A path 4 feet wide and 30 feet long at 3 inches deep works out to about 1.1 cubic yards. Round up slightly so low spots can be topped off later.'],
     ['q' => 'How is pea gravel priced?',
-     'a' => 'HARDROCK Sand and Gravel gives pea gravel prices over the phone instead of posting a rate, since the total depends on the amount and the drop-off address. Have your cubic-yard figure ready when you call ' . $spCall . ', and ask how the load is measured at the same time.'],
+     'a' => 'Hardrock Sand And Gravel gives pea gravel prices over the phone instead of posting a rate, since the total depends on the amount and the drop-off address. Have your cubic-yard figure ready when you call ' . $spCall . ', and ask how the load is measured at the same time.'],
 ];
 
 $pageSchemas = [
@@ -100,7 +100,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Pea gravel · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title"><span class="text-accent">Pea Gravel</span> for Paths and Play Areas in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel delivers pea gravel to homes in Sherman, Denison and across Grayson County. The small, rounded stone suits garden walkways, backyard play areas, dog runs and drainage strips by downspouts, and it fits homeowners who want a surface that drains fast and rakes level in a few minutes.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel delivers pea gravel to homes in Sherman, Denison and across Grayson County. The small, rounded stone suits garden walkways, backyard play areas, dog runs and drainage strips by downspouts, and it fits homeowners who want a surface that drains fast and rakes level in a few minutes.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -211,7 +211,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="reveal-left">
         <span class="eyebrow">Ordering</span>
         <h2 id="pg-order-title">How does ordering pea gravel from HARDROCK work?</h2>
-        <p class="answer-block">Ordering pea gravel from HARDROCK Sand and Gravel takes one phone call or the form on this page. HARDROCK checks the quantity with you, gives the price and a delivery day over the phone, then drops the load where you point. Lines open at 6 AM Monday through Thursday.</p>
+        <p class="answer-block">Ordering pea gravel from Hardrock Sand And Gravel takes one phone call or the form on this page. HARDROCK checks the quantity with you, gives the price and a delivery day over the phone, then drops the load where you point. Lines open at 6 AM Monday through Thursday.</p>
         <ul class="sp-included">
           <li><?php echo icon('map-pin', 18); ?><span>The delivery address in Sherman, Denison or elsewhere in Grayson County</span></li>
           <li><?php echo icon('ruler', 18); ?><span>Length and width of each area, in feet</span></li>
@@ -261,7 +261,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Recent work</span>
       <h2 id="pg-proof-title">What do customers say after a HARDROCK gravel delivery?</h2>
-      <p class="answer-block">Customers who order gravel from HARDROCK Sand and Gravel post their reviews on Google, and the newest ones appear below. HARDROCK has hauled sand, gravel and rock around Sherman and Denison since 2019 under owner Dean Jones, for homes, farms and job sites.</p>
+      <p class="answer-block">Customers who order gravel from Hardrock Sand And Gravel post their reviews on Google, and the newest ones appear below. HARDROCK has hauled sand, gravel and rock around Sherman and Denison since 2016 under owner Dean Jones, for homes, farms and job sites.</p>
     </div>
     <div class="sp-proof__single">
       <figure class="reveal-left">
@@ -287,7 +287,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Questions</span>
       <h2 id="pg-faq-title">What do people ask before ordering pea gravel?</h2>
-      <p>Before a pea gravel order, HARDROCK Sand and Gravel customers mostly want three answers: whether the load can reach their address, how many cubic yards a walkway or play area takes, and how the price is worked out.</p>
+      <p>Before a pea gravel order, Hardrock Sand And Gravel customers mostly want three answers: whether the load can reach their address, how many cubic yards a walkway or play area takes, and how the price is worked out.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $faqIdx => $faq): ?>
@@ -305,10 +305,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ RELATED SERVICES ============ -->
 <?php echo sp_related_section(['river-rock', 'decomposed-granite', 'delivery'],
     'What else pairs with <span class="text-accent">pea gravel</span> in a backyard project?',
-    'Pea gravel is often one of several materials in a yard project. HARDROCK Sand and Gravel also supplies river rock for planting beds and dry creek channels, decomposed granite for firm paths that carry a wheelbarrow, and bulk delivery of sand, gravel, rock and dirt anywhere in Sherman and Grayson County.'); ?>
+    'Pea gravel is often one of several materials in a yard project. Hardrock Sand And Gravel also supplies river rock for planting beds and dry creek channels, decomposed granite for firm paths that carry a wheelbarrow, and bulk delivery of sand, gravel, rock and dirt anywhere in Sherman and Grayson County.'); ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need pea gravel for a path or play area?',
-    'Call HARDROCK Sand and Gravel with the area size and the address, or send the form. Saturday hours run 9 AM to 2 PM when a weekday call is hard to fit in.'); ?>
+    'Call Hardrock Sand And Gravel with the area size and the address, or send the form. Saturday hours run 9 AM to 2 PM when a weekday call is hard to fit in.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

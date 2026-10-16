@@ -10,7 +10,7 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/inner-page.php';
 
 if (!function_exists('legal_company_name')) {
-    /** "HARDROCK Sand and Gravel" or "HARDROCK Sand and Gravel, LLC" once $companyEntityType is set. */
+    /** "Hardrock Sand And Gravel" or "Hardrock Sand And Gravel, LLC" once $companyEntityType is set. */
     function legal_company_name(): string {
         global $siteName, $companyEntityType;
         return trim((string) $siteName) . (trim((string) $companyEntityType) !== '' ? ', ' . trim((string) $companyEntityType) : '');

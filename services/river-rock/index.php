@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('river-rock');
-$pageTitle       = 'River Rock in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'River Rock in Sherman, TX | Hardrock Sand And Gravel';
 $pageDescription = 'River rock for landscape beds, dry creek beds and downspout splash areas, delivered across Sherman, Denison and Grayson County. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/river-rock/';
 $ogImage         = '/assets/images/pea-gravel-closeup.jpg';
@@ -28,9 +28,9 @@ $faqs = [
     ['q' => 'Which size of river rock should I order?',
      'a' => 'For bed cover and narrow channels, smaller river rock under about 1½ inches looks neat and fills the gaps. For downspout pads and the floor of a dry creek bed, 1 to 3 inch stone is the usual pick, with bigger cobble along the edges. Tell HARDROCK the job when you call and ask which sizes are available.'],
     ['q' => 'Does HARDROCK bring river rock to Denison and other Grayson County towns?',
-     'a' => 'HARDROCK Sand and Gravel delivers river rock in Sherman, Denison and the rest of Grayson County. Ring ' . $spCall . ' with the address and the rough size of the bed or creek, and HARDROCK confirms what it will cost and which day the rock arrives.'],
+     'a' => 'Hardrock Sand And Gravel delivers river rock in Sherman, Denison and the rest of Grayson County. Ring ' . $spCall . ' with the address and the rough size of the bed or creek, and HARDROCK confirms what it will cost and which day the rock arrives.'],
     ['q' => 'How does HARDROCK price river rock?',
-     'a' => 'River rock prices from HARDROCK Sand and Gravel are given by phone, since the stone size, the amount and the address all move the total. Bring the cubic-yard estimate from the dry creek example on this page to the call, and ask whether the quote is by the ton or the yard.'],
+     'a' => 'River rock prices from Hardrock Sand And Gravel are given by phone, since the stone size, the amount and the address all move the total. Bring the cubic-yard estimate from the dry creek example on this page to the call, and ask whether the quote is by the ton or the yard.'],
 ];
 
 $pageSchemas = [
@@ -94,7 +94,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">River rock · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title"><span class="text-accent">River Rock</span> for Beds and Creeks in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel delivers river rock to Sherman, Denison and the rest of Grayson County for landscape beds, dry creek beds and downspout splash areas. River rock is stone worn smooth by water and sold in size ranges, so the right pick depends on whether it will cover a bed or line a channel.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel delivers river rock to Sherman, Denison and the rest of Grayson County for landscape beds, dry creek beds and downspout splash areas. River rock is stone worn smooth by water and sold in size ranges, so the right pick depends on whether it will cover a bed or line a channel.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -229,7 +229,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Recent work</span>
       <h2 id="rv-proof-title">What do customers say about ordering rock from HARDROCK?</h2>
-      <p class="answer-block">Customers who order rock and gravel from HARDROCK Sand and Gravel leave their reviews on Google, and the latest are below. HARDROCK has served Sherman, Denison and Grayson County since 2019, with Dean Jones as owner. The photo beside the reviews shows rip rap from one of its jobs, for a sense of stone scale.</p>
+      <p class="answer-block">Customers who order rock and gravel from Hardrock Sand And Gravel leave their reviews on Google, and the latest are below. HARDROCK has served Sherman, Denison and Grayson County since 2016, with Dean Jones as owner. The photo beside the reviews shows rip rap from one of its jobs, for a sense of stone scale.</p>
     </div>
     <div class="sp-proof__single">
       <figure class="reveal-left">
@@ -255,7 +255,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Questions</span>
       <h2 id="rv-faq-title">What do people ask before buying river rock?</h2>
-      <p>River rock buyers who call HARDROCK Sand and Gravel usually start with the stone size, then ask whether the load reaches Denison or another Grayson County town, and finally how the river rock price is worked out.</p>
+      <p>River rock buyers who call Hardrock Sand And Gravel usually start with the stone size, then ask whether the load reaches Denison or another Grayson County town, and finally how the river rock price is worked out.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $faqIdx => $faq): ?>
@@ -273,10 +273,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ RELATED SERVICES ============ -->
 <?php echo sp_related_section(['pea-gravel', 'rip-rap', 'decomposed-granite'],
     'What pairs well with <span class="text-accent">river rock</span> in a landscape?',
-    'River rock rarely works alone in a finished yard. HARDROCK Sand and Gravel also carries pea gravel for the walkway that crosses the bed, rip rap for any bank where water runs hard, and decomposed granite for a firm path or seating area beside the rock, all delivered around Sherman.'); ?>
+    'River rock rarely works alone in a finished yard. Hardrock Sand And Gravel also carries pea gravel for the walkway that crosses the bed, rip rap for any bank where water runs hard, and decomposed granite for a firm path or seating area beside the rock, all delivered around Sherman.'); ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need river rock before the spring storms?',
-    'Call HARDROCK Sand and Gravel or send the form with the address and the size of the bed or channel. HARDROCK takes calls until 5 PM on weekdays and until 2 PM on Saturdays.'); ?>
+    'Call Hardrock Sand And Gravel or send the form with the address and the size of the bed or channel. HARDROCK takes calls until 5 PM on weekdays and until 2 PM on Saturdays.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

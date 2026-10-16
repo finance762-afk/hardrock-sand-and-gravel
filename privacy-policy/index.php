@@ -6,8 +6,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 /* ---- Page setup ------------------------------------------------------------------------------- */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';
 
-$pageTitle       = 'Privacy Policy | HARDROCK Sand and Gravel, Sherman TX';
-$pageDescription = 'How HARDROCK Sand and Gravel in Sherman, TX collects, uses and protects the information you share through its website, estimate forms, calls and texts.';
+$pageTitle       = 'Privacy Policy | Hardrock Sand And Gravel, Sherman TX';
+$pageDescription = 'How Hardrock Sand And Gravel in Sherman, TX collects, uses and protects the information you share through its website, estimate forms, calls and texts.';
 $canonicalUrl    = $siteUrl . '/privacy-policy/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'legal';

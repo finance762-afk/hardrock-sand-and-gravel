@@ -28,7 +28,7 @@ $smAdd = function (string $path, string $file, string $freq, string $prio, array
     $smPages[] = ['path' => $path, 'lastmod' => $smMod($file), 'changefreq' => $freq, 'priority' => $prio, 'images' => $images];
 };
 
-$smAdd('/', 'index.php', 'weekly', '1.0', [$smImg('hero-rip-rap-v1', 'Close-up of rip rap rock for HARDROCK Sand and Gravel in Sherman, TX')]);
+$smAdd('/', 'index.php', 'weekly', '1.0', [$smImg('hero-rip-rap-v1', 'Close-up of rip rap rock for Hardrock Sand And Gravel in Sherman, TX')]);
 $smAdd('/services/', 'services/index.php', 'monthly', '0.8');
 foreach ($services as $smSvc) {
     $smCard = $spCards[$smSvc['slug']] ?? null;

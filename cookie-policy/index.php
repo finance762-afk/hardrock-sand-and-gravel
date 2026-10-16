@@ -6,8 +6,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 /* ---- Page setup ------------------------------------------------------------------------------- */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';
 
-$pageTitle       = 'Cookie Policy | HARDROCK Sand and Gravel, Sherman TX';
-$pageDescription = 'The cookies and similar technologies used on the HARDROCK Sand and Gravel website in Sherman, TX, what each one does, and how to block or remove them.';
+$pageTitle       = 'Cookie Policy | Hardrock Sand And Gravel, Sherman TX';
+$pageDescription = 'The cookies and similar technologies used on the Hardrock Sand And Gravel website in Sherman, TX, what each one does, and how to block or remove them.';
 $canonicalUrl    = $siteUrl . '/cookie-policy/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'legal';

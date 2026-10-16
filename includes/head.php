@@ -24,6 +24,7 @@ if ($headImage !== '' && $headImage[0] === '/') $headImage = rtrim($siteUrl, '/'
 $headType  = $ogType ?? 'website';
 $pageType  = $pageType ?? p1_page_type_from_path(strtok((string) ($_SERVER['REQUEST_URI'] ?? '/'), '?') ?: '/');
 $headCss   = '?v=' . ($cssVersion ?? '1');
+if (empty($allowIndexing) && !headers_sent()) header('X-Robots-Tag: noindex, nofollow');   // staging: flip $allowIndexing in config.php at launch
 ob_start('p1_linkify_contact');   // tel:/mailto: links for plain-text phone/email in the body (flushed at script end)
 ?>
 <!DOCTYPE html>
@@ -32,7 +33,7 @@ ob_start('p1_linkify_contact');   // tel:/mailto: links for plain-text phone/ema
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php echo generateMetaTags($headTitle, $headDesc, $headCanon); ?>
-<?php if (!empty($noindex)): ?>
+<?php if (!empty($noindex) || empty($allowIndexing)): ?>
 <meta name="robots" content="noindex,nofollow">
 <?php else: ?>
 <meta name="robots" content="index,follow,max-image-preview:large">

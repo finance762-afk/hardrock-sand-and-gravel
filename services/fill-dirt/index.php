@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('fill-dirt');
-$pageTitle       = 'Fill Dirt in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'Fill Dirt in Sherman, TX | Hardrock Sand And Gravel';
 $pageDescription = 'Fill dirt delivered for leveling, backfill and raising grade on homes, farms and building sites in Sherman and Grayson County. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/fill-dirt/';
 $ogImage         = '/assets/images/excavator-crushed-rock-pad.jpg';
@@ -25,11 +25,11 @@ $spTel       = 'tel:' . $phoneE164;
 /* FAQ: research-brief questions this page can answer truthfully (delivery area, which material, pricing unit) */
 $faqs = [
     ['q' => 'Do you deliver fill dirt to Sherman and nearby?',
-     'a' => 'Yes. HARDROCK Sand and Gravel delivers fill dirt in Sherman, Denison and across Grayson County. Call ' . $spCall . ' with the address and the size of the area, and HARDROCK will confirm the delivery and a drop day.'],
+     'a' => 'Yes. Hardrock Sand And Gravel delivers fill dirt in Sherman, Denison and across Grayson County. Call ' . $spCall . ' with the address and the size of the area, and HARDROCK will confirm the delivery and a drop day.'],
     ['q' => 'Is fill dirt the same thing as topsoil?',
      'a' => 'No. Fill dirt is subsoil meant to be packed down to build height, while topsoil carries the organic matter grass needs. Build the height with fill dirt, then finish with a few inches of topsoil only where you want a lawn or garden bed.'],
     ['q' => 'Is fill dirt priced by the ton or the cubic yard?',
-     'a' => 'HARDROCK Sand and Gravel gives fill dirt prices over the phone. Bring your cubic-yard figure from the low-spot math on this page when you call ' . $spCall . ', and HARDROCK will explain the current price and how the load is measured.'],
+     'a' => 'Hardrock Sand And Gravel gives fill dirt prices over the phone. Bring your cubic-yard figure from the low-spot math on this page when you call ' . $spCall . ', and HARDROCK will explain the current price and how the load is measured.'],
 ];
 
 $pageSchemas = [
@@ -93,7 +93,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Fill dirt · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title"><span class="text-accent">Fill Dirt</span> Delivered in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel delivers fill dirt to homes, farms and building sites in Sherman, Denison and across Grayson County. Fill dirt raises low spots, backfills trenches and walls, and builds up grade where water sits, and HARDROCK checks the quantity with you by phone before the load is scheduled.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel delivers fill dirt to homes, farms and building sites in Sherman, Denison and across Grayson County. Fill dirt raises low spots, backfills trenches and walls, and builds up grade where water sits, and HARDROCK checks the quantity with you by phone before the load is scheduled.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -179,7 +179,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="reveal-left">
         <span class="eyebrow">How it works</span>
         <h2 id="fd-breakdown-title">How does a fill dirt order with HARDROCK work?</h2>
-        <p class="answer-block">A fill dirt order with HARDROCK Sand and Gravel starts with a call or the form and ends with the load dropped on your property. In between, HARDROCK checks the quantity against your measurements and gives the price and a delivery day over the phone.</p>
+        <p class="answer-block">A fill dirt order with Hardrock Sand And Gravel starts with a call or the form and ends with the load dropped on your property. In between, HARDROCK checks the quantity against your measurements and gives the price and a delivery day over the phone.</p>
         <ul class="sp-included">
           <li><?php echo icon('check', 18); ?><span>Length, width and depth of the area to fill</span></li>
           <li><?php echo icon('check', 18); ?><span>What the fill is for: low spot, backfill or raised grade</span></li>
@@ -267,7 +267,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Questions</span>
       <h2 id="fd-faq-title">What do customers ask HARDROCK before ordering fill dirt?</h2>
-      <p>Customers ordering fill dirt from HARDROCK Sand and Gravel tend to ask three things first: whether HARDROCK delivers to their address, whether fill dirt can stand in for topsoil, and how a fill dirt load gets priced.</p>
+      <p>Customers ordering fill dirt from Hardrock Sand And Gravel tend to ask three things first: whether HARDROCK delivers to their address, whether fill dirt can stand in for topsoil, and how a fill dirt load gets priced.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $faqIdx => $faq): ?>
@@ -285,10 +285,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ RELATED SERVICES ============ -->
 <?php echo sp_related_section(['house-pads', 'ponds', 'delivery'],
     'What other jobs use <span class="text-accent">fill dirt</span>?',
-    'Fill dirt turns up inside bigger jobs too. HARDROCK Sand and Gravel builds house pads with fill and base ahead of new slabs, digs ponds that move a lot of dirt from one place to another, and delivers bulk sand, gravel, rock and fill across Sherman and Grayson County for owners doing the spreading themselves.'); ?>
+    'Fill dirt turns up inside bigger jobs too. Hardrock Sand And Gravel builds house pads with fill and base ahead of new slabs, digs ponds that move a lot of dirt from one place to another, and delivers bulk sand, gravel, rock and fill across Sherman and Grayson County for owners doing the spreading themselves.'); ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need fill dirt for a low spot or a backfill?',
-    'Send the measurements through the form or call HARDROCK Sand and Gravel. HARDROCK is open Saturday from 9 AM to 2 PM, so a weekend project can still get a price lined up.'); ?>
+    'Send the measurements through the form or call Hardrock Sand And Gravel. HARDROCK is open Saturday from 9 AM to 2 PM, so a weekend project can still get a price lined up.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

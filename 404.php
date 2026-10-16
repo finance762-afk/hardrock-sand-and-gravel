@@ -7,8 +7,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 http_response_code(404);   /* real 404 status — Apache serves this file through ErrorDocument 404 */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 
-$pageTitle       = 'Page Not Found | HARDROCK Sand and Gravel, Sherman TX';
-$pageDescription = 'That page is not on the HARDROCK Sand and Gravel site. Find gravel, sand, rock and dirt delivery in Sherman, TX, or call ' . formatPhone($phone) . '.';
+$pageTitle       = 'Page Not Found | Hardrock Sand And Gravel, Sherman TX';
+$pageDescription = 'That page is not on the Hardrock Sand And Gravel site. Find gravel, sand, rock and dirt delivery in Sherman, TX, or call ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'other';
@@ -82,7 +82,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="hero-text hero-copy">
       <span class="eyebrow">Error 404 · Page not found</span>
       <h1 class="hero-title" id="nf-title">That load went <span class="text-accent">somewhere else</span></h1>
-      <p class="hero-answer">The page you wanted is not on the HARDROCK Sand and Gravel site, but the gravel, sand and dirt are still a call away in Sherman, TX.</p>
+      <p class="hero-answer">The page you wanted is not on the Hardrock Sand And Gravel site, but the gravel, sand and dirt are still a call away in Sherman, TX.</p>
       <div class="nf-actions">
         <a class="btn btn-primary btn-lg" href="/">Back to the homepage</a>
         <a class="link-call" href="<?php echo esc($nfTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($nfCall); ?></a>
@@ -97,7 +97,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title">
       <span class="eyebrow-label">Start here</span>
       <h2 id="nf-popular-title">Which page were you looking for?</h2>
-      <p class="answer-block">These are the pages visitors to HARDROCK Sand and Gravel open most: the full list of materials and services, gravel delivery in Sherman, the two most-ordered base materials, the FAQ and the contact page.</p>
+      <p class="answer-block">These are the pages visitors to Hardrock Sand And Gravel open most: the full list of materials and services, gravel delivery in Sherman, the two most-ordered base materials, the FAQ and the contact page.</p>
     </div>
     <ul class="nf-grid">
       <?php foreach ($nfPopular as $nfLink): ?>
@@ -114,7 +114,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div>
         <span class="eyebrow">Looking for a material?</span>
         <h2 id="nf-find-title">Can&rsquo;t find the gravel, sand or rock you need?</h2>
-        <p class="answer-block">Pick the material or job below to open its page, or call <?php echo esc($nfCall); ?> and describe what you are building. HARDROCK Sand and Gravel will point you to the right material and price it by phone.</p>
+        <p class="answer-block">Pick the material or job below to open its page, or call <?php echo esc($nfCall); ?> and describe what you are building. Hardrock Sand And Gravel will point you to the right material and price it by phone.</p>
         <a class="btn btn-secondary" href="/contact/">Send HARDROCK a message</a>
       </div>
       <ul class="nf-tags" aria-label="Popular searches">
@@ -126,6 +126,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   </div>
 </section>
 
-<?php echo sp_final_cta('Skip the search and <span class="text-accent">call HARDROCK</span>', 'HARDROCK Sand and Gravel answers the phone Monday through Saturday and prices every order by phone for Sherman, Denison and Grayson County.', 'Contact HARDROCK'); ?>
+<?php echo sp_final_cta('Skip the search and <span class="text-accent">call HARDROCK</span>', 'Hardrock Sand And Gravel answers the phone Monday through Saturday and prices every order by phone for Sherman, Denison and Grayson County.', 'Contact HARDROCK'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

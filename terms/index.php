@@ -6,8 +6,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 /* ---- Page setup ------------------------------------------------------------------------------- */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';
 
-$pageTitle       = 'Terms of Service | HARDROCK Sand and Gravel, Sherman TX';
-$pageDescription = 'The terms that apply to this website and to material orders, deliveries and site work from HARDROCK Sand and Gravel in Sherman, Denison and Grayson County, TX.';
+$pageTitle       = 'Terms of Service | Hardrock Sand And Gravel, Sherman TX';
+$pageDescription = 'The terms that apply to this website and to material orders, deliveries and site work from Hardrock Sand And Gravel in Sherman, Denison and Grayson County, TX.';
 $canonicalUrl    = $siteUrl . '/terms/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'legal';

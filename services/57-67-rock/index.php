@@ -27,9 +27,9 @@ $faqs = [
     ['q' => 'Should I order 57 rock or 67 rock?',
      'a' => 'Order 57 rock for French drains, culvert bedding and the finish layer on a gravel drive, where the larger stone keeps open gaps for water. Order 67 rock for a concrete mix, a finer drainage layer or anywhere a smoother, tighter surface matters. If the job could go either way, describe it to HARDROCK on the phone first.'],
     ['q' => 'Does HARDROCK bring 57 and 67 rock out to Denison and the rest of the county?',
-     'a' => 'Yes. HARDROCK Sand and Gravel trucks crushed rock to homes, farms and job sites in Sherman, Denison and the other Grayson County towns. Call ' . $spCall . ' with the address and the size you want, and HARDROCK will quote the load and set a delivery day by phone.'],
+     'a' => 'Yes. Hardrock Sand And Gravel trucks crushed rock to homes, farms and job sites in Sherman, Denison and the other Grayson County towns. Call ' . $spCall . ' with the address and the size you want, and HARDROCK will quote the load and set a delivery day by phone.'],
     ['q' => 'What does a load of 57 or 67 rock cost?',
-     'a' => 'HARDROCK Sand and Gravel gives crushed rock prices over the phone, because the figure depends on the size, the quantity and the distance to your site. Work out your cubic yards first, then call ' . $spCall . ' to hear the current price and the unit it is sold by.'],
+     'a' => 'Hardrock Sand And Gravel gives crushed rock prices over the phone, because the figure depends on the size, the quantity and the distance to your site. Work out your cubic yards first, then call ' . $spCall . ' to hear the current price and the unit it is sold by.'],
 ];
 
 $pageSchemas = [
@@ -96,7 +96,7 @@ html.js-anim .sr-gauge.reveal-up:not(.in) .sr-bar { transform: scaleX(0); }
       <div class="hero-text hero-copy">
         <span class="eyebrow">Crushed rock · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title"><span class="text-accent">57 and 67 Rock</span> in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel delivers #57 and #67 crushed rock to Sherman, Denison and Grayson County. Builders and homeowners pick 57 rock for French drains, culvert bedding and the top layer of a gravel drive, and the smaller 67 rock for concrete mixes, finer drainage beds and smoother walking surfaces.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel delivers #57 and #67 crushed rock to Sherman, Denison and Grayson County. Builders and homeowners pick 57 rock for French drains, culvert bedding and the top layer of a gravel drive, and the smaller 67 rock for concrete mixes, finer drainage beds and smoother walking surfaces.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -280,7 +280,7 @@ html.js-anim .sr-gauge.reveal-up:not(.in) .sr-bar { transform: scaleX(0); }
     <div class="section-title reveal-up">
       <span class="eyebrow">Questions</span>
       <h2 id="sr-faq-title">What do buyers ask about 57 and 67 rock?</h2>
-      <p>Buyers of 57 and 67 rock tend to ask HARDROCK Sand and Gravel the same three things: which of the two sizes fits their project, whether the truck reaches their part of the county, and what a load will cost.</p>
+      <p>Buyers of 57 and 67 rock tend to ask Hardrock Sand And Gravel the same three things: which of the two sizes fits their project, whether the truck reaches their part of the county, and what a load will cost.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $faqIdx => $faq): ?>
@@ -298,10 +298,10 @@ html.js-anim .sr-gauge.reveal-up:not(.in) .sr-bar { transform: scaleX(0); }
 <!-- ============ RELATED SERVICES ============ -->
 <?php echo sp_related_section(['road-base', 'driveways', 'river-rock'],
     'What goes with <span class="text-accent">57 and 67 rock</span> on a drive or drainage job?',
-    'Crushed rock rarely goes down alone. HARDROCK Sand and Gravel also hauls road base for the layer beneath a drive, builds complete gravel driveways for rural lots and homes, and carries river rock for dry creek beds, so a drainage fix or a new drive near Sherman can be planned on one call.'); ?>
+    'Crushed rock rarely goes down alone. Hardrock Sand And Gravel also hauls road base for the layer beneath a drive, builds complete gravel driveways for rural lots and homes, and carries river rock for dry creek beds, so a drainage fix or a new drive near Sherman can be planned on one call.'); ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need 57 or 67 rock for a drain or a drive?',
-    'Call HARDROCK Sand and Gravel with the size, the measurements and the address, or send the form. The price and a delivery day come back on the phone.'); ?>
+    'Call Hardrock Sand And Gravel with the size, the measurements and the address, or send the form. The price and a delivery day come back on the phone.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

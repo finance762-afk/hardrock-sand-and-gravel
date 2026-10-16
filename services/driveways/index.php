@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('driveways');
-$pageTitle       = 'Gravel Driveways in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'Gravel Driveways in Sherman, TX | Hardrock Sand And Gravel';
 $pageDescription = 'Gravel driveways built in layers of road base and crushed top rock for homes, farms and rural lots in Sherman and Grayson County. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/driveways/';
 $ogImage         = '/assets/images/gravel-driveway-rural.jpg';
@@ -25,11 +25,11 @@ $spTel       = 'tel:' . $phoneE164;
 /* FAQ: research-brief questions this page can answer truthfully (quantity, which material, pricing unit) */
 $faqs = [
     ['q' => 'How much gravel do I need for my driveway?',
-     'a' => 'Work out each layer on its own: length times width times depth in feet, divided by 27. A shorter drive, 100 feet long and 10 feet wide, takes about 18.5 cubic yards of road base at 6 inches and about 9.3 cubic yards of top rock at 3 inches. HARDROCK Sand and Gravel will check the figures with you at ' . $spCall . '.'],
+     'a' => 'Work out each layer on its own: length times width times depth in feet, divided by 27. A shorter drive, 100 feet long and 10 feet wide, takes about 18.5 cubic yards of road base at 6 inches and about 9.3 cubic yards of top rock at 3 inches. Hardrock Sand And Gravel will check the figures with you at ' . $spCall . '.'],
     ['q' => 'Which type of gravel should I use for a driveway?',
-     'a' => 'A common build is compacted road base underneath with an angular crushed rock such as 57 or 67 on top. Leave pea gravel and river rock off the drive, because round stones roll under tires. Tell HARDROCK Sand and Gravel what will use the drive, from a family car to a loaded stock trailer, and HARDROCK will suggest a mix.'],
+     'a' => 'A common build is compacted road base underneath with an angular crushed rock such as 57 or 67 on top. Leave pea gravel and river rock off the drive, because round stones roll under tires. Tell Hardrock Sand And Gravel what will use the drive, from a family car to a loaded stock trailer, and HARDROCK will suggest a mix.'],
     ['q' => 'Do you sell driveway gravel by the ton or the cubic yard?',
-     'a' => 'HARDROCK Sand and Gravel quotes every driveway by phone, because the length, the layers and the material all change the price. Bring your cubic-yard figures for the base and the top rock to the call, and HARDROCK will give you the current price and how the material is measured.'],
+     'a' => 'Hardrock Sand And Gravel quotes every driveway by phone, because the length, the layers and the material all change the price. Bring your cubic-yard figures for the base and the top rock to the call, and HARDROCK will give you the current price and how the material is measured.'],
 ];
 
 $pageSchemas = [
@@ -97,7 +97,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Gravel driveways · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title">Gravel <span class="text-accent">Driveways</span> in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel builds gravel driveways for homes, farms and rural lots in Sherman, Denison and Grayson County, and delivers the road base and top rock to owners who would rather lay their own. A drive built in compacted layers holds up on Blackland Prairie clay far better than rock dumped on bare dirt.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel builds gravel driveways for homes, farms and rural lots in Sherman, Denison and Grayson County, and delivers the road base and top rock to owners who would rather lay their own. A drive built in compacted layers holds up on Blackland Prairie clay far better than rock dumped on bare dirt.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -269,6 +269,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     echo p1_google_reviews($slug, ['heading' => 'What Sherman-area customers say on Google', 'heading_tag' => 'h3', 'limit' => 6]); ?>
     <div class="sp-proof__foot">
       <a class="btn btn-secondary" href="<?php echo esc($gbp['share_url']); ?>" target="_blank" rel="noopener">Read HARDROCK's Google reviews</a>
+      <p>For the arithmetic behind a driveway order, see <a href="/blog/how-much-gravel-for-a-driveway-sherman-tx/">how much gravel a Sherman driveway takes</a>, and if an existing drive washed out, read <a href="/blog/fix-gravel-driveway-after-heavy-rain-grayson-county/">how to fix a gravel driveway after heavy rain</a>.</p>
       <p>Driveways are one of 13 materials and services on <a href="/services/">HARDROCK's services page</a>.</p>
     </div>
   </div>
@@ -303,6 +304,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need a drive that stops rutting?',
-    'Send HARDROCK Sand and Gravel the length, the width and the address, or call. Have the route measured before you pick up the phone and the base and top-rock numbers come together quickly.'); ?>
+    'Send Hardrock Sand And Gravel the length, the width and the address, or call. Have the route measured before you pick up the phone and the base and top-rock numbers come together quickly.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('delivery');
-$pageTitle       = 'Gravel Delivery in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'Gravel Delivery in Sherman, TX | Hardrock Sand And Gravel';
 $pageDescription = 'Bulk sand, gravel, rock and fill dirt delivered to homes, farms and job sites in Sherman, Denison and Grayson County, TX. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/delivery/';
 $ogImage         = '/assets/images/gravel-stockpiles-job-site.jpg';
@@ -25,9 +25,9 @@ $spTel       = 'tel:' . $phoneE164;
 /* FAQ: research-brief questions this page can answer truthfully (delivery area, pricing unit) */
 $faqs = [
     ['q' => 'Do you deliver to Sherman and the surrounding area?',
-     'a' => 'Yes. HARDROCK Sand and Gravel delivers bulk material in Sherman, Denison and the rest of Grayson County. If the address sits outside the county, call ' . $spCall . ' and ask before you plan the job around it.'],
+     'a' => 'Yes. Hardrock Sand And Gravel delivers bulk material in Sherman, Denison and the rest of Grayson County. If the address sits outside the county, call ' . $spCall . ' and ask before you plan the job around it.'],
     ['q' => 'Do you sell delivered material by the ton or the cubic yard?',
-     'a' => 'HARDROCK Sand and Gravel prices each delivery by phone, since the material, the amount and the distance all move the number. Work out your cubic yards with the formula on this page, then call ' . $spCall . ' for the current price and how that material is measured.'],
+     'a' => 'Hardrock Sand And Gravel prices each delivery by phone, since the material, the amount and the distance all move the number. Work out your cubic yards with the formula on this page, then call ' . $spCall . ' for the current price and how that material is measured.'],
 ];
 
 $pageSchemas = [
@@ -88,7 +88,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Bulk delivery · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title">Sand and Gravel <span class="text-accent">Delivery</span> in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel delivers bulk pea gravel, decomposed granite, road base, 57 and 67 rock, fill dirt, mason sand, rip rap and river rock to homes, farms and job sites in Sherman, Denison and across Grayson County. Call or send the form with the address and the amount, and HARDROCK prices the load by phone.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel delivers bulk pea gravel, decomposed granite, road base, 57 and 67 rock, fill dirt, mason sand, rip rap and river rock to homes, farms and job sites in Sherman, Denison and across Grayson County. Call or send the form with the address and the amount, and HARDROCK prices the load by phone.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -127,7 +127,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="sp-problem__lead reveal-left">
         <span class="eyebrow">What's on the truck</span>
         <h2 id="dl-materials-title">Which bulk materials will HARDROCK deliver to your property?</h2>
-        <p class="answer-block">HARDROCK Sand and Gravel delivers all eight of its bulk materials, from fine mason sand to large rip rap, to homes, farms and job sites. Most orders fit one of four jobs: building a base, changing grade, finishing a surface, or setting masonry and banks. Start with the job the material has to do, and the right material follows.</p>
+        <p class="answer-block">Hardrock Sand And Gravel delivers all eight of its bulk materials, from fine mason sand to large rip rap, to homes, farms and job sites. Most orders fit one of four jobs: building a base, changing grade, finishing a surface, or setting masonry and banks. Start with the job the material has to do, and the right material follows.</p>
         <p class="pull-quote">Order by what the material has to do, not by the name on the pile.</p>
         <p>Each material has its own page. For walkways and play areas, read about <a href="/services/pea-gravel/">pea gravel for paths, beds and play areas</a>. For a low corner of the yard, see <a href="/services/fill-dirt/">fill dirt for leveling and backfill</a>. For anything that carries tires, start with <a href="/services/road-base/">road base that packs firm under traffic</a>.</p>
       </div>
@@ -291,6 +291,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need sand, gravel or dirt on the ground?',
-    'Call HARDROCK Sand and Gravel or send the form with the address, the material and the size of the area. Mark the drop spot while you wait for the callback.'); ?>
+    'Call Hardrock Sand And Gravel or send the form with the address, the material and the size of the area. Mark the drop spot while you wait for the callback.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

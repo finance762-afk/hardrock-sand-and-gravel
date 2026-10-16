@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('land-clearing');
-$pageTitle       = 'Land Clearing in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'Land Clearing in Sherman, TX | Hardrock Sand And Gravel';
 $pageDescription = 'Brush and tree clearing for lots and acreage in Sherman, Denison and Grayson County, ahead of driveways, house pads and ponds. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/land-clearing/';
 $ogImage         = '/assets/images/pond-excavation-trees.jpg';
@@ -25,9 +25,9 @@ $spTel       = 'tel:' . $phoneE164;
 /* FAQ: research-brief questions this page can answer truthfully (service area, which material) */
 $faqs = [
     ['q' => 'Do you clear land outside Sherman?',
-     'a' => 'HARDROCK Sand and Gravel clears land in Sherman, Denison and the rest of Grayson County. Call ' . $spCall . ' with the property location and what is growing on it, and HARDROCK will confirm the job and set a day.'],
+     'a' => 'Hardrock Sand And Gravel clears land in Sherman, Denison and the rest of Grayson County. Call ' . $spCall . ' with the property location and what is growing on it, and HARDROCK will confirm the job and set a day.'],
     ['q' => 'Which material goes on the ground after clearing?',
-     'a' => 'That depends on what is being built. A gravel driveway goes down as a base layer with rock on top, a house pad is raised with fill and base, and soft or low spots are leveled with fill dirt. HARDROCK Sand and Gravel sells and delivers each of those, so describe the project and HARDROCK will match the material to it.'],
+     'a' => 'That depends on what is being built. A gravel driveway goes down as a base layer with rock on top, a house pad is raised with fill and base, and soft or low spots are leveled with fill dirt. Hardrock Sand And Gravel sells and delivers each of those, so describe the project and HARDROCK will match the material to it.'],
 ];
 
 $pageSchemas = [
@@ -96,7 +96,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Land clearing · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title"><span class="text-accent">Land Clearing</span> in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel clears brush and trees from lots and acreage in Sherman, Denison and Grayson County so a driveway, house pad or pond can go in. Because HARDROCK also builds those projects and hauls the rock and dirt for them, the ground gets cleared with the next step already planned.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel clears brush and trees from lots and acreage in Sherman, Denison and Grayson County so a driveway, house pad or pond can go in. Because HARDROCK also builds those projects and hauls the rock and dirt for them, the ground gets cleared with the next step already planned.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -136,7 +136,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <span class="eyebrow">Before the build</span>
         <h2 id="lc-before-title">What has to happen before a <span class="text-accent">driveway, pad or pond</span> can start?</h2>
       </div>
-      <p class="answer-block reveal-right">Before a driveway, house pad or pond can start, the ground has to be opened: brush and trees out of the footprint, the route marked, and buried lines located. HARDROCK Sand and Gravel handles the clearing and the build that follows, so the gap between the two stays short.</p>
+      <p class="answer-block reveal-right">Before a driveway, house pad or pond can start, the ground has to be opened: brush and trees out of the footprint, the route marked, and buried lines located. Hardrock Sand And Gravel handles the clearing and the build that follows, so the gap between the two stays short.</p>
     </div>
     <ol class="lc-sequence">
       <li class="reveal-up reveal-delay-1"><?php echo icon('map-pin', 22); ?><b>Mark what stays</b><span>Flag the trees, fence lines and house site to leave alone, and call 811 so buried lines get painted.</span></li>
@@ -156,7 +156,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="reveal-left">
         <span class="eyebrow">What's included</span>
         <h2 id="lc-breakdown-title">What does land clearing from HARDROCK include?</h2>
-        <p class="answer-block">Land clearing from HARDROCK Sand and Gravel removes the brush and trees standing where the project will go and opens the ground for the next step. When that next step is a HARDROCK driveway, pad or pond, the clearing and the build are worked out in the same phone call.</p>
+        <p class="answer-block">Land clearing from Hardrock Sand And Gravel removes the brush and trees standing where the project will go and opens the ground for the next step. When that next step is a HARDROCK driveway, pad or pond, the clearing and the build are worked out in the same phone call.</p>
         <ul class="sp-included">
           <li><?php echo icon('check', 18); ?><span>Brush and trees taken out of the project area</span></li>
           <li><?php echo icon('check', 18); ?><span>Clearing planned around the drive, pad or pond that follows</span></li>
@@ -278,7 +278,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Questions</span>
       <h2 id="lc-faq-title">What do property owners ask HARDROCK about land clearing?</h2>
-      <p>Property owners around Sherman usually ask HARDROCK Sand and Gravel the same two things about land clearing: whether their land is inside the area HARDROCK covers, and which material the cleared ground needs once the brush is gone.</p>
+      <p>Property owners around Sherman usually ask Hardrock Sand And Gravel the same two things about land clearing: whether their land is inside the area HARDROCK covers, and which material the cleared ground needs once the brush is gone.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $faqIdx => $faq): ?>
@@ -296,10 +296,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ RELATED SERVICES ============ -->
 <?php echo sp_related_section(['house-pads', 'driveways', 'ponds'],
     'What gets built on <span class="text-accent">cleared ground</span>?',
-    'Cleared ground almost always turns into something else. HARDROCK Sand and Gravel builds house pads with fill and base for new slabs, lays gravel driveways across rural lots, and digs ponds for stock water or runoff, so the company that opens the ground in Grayson County can finish the next job on it.'); ?>
+    'Cleared ground almost always turns into something else. Hardrock Sand And Gravel builds house pads with fill and base for new slabs, lays gravel driveways across rural lots, and digs ponds for stock water or runoff, so the company that opens the ground in Grayson County can finish the next job on it.'); ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need a lot cleared before the build starts?',
-    'Call HARDROCK Sand and Gravel with the property location and what you plan to build, or send the form. HARDROCK opens at 6 AM Monday through Thursday and at 9 AM on Friday.'); ?>
+    'Call Hardrock Sand And Gravel with the property location and what you plan to build, or send the form. HARDROCK opens at 6 AM Monday through Thursday and at 9 AM on Friday.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

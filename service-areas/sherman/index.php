@@ -21,7 +21,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/area-page.php';
 $apSlug          = 'sherman';
 $apRow           = ap_area($apSlug);
 $pageTitle       = 'Sand and Gravel Supplier in Sherman, TX | HARDROCK';
-$pageDescription = 'HARDROCK Sand and Gravel supplies pea gravel, road base, 57/67 rock and fill dirt to Sherman, TX addresses. Based in Sherman since 2019. Call ' . formatPhone($phone) . '.';
+$pageDescription = 'Hardrock Sand And Gravel supplies pea gravel, road base, 57/67 rock and fill dirt to Sherman, TX addresses. Based in Sherman since 2016. Call ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . ap_url($apSlug);
 $ogImage         = '/assets/images/' . $apRow['photo'] . '.jpg';
 $currentPage     = 'areas';
@@ -37,11 +37,11 @@ $spTel       = 'tel:' . $phoneE164;
 
 $faqs = [
     ['q' => 'Does HARDROCK deliver sand and gravel inside Sherman, TX?',
-     'a' => 'Yes. HARDROCK Sand and Gravel is based in Sherman and delivers bulk gravel, sand, rock and fill dirt to Sherman addresses. Call ' . $spCall . ' with the street address, the material and the size of the area, and HARDROCK prices the load by phone.'],
+     'a' => 'Yes. Hardrock Sand And Gravel is based in Sherman and delivers bulk gravel, sand, rock and fill dirt to Sherman addresses. Call ' . $spCall . ' with the street address, the material and the size of the area, and HARDROCK prices the load by phone.'],
     ['q' => 'How much road base or fill does a Sherman driveway or building pad need?',
      'a' => 'Multiply length by width by depth in feet and divide by 27 to get cubic yards, then add 5 to 10 percent for settling. A 12 by 40 foot drive laid 4 inches deep works out to about 5.9 cubic yards before that extra. HARDROCK will check your numbers on the phone before ordering.'],
     ['q' => 'What are HARDROCK\'s hours for Sherman customers?',
-     'a' => 'HARDROCK Sand and Gravel takes calls Monday to Thursday from 6:00 AM to 5:00 PM, Friday from 9:00 AM to 5:00 PM and Saturday from 9:00 AM to 2:00 PM. The business is closed Sunday. The number is ' . $spCall . '.'],
+     'a' => 'Hardrock Sand And Gravel takes calls Monday to Thursday from 6:00 AM to 5:00 PM, Friday from 9:00 AM to 5:00 PM and Saturday from 9:00 AM to 2:00 PM. The business is closed Sunday. The number is ' . $spCall . '.'],
 ];
 $pageSchemas = [ap_schema($apSlug, $pageTitle, $pageDescription, [
     'name' => 'Sherman', 'type' => 'City', 'sameAs' => 'https://en.wikipedia.org/wiki/Sherman,_Texas',
@@ -109,7 +109,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Grayson County seat · Home base</span>
         <h1 class="hero-title" id="sp-hero-title">Sand and Gravel Supplier in <span class="text-accent">Sherman</span>, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel is a Sherman-based supplier of bulk gravel, sand, rock and fill dirt, delivered across town and the rest of Grayson County.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel is a Sherman-based supplier of bulk gravel, sand, rock and fill dirt, delivered across town and the rest of Grayson County.</p>
         <div class="hero-actions btn-group">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -147,7 +147,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="ap-intro__copy reveal-left">
         <span class="eyebrow">Sherman, Texas</span>
         <h2 id="sh-intro-title">Who delivers sand and gravel to Sherman, TX addresses?</h2>
-        <p class="answer-block">HARDROCK Sand and Gravel, a supplier based in Sherman, TX since 2019, delivers pea gravel, road base, 57 and 67 rock, fill dirt, mason sand, decomposed granite, river rock and rip rap to Sherman addresses. Call <?php echo esc($spCall); ?> with the street, the material and the size of the area, and HARDROCK prices the load by phone.</p>
+        <p class="answer-block">Hardrock Sand And Gravel, a supplier based in Sherman, TX since 2016, delivers pea gravel, road base, 57 and 67 rock, fill dirt, mason sand, decomposed granite, river rock and rip rap to Sherman addresses. Call <?php echo esc($spCall); ?> with the street, the material and the size of the area, and HARDROCK prices the load by phone.</p>
         <p>If you searched for sand and gravel near me in Sherman, the useful fact is that the supplier is already in town. Sherman is the Grayson County seat, named for Texas Revolution general Sidney Sherman, and the county's largest city at 43,645 people in the 2020 census. Austin College, founded in 1849, has been in Sherman since it moved here in 1876.</p>
         <p>Addresses in Sherman run from lots near the courthouse and the Austin College campus out to acreage at the south edge of the city, where Texas Instruments has built a large semiconductor wafer fab near the city limits. A load going to any of those addresses is planned around how a truck gets in, where the pile can sit, and what the material has to do once it is down.</p>
       </div>
@@ -174,7 +174,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <span class="eyebrow">Giving directions</span>
         <h2 id="sh-roads-title">Which roads get a gravel load to your Sherman address?</h2>
         <p class="answer-block">Four highways organize a Sherman delivery address: US 75 north and south, US 82 east and west, SH 56 and SH 11 across the city, and SH 91 toward Denison. Give HARDROCK the street, the nearest cross street and which side of US 75 and US 82 the lot sits on, and the route is settled on the call.</p>
-        <p>Sherman sits between Denison to the north and Howe to the south, about 70 miles north of Dallas. A street name alone can be ambiguous on a growing edge of town, so a landmark helps: the freeway frontage road, a church, a farm gate, a mailbox number on a rural road. Mention it on the call so the route can be confirmed before a loaded truck heads out.</p>
+        <p>Sherman sits between Denison to the north and Howe to the south, about 65 miles north of Dallas. A street name alone can be ambiguous on a growing edge of town, so a landmark helps: the freeway frontage road, a church, a farm gate, a mailbox number on a rural road. Mention it on the call so the route can be confirmed before a loaded truck heads out.</p>
         <p>Heading to Denison instead? Read about <a href="<?php echo esc(areaUrl('denison')); ?>">sand and gravel delivery in Denison</a>, or see how <a href="/services/delivery/">HARDROCK's delivery service</a> works from call to drop.</p>
       </div>
       <ol class="sh-route reveal-right">
@@ -213,7 +213,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Available in Sherman</span>
       <h2 id="sh-svc-title">What materials and site work can HARDROCK bring to Sherman?</h2>
-      <p class="answer-block">HARDROCK Sand and Gravel brings eight bulk materials plus driveway, house pad, pond and land clearing work to Sherman. The six below match most Sherman lots, from a base under a drive to fill under a slab; the rest are one tap away and each has its own page.</p>
+      <p class="answer-block">Hardrock Sand And Gravel brings eight bulk materials plus driveway, house pad, pond and land clearing work to Sherman. The six below match most Sherman lots, from a base under a drive to fill under a slab; the rest are one tap away and each has its own page.</p>
     </div>
     <?php echo ap_service_list(['road-base', '57-67-rock', 'fill-dirt', 'house-pads', 'driveways', 'delivery'], 'Sherman'); ?>
   </div>
@@ -225,7 +225,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Why HARDROCK</span>
       <h2 id="sh-why-title">Why order sand and gravel from a supplier based in Sherman?</h2>
-      <p>HARDROCK Sand and Gravel is a local business, in business since <?php echo esc($yearEstablished); ?>, and the four facts below come from HARDROCK's own business details rather than from guesswork.</p>
+      <p>Hardrock Sand And Gravel is a local business, in business since <?php echo esc($yearEstablished); ?>, and the four facts below come from HARDROCK's own business details rather than from guesswork.</p>
     </div>
     <ul class="ap-why__grid">
       <li class="reveal-up reveal-delay-1"><?php echo icon('map-pin', 24); ?><b>Based in Sherman</b><span>HARDROCK's listed location is Sherman, TX, so Sherman is the starting point, not the far end of a haul.</span></li>
@@ -273,7 +273,7 @@ if ($shReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow">Also serving</span>
       <h2 id="sh-near-title">Where else does HARDROCK deliver besides Sherman?</h2>
-      <p>HARDROCK Sand and Gravel also delivers to Denison, about 11 miles north of Sherman, and across the rest of Grayson County. Each page covers its own roads, ground conditions and the materials that suit the work there.</p>
+      <p>Hardrock Sand And Gravel also delivers to Denison, about 11 miles north of Sherman, and across the rest of Grayson County. Each page covers its own roads, ground conditions and the materials that suit the work there.</p>
     </div>
     <?php echo ap_nearby($apSlug); ?>
   </div>
@@ -281,6 +281,6 @@ if ($shReviews !== ''): ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Get a Free Estimate in Sherman',
-    'Call HARDROCK Sand and Gravel or send the form with your Sherman address, the material and the size of the area. HARDROCK prices the load by phone and sets a delivery day.'); ?>
+    'Call Hardrock Sand And Gravel or send the form with your Sherman address, the material and the size of the area. HARDROCK prices the load by phone and sets a delivery day.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

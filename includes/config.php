@@ -1,6 +1,6 @@
 <?php
 /**
- * includes/config.php — single source of site-wide variables (HARDROCK Sand and Gravel).
+ * includes/config.php — single source of site-wide variables (Hardrock Sand And Gravel).
  * Every value below traces to build-plan.json. Nothing here is invented; unknowns stay empty
  * and the templates omit anything empty.
  * UNKNOWN at Phase 1: street address + ZIP, logo, brand colors, social links, GA4 ID, review count.
@@ -8,7 +8,7 @@
 
 // ---- Identity ---------------------------------------------------------------------------------
 $slug          = 'hardrock-sand-and-gravel';             // exact build directory name
-$siteName      = 'HARDROCK Sand and Gravel';             // as written in the business description / partner profile (plan company_name: "Hardrock Sand And Gravel")
+$siteName      = 'Hardrock Sand And Gravel';             // as written in the business description / partner profile (plan company_name: "Hardrock Sand And Gravel")
 $tagline       = '';                                     // none in build-plan
 $industry      = 'Sand & gravel supplier';
 $ownerName     = 'Dean Jones';
@@ -105,11 +105,11 @@ $businessHours = implode(', ', array_map(static fn ($h) => $h['short'] . ' ' . $
 // build-plan design.colors carries no values and assets.logo is null: these mirror the scaffold tokens in
 // framework.css :root. Replace both together once a logo is analysed.
 $colors = ['primary' => '#1f2428', 'secondary' => '#5a6570', 'accent' => '#c8461a'];
-$yearEstablished = 2019;                                  // "in business since 2019"
-$yearsInBusiness = (int) date('Y') - $yearEstablished;    // build-plan content.years = 7 (2026)
+$yearEstablished = 2016;                                  // GBP: "Established in Sherman Texas in 2016"
+$yearsInBusiness = (int) date('Y') - $yearEstablished;    // 10 in 2026
 
 // Factual description for schema / AEO (build-plan content.description)
-$businessDescription = 'HARDROCK Sand and Gravel is a local sand and gravel supplier serving Sherman, Denison and Grayson County, TX, in business since 2019. Services include delivery, pea gravel, 57 rock and 67 rock.';
+$businessDescription = 'Hardrock Sand And Gravel is a local sand and gravel supplier serving Sherman, Denison and Grayson County, TX, in business since 2016. Services include delivery, pea gravel, 57 rock and 67 rock.';
 
 // ---- Google Business Profile ------------------------------------------------------------------
 $gbp = [
@@ -124,6 +124,14 @@ $gbp = [
 $geo = null;                                              // integrations.geo is null
 
 // ---- Social / analytics -----------------------------------------------------------------------
+// Extra schema sameAs profiles (GBP CID + Facebook), merged into LocalBusiness sameAs
+$schemaSameAs = [
+    'https://www.google.com/maps?cid=15059629316150999492',
+    'https://www.facebook.com/p/Hardrock-Sand-and-Gravel-61594075584700',
+];
+// SEO indexing switch: false on staging (noindex meta + X-Robots-Tag). Set to true at launch.
+$allowIndexing = false;
+
 $socialLinks       = [];                                  // none provided — footer renders icons only for platforms the client uses
 $googleAnalyticsId = 'G-XXXXXXXXXX';                      // placeholder until the client's GA4 measurement ID is set
 

@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/inner-page.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';   /* legal_address() for the reach panel */
 
-$pageTitle       = 'Contact HARDROCK Sand and Gravel in Sherman, Texas';
+$pageTitle       = 'Contact Hardrock Sand And Gravel in Sherman, Texas';
 $pageDescription = 'Call ' . formatPhone($phone) . ' or send the form to get a price and delivery day on bulk gravel, sand, rock or fill dirt in Sherman, Denison and Grayson County, TX.';
 $canonicalUrl    = $siteUrl . '/contact/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
@@ -118,8 +118,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="ct-grid">
 
       <div class="ct-card reveal-left" id="contact-form">
-        <h2 id="ct-form-title">How do I get a price from HARDROCK Sand and Gravel?</h2>
-        <p class="answer-block">Send the material or job, the delivery address and roughly how much you need. HARDROCK Sand and Gravel calls back during business hours with a price and a delivery day. No obligation.</p>
+        <h2 id="ct-form-title">How do I get a price from Hardrock Sand And Gravel?</h2>
+        <p class="answer-block">Send the material or job, the delivery address and roughly how much you need. Hardrock Sand And Gravel calls back during business hours with a price and a delivery day. No obligation.</p>
         <form class="ct-form" action="<?php echo esc($formAction); ?>" method="POST">
           <?php echo p1_lead_hidden_fields('contact'); ?>
           <?php /* Standard names above (_honey, consent_version, consent_page) are what the leads endpoint reads; the underscore variants below are the build prompt's names, kept as harmless duplicates. */ ?>
@@ -172,7 +172,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </form>
       </div>
 
-      <aside class="ct-side" aria-label="Ways to reach HARDROCK Sand and Gravel">
+      <aside class="ct-side" aria-label="Ways to reach Hardrock Sand And Gravel">
         <div class="ct-reach reveal-right">
           <h2>Reach HARDROCK directly</h2>
           <a class="ct-phone" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 30); ?><?php echo esc($spCall); ?></a>
@@ -208,20 +208,20 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="ct-map__grid">
       <div class="reveal-left">
         <span class="eyebrow">Find us</span>
-        <h2 id="ct-map-title">Where is HARDROCK Sand and Gravel located?</h2>
-        <p class="answer-block">HARDROCK Sand and Gravel is based in <?php echo esc($ctCity); ?> and serves Sherman, Denison and the rest of Grayson County. Most orders are delivered, so call <?php echo esc($spCall); ?> to ask about visiting before you drive out.</p>
+        <h2 id="ct-map-title">Where is Hardrock Sand And Gravel located?</h2>
+        <p class="answer-block">Hardrock Sand And Gravel is based in <?php echo esc($ctCity); ?> and serves Sherman, Denison and the rest of Grayson County. Most orders are delivered, so call <?php echo esc($spCall); ?> to ask about visiting before you drive out.</p>
         <div class="ct-map__actions">
           <a class="btn btn-primary" href="<?php echo esc($gbp['directions']); ?>" target="_blank" rel="noopener"><?php echo icon('map-pin', 18); ?>Get directions</a>
           <a class="btn btn-secondary" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>Call first</a>
         </div>
       </div>
       <div class="map-embed reveal-right">
-        <iframe title="Map of HARDROCK Sand and Gravel in <?php echo esc($ctCity); ?>" src="<?php echo esc($ctMapSrc); ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Map of Hardrock Sand And Gravel in <?php echo esc($ctCity); ?>" src="<?php echo esc($ctMapSrc); ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
 </section>
 
-<?php echo sp_final_cta('Need sand, gravel or dirt <span class="text-accent">on the ground</span>?', 'Call ' . $spCall . ' or send the form above. HARDROCK Sand and Gravel quotes by phone and sets a delivery day for Sherman, Denison and Grayson County.'); ?>
+<?php echo sp_final_cta('Need sand, gravel or dirt <span class="text-accent">on the ground</span>?', 'Call ' . $spCall . ' or send the form above. Hardrock Sand And Gravel quotes by phone and sets a delivery day for Sherman, Denison and Grayson County.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

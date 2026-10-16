@@ -6,8 +6,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 /* ---- Page setup ------------------------------------------------------------------------------- */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';
 
-$pageTitle       = 'Accessibility Statement | HARDROCK Sand and Gravel';
-$pageDescription = 'HARDROCK Sand and Gravel in Sherman, TX aims to meet WCAG 2.1 Level AA. See the accessibility features on this site and how to reach us if you hit a barrier.';
+$pageTitle       = 'Accessibility Statement | Hardrock Sand And Gravel';
+$pageDescription = 'Hardrock Sand And Gravel in Sherman, TX aims to meet WCAG 2.1 Level AA. See the accessibility features on this site and how to reach us if you hit a barrier.';
 $canonicalUrl    = $siteUrl . '/accessibility/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'legal';

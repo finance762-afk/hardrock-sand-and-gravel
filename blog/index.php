@@ -8,7 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-helpers.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $pageTitle       = 'Sand and Gravel Blog: Driveway & Rock Guides | HARDROCK';
-$pageDescription = 'Plain-English guides from HARDROCK Sand and Gravel in Sherman, TX: how much gravel a driveway needs, repairing rain damage and choosing the right rock.';
+$pageDescription = 'Plain-English guides from Hardrock Sand And Gravel in Sherman, TX: how much gravel a driveway needs, repairing rain damage and choosing the right rock.';
 $canonicalUrl    = $siteUrl . '/blog/';
 $ogImage         = '/assets/images/' . blog_image_base($blogPosts[0]['image']) . '.jpg';
 $currentPage     = 'blog';
@@ -51,7 +51,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="hero-text hero-copy">
       <span class="eyebrow">The HARDROCK blog</span>
       <h1 class="hero-title" id="bli-title">Sand, Gravel and <span class="text-accent">Driveway</span> Guides for Sherman, TX</h1>
-      <p class="hero-answer">HARDROCK Sand and Gravel answers the questions that come before an order: how much to buy, which rock to use and what Grayson County weather does to a drive. More guides are added over time.</p>
+      <p class="hero-answer">Hardrock Sand And Gravel answers the questions that come before an order: how much to buy, which rock to use and what Grayson County weather does to a drive. More guides are added over time.</p>
     </div>
   </div>
 </section>
@@ -81,6 +81,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Ready to price a load?',
-    'Call HARDROCK Sand and Gravel or send the form with the material, the amount and the address. HARDROCK prices the load by phone and sets a delivery day.'); ?>
+    'Call Hardrock Sand And Gravel or send the form with the material, the amount and the address. HARDROCK prices the load by phone and sets a delivery day.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

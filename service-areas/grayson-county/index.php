@@ -27,7 +27,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/area-page.php';
 $apSlug          = 'grayson-county';
 $apRow           = ap_area($apSlug);
 $pageTitle       = 'Sand and Gravel Delivery in Grayson County, TX | HARDROCK';
-$pageDescription = 'HARDROCK Sand and Gravel delivers gravel, sand, rock and fill dirt across Grayson County, TX, plus driveways, ponds and land clearing. Call ' . formatPhone($phone) . '.';
+$pageDescription = 'Hardrock Sand And Gravel delivers gravel, sand, rock and fill dirt across Grayson County, TX, plus driveways, ponds and land clearing. Call ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . ap_url($apSlug);
 $ogImage         = '/assets/images/' . $apRow['photo'] . '.jpg';
 $currentPage     = 'areas';
@@ -43,11 +43,11 @@ $spTel       = 'tel:' . $phoneE164;
 
 $faqs = [
     ['q' => 'Does HARDROCK deliver sand and gravel outside Sherman and Denison?',
-     'a' => 'HARDROCK Sand and Gravel serves Grayson County beyond its Sherman base, including the small towns and rural roads between Sherman, Denison and the county lines. Call ' . $spCall . ' with the address; if it sits outside the county, ask before you plan the job around it.'],
+     'a' => 'Hardrock Sand And Gravel serves Grayson County beyond its Sherman base, including the small towns and rural roads between Sherman, Denison and the county lines. Call ' . $spCall . ' with the address; if it sits outside the county, ask before you plan the job around it.'],
     ['q' => 'What gravel should I use for a long rural driveway in Grayson County?',
      'a' => 'A common build is road base as the compacted lower layer and 57 rock as the top course, which drains and grips. Soft clay, sandy ground and long culvert crossings each change the details, so describe the lane and any wet spots when you call ' . $spCall . '.'],
     ['q' => 'Can HARDROCK clear land and dig a pond on acreage?',
-     'a' => 'Yes. HARDROCK Sand and Gravel lists land clearing, pond digging, driveways and house pads next to its bulk materials. Clearing opens the ground, the pond or pad is shaped on it, and the same business delivers the rock and fill for the finish.'],
+     'a' => 'Yes. Hardrock Sand And Gravel lists land clearing, pond digging, driveways and house pads next to its bulk materials. Clearing opens the ground, the pond or pad is shaped on it, and the same business delivers the rock and fill for the finish.'],
 ];
 $pageSchemas = [ap_schema($apSlug, $pageTitle, $pageDescription, [
     'name' => 'Grayson County', 'type' => 'AdministrativeArea', 'sameAs' => 'https://en.wikipedia.org/wiki/Grayson_County,_Texas',
@@ -115,7 +115,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Acreage across 979 square miles</span>
         <h1 class="hero-title" id="sp-hero-title">Sand, Gravel and Site Work in <span class="text-accent">Grayson County</span>, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel serves Grayson County, Texas from Sherman with bulk gravel, sand, rock and fill dirt, plus driveways, pads, ponds and land clearing for rural lots.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel serves Grayson County, Texas from Sherman with bulk gravel, sand, rock and fill dirt, plus driveways, pads, ponds and land clearing for rural lots.</p>
         <div class="hero-actions btn-group">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -153,7 +153,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="gc-acre__copy reveal-left">
         <span class="eyebrow">Grayson County, Texas</span>
         <h2 id="gc-acre-title">Who delivers sand and gravel across Grayson County, TX?</h2>
-        <p class="answer-block">HARDROCK Sand and Gravel, a Sherman, TX supplier in business since 2019, delivers pea gravel, road base, 57 and 67 rock, fill dirt, mason sand, decomposed granite, river rock and rip rap across Grayson County, and also does driveway, pad, pond and land clearing work. Call <?php echo esc($spCall); ?> with the address and HARDROCK prices the load by phone.</p>
+        <p class="answer-block">Hardrock Sand And Gravel, a Sherman, TX supplier in business since 2016, delivers pea gravel, road base, 57 and 67 rock, fill dirt, mason sand, decomposed granite, river rock and rip rap across Grayson County, and also does driveway, pad, pond and land clearing work. Call <?php echo esc($spCall); ?> with the address and HARDROCK prices the load by phone.</p>
         <p>Grayson County covers 979 square miles, 933 of them land, with the Red River and Lake Texoma along its north edge and Collin County to the south. Distance is the first thing that sets a county order apart from an in-town one: a rural lane can be a mile of gravel, a gate can be a quarter-mile from the pavement, and the address may not turn up on a map. Sherman, the county seat, and Denison have their own pages, and this one covers everything between and around them.</p>
         <p>Anyone searching for sand and gravel near me in Grayson County is usually weighing a haul. Tell HARDROCK where the nearest paved road is, how long the lane runs and whether a loaded dump truck can turn around, and the call settles whether the load goes to the gate or to a staging spot. The Handbook of Texas lists sand and gravel among the county's own natural resources, alongside limestone.</p>
         <p>County weather matters to a gravel lane. The Handbook puts average rainfall near 37 inches a year with a growing season of about 227 days, and a rural road that is dry in August can be soft in March. HARDROCK's <a href="/services/delivery/">delivery page</a> explains what happens after the call.</p>
@@ -192,7 +192,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="gc-towns__copy reveal-left">
         <span class="eyebrow">Across the county</span>
         <h2 id="gc-towns-title">Which Grayson County towns does HARDROCK serve?</h2>
-        <p class="answer-block">HARDROCK Sand and Gravel serves Grayson County from its Sherman base, including Sherman, Denison and the smaller towns listed here. Call <?php echo esc($spCall); ?> to confirm a specific address, since the exact delivery edge depends on the load and the road.</p>
+        <p class="answer-block">Hardrock Sand And Gravel serves Grayson County from its Sherman base, including Sherman, Denison and the smaller towns listed here. Call <?php echo esc($spCall); ?> to confirm a specific address, since the exact delivery edge depends on the load and the road.</p>
         <p>The list follows the county's own towns and cities. Part of Van Alstyne lies in Collin County and part of Whitewright in Fannin County, so give the street address, not just the town. USDA's 2023 hardiness map puts the ZIP codes for Sherman, Denison, Pottsboro and Van Alstyne all in zone 8a.</p>
       </div>
       <ul class="gc-towns__list reveal-right" aria-label="Grayson County communities">
@@ -210,7 +210,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Available across the county</span>
       <h2 id="gc-svc-title">What does HARDROCK do on Grayson County acreage?</h2>
-      <p class="answer-block">HARDROCK Sand and Gravel clears brush and trees from rural lots, digs and shapes ponds, builds gravel driveways and house pads, and delivers eight bulk materials to the finished site. The six below suit acreage best; the other materials are listed underneath with their own pages.</p>
+      <p class="answer-block">Hardrock Sand And Gravel clears brush and trees from rural lots, digs and shapes ponds, builds gravel driveways and house pads, and delivers eight bulk materials to the finished site. The six below suit acreage best; the other materials are listed underneath with their own pages.</p>
     </div>
     <?php echo ap_service_list(['land-clearing', 'ponds', 'driveways', 'delivery', 'fill-dirt', 'rip-rap'], 'Grayson County'); ?>
   </div>
@@ -222,7 +222,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Why HARDROCK</span>
       <h2 id="gc-why-title">Why use one business for clearing, dirt and rock?</h2>
-      <p>HARDROCK Sand and Gravel lists both site work and bulk material, so an acreage job can run on one phone number. The four facts below come from the business's own details.</p>
+      <p>Hardrock Sand And Gravel lists both site work and bulk material, so an acreage job can run on one phone number. The four facts below come from the business's own details.</p>
     </div>
     <ul class="ap-why__grid">
       <li class="reveal-up reveal-delay-1"><?php echo icon('trees', 24); ?><b>Clear, shape, finish</b><span>Land clearing, ponds, pads and drives are on the service list next to the gravel and fill that finish them.</span></li>
@@ -270,7 +270,7 @@ if ($gcReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow">Also serving</span>
       <h2 id="gc-near-title">Where else does HARDROCK deliver in Grayson County?</h2>
-      <p>HARDROCK Sand and Gravel has dedicated pages for the county's two largest cities, Sherman and Denison. Use them for local roads, ground conditions and materials; the rest of the county is covered on this page and by phone.</p>
+      <p>Hardrock Sand And Gravel has dedicated pages for the county's two largest cities, Sherman and Denison. Use them for local roads, ground conditions and materials; the rest of the county is covered on this page and by phone.</p>
     </div>
     <?php echo ap_nearby($apSlug); ?>
   </div>
@@ -278,6 +278,6 @@ if ($gcReviews !== ''): ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Get a Free Estimate in Grayson County',
-    'Call HARDROCK Sand and Gravel or send the form with your Grayson County address, the material or job and how far the lane or lot sits from the pavement. HARDROCK prices it by phone.'); ?>
+    'Call Hardrock Sand And Gravel or send the form with your Grayson County address, the material or job and how far the lane or lot sits from the pavement. HARDROCK prices it by phone.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

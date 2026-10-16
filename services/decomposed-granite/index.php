@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('decomposed-granite');
-$pageTitle       = 'Decomposed Granite in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'Decomposed Granite in Sherman, TX | Hardrock Sand And Gravel';
 $pageDescription = 'Decomposed granite for firm garden paths, patios and xeriscape beds, delivered in Sherman, Denison and Grayson County, TX. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/decomposed-granite/';
 $ogImage         = '/assets/images/crushed-red-granite-closeup.jpg';
@@ -25,9 +25,9 @@ $spTel       = 'tel:' . $phoneE164;
 /* FAQ: research-brief questions this page can answer truthfully (delivery area, pricing unit) + one general DG question */
 $faqs = [
     ['q' => 'Can HARDROCK deliver decomposed granite to my address?',
-     'a' => 'HARDROCK Sand and Gravel delivers decomposed granite in Sherman, Denison and throughout Grayson County. Call ' . $spCall . ' with the street address and the square footage of the path or patio, and the cost and drop-off day are worked out during that conversation.'],
+     'a' => 'Hardrock Sand And Gravel delivers decomposed granite in Sherman, Denison and throughout Grayson County. Call ' . $spCall . ' with the street address and the square footage of the path or patio, and the cost and drop-off day are worked out during that conversation.'],
     ['q' => 'Is decomposed granite sold per ton or per cubic yard?',
-     'a' => 'HARDROCK Sand and Gravel quotes decomposed granite by phone rather than listing a rate online, because quantity and distance both change the total. Run the patio numbers above first, then ring ' . $spCall . ' and ask which unit the quote is in.'],
+     'a' => 'Hardrock Sand And Gravel quotes decomposed granite by phone rather than listing a rate online, because quantity and distance both change the total. Run the patio numbers above first, then ring ' . $spCall . ' and ask which unit the quote is in.'],
     ['q' => 'Will a decomposed granite path wash out in heavy rain?',
      'a' => 'A well-built DG path with edging, a compacted base and a slight cross slope handles ordinary rain. Fast runoff crossing the path is what carries the fine grit away, so send gutter water and uphill drainage around it, and top-dress any thin spots after a big spring storm.'],
 ];
@@ -94,7 +94,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Decomposed granite · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title"><span class="text-accent">Decomposed Granite</span> in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel supplies and delivers decomposed granite to homeowners and landscapers in Sherman, Denison and across Grayson County. DG is granite weathered down to small chips and fine grit, and once it is dampened and compacted it sets into a firm, earth-toned floor for garden paths, patios and xeriscape beds.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel supplies and delivers decomposed granite to homeowners and landscapers in Sherman, Denison and across Grayson County. DG is granite weathered down to small chips and fine grit, and once it is dampened and compacted it sets into a firm, earth-toned floor for garden paths, patios and xeriscape beds.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -102,7 +102,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <ul class="hero-chips">
           <li><?php echo icon('layers', 16); ?>Paths, patios, xeriscape</li>
           <li><?php echo icon('truck', 16); ?>Grayson County delivery</li>
-          <li><?php echo icon('calendar', 16); ?>In business since 2019</li>
+          <li><?php echo icon('calendar', 16); ?>In business since 2016</li>
         </ul>
       </div>
 
@@ -234,7 +234,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Recent work</span>
       <h2 id="dg-proof-title">What do HARDROCK customers around Sherman say?</h2>
-      <p class="answer-block">HARDROCK Sand and Gravel customers post their reviews on Google, and the most recent are shown below. Beside them is a flagstone patio from HARDROCK's photo collection: stone set with fine tan material in the joints around a square fire pit, the kind of outdoor floor that DG and mason sand go into.</p>
+      <p class="answer-block">Hardrock Sand And Gravel customers post their reviews on Google, and the most recent are shown below. Beside them is a flagstone patio from HARDROCK's photo collection: stone set with fine tan material in the joints around a square fire pit, the kind of outdoor floor that DG and mason sand go into.</p>
     </div>
     <div class="sp-proof__single">
       <figure class="reveal-left">
@@ -242,7 +242,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <figcaption>A flagstone patio set in fine gravel, with a square stone fire pit.</figcaption>
       </figure>
       <div class="reveal-right">
-        <p>HARDROCK has been in business since 2019 under owner Dean Jones, and it covers Sherman, Denison and the rest of Grayson County with eight bulk materials plus driveways, house pads, ponds and land clearing. Every one of them is listed on <a href="/services/">the HARDROCK services overview</a>.</p>
+        <p>HARDROCK has been in business since 2016 under owner Dean Jones, and it covers Sherman, Denison and the rest of Grayson County with eight bulk materials plus driveways, house pads, ponds and land clearing. Every one of them is listed on <a href="/services/">the HARDROCK services overview</a>.</p>
       </div>
     </div>
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/google-reviews.php';
@@ -260,7 +260,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Questions</span>
       <h2 id="dg-faq-title">What should you know before ordering decomposed granite?</h2>
-      <p>Three decomposed granite questions come up most with HARDROCK Sand and Gravel: whether the load can come to a given address, which unit the price is quoted in, and how a finished DG path stands up to a North Texas downpour.</p>
+      <p>Three decomposed granite questions come up most with Hardrock Sand And Gravel: whether the load can come to a given address, which unit the price is quoted in, and how a finished DG path stands up to a North Texas downpour.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $faqIdx => $faq): ?>
@@ -278,10 +278,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ RELATED SERVICES ============ -->
 <?php echo sp_related_section(['pea-gravel', 'mason-sand', 'road-base'],
     'What else goes into a <span class="text-accent">decomposed granite</span> path or patio?',
-    'A DG project usually needs more than the DG itself. HARDROCK Sand and Gravel delivers the crushed road base that goes underneath, mason sand for bedding flagstone and pavers, and pea gravel for the looser play areas and dog runs next to the patio, all from one Sherman supplier.'); ?>
+    'A DG project usually needs more than the DG itself. Hardrock Sand And Gravel delivers the crushed road base that goes underneath, mason sand for bedding flagstone and pavers, and pea gravel for the looser play areas and dog runs next to the patio, all from one Sherman supplier.'); ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need decomposed granite for a path or patio?',
-    'Send the form or call HARDROCK Sand and Gravel with the square footage and the address. Fridays and Saturdays start at 9 AM; the rest of the working week starts at 6 AM.'); ?>
+    'Send the form or call Hardrock Sand And Gravel with the square footage and the address. Fridays and Saturdays start at 9 AM; the rest of the working week starts at 6 AM.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

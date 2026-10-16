@@ -6,8 +6,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 /* ---- Page setup ------------------------------------------------------------------------------- */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 
-$pageTitle       = 'Thank You | HARDROCK Sand and Gravel, Sherman TX';
-$pageDescription = 'Your request reached HARDROCK Sand and Gravel in Sherman, TX. Expect a call back with a price and a delivery day. Open Monday to Saturday.';
+$pageTitle       = 'Thank You | Hardrock Sand And Gravel, Sherman TX';
+$pageDescription = 'Your request reached Hardrock Sand And Gravel in Sherman, TX. Expect a call back with a price and a delivery day. Open Monday to Saturday.';
 $canonicalUrl    = $siteUrl . '/thank-you';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'other';
@@ -70,7 +70,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="hero-text hero-copy">
       <span class="eyebrow">Request received</span>
       <h1 class="hero-title" id="ty-title">Thanks. <span class="text-accent">HARDROCK</span> has your request.</h1>
-      <p class="hero-answer">HARDROCK Sand and Gravel received your details and will call you back with a price and a delivery day. Need it sooner? Call <?php echo esc($tyCall); ?>.</p>
+      <p class="hero-answer">Hardrock Sand And Gravel received your details and will call you back with a price and a delivery day. Need it sooner? Call <?php echo esc($tyCall); ?>.</p>
       <div class="ty-actions">
         <a class="btn btn-primary btn-lg" href="<?php echo esc($tyTel); ?>"><?php echo icon('phone', 20); ?>Call <?php echo esc($tyCall); ?></a>
         <a class="link-call" href="/">Back to the homepage</a>
@@ -85,8 +85,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="ty-next__grid">
       <div class="reveal-left">
         <span class="eyebrow">What to expect</span>
-        <h2 id="ty-next-title">What happens after I send my request to HARDROCK Sand and Gravel?</h2>
-        <p class="answer-block">HARDROCK Sand and Gravel reads your request and calls the number you gave during business hours, Monday through Saturday. On the call, HARDROCK checks the quantity with you, then gives the price and a delivery day.</p>
+        <h2 id="ty-next-title">What happens after I send my request to Hardrock Sand And Gravel?</h2>
+        <p class="answer-block">Hardrock Sand And Gravel reads your request and calls the number you gave during business hours, Monday through Saturday. On the call, HARDROCK checks the quantity with you, then gives the price and a delivery day.</p>
         <dl class="ty-hours" aria-label="Business hours">
           <?php foreach ($hours as $tyDay): ?>
           <div><dt><?php echo esc($tyDay['day']); ?></dt><dd><?php echo esc($tyDay['label']); ?></dd></div>
@@ -109,8 +109,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <div class="section-title reveal-up">
       <span class="eyebrow-label">While you wait</span>
-      <h2 id="ty-more-title">What else does HARDROCK Sand and Gravel deliver?</h2>
-      <p class="answer-block">HARDROCK Sand and Gravel delivers eight bulk materials and builds driveways, house pads and ponds across Sherman, Denison and Grayson County. Here are three of the most asked-about materials, or see the full list of <?php echo count($services); ?> services.</p>
+      <h2 id="ty-more-title">What else does Hardrock Sand And Gravel deliver?</h2>
+      <p class="answer-block">Hardrock Sand And Gravel delivers eight bulk materials and builds driveways, house pads and ponds across Sherman, Denison and Grayson County. Here are three of the most asked-about materials, or see the full list of <?php echo count($services); ?> services.</p>
     </div>
     <div class="services-grid services-grid--3">
       <?php foreach ($tyCards as $tyI => $tySlug) echo sp_card($tySlug, $tyI + 1); ?>

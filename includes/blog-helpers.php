@@ -93,7 +93,7 @@ if (!function_exists('blog_post_schema')) {
                 'image' => $blBase . '/assets/images/' . blog_image_base($post['image']) . '.jpg',
                 'datePublished' => $post['dateISO'], 'dateModified' => $post['dateISO'], 'keywords' => $keywords,
                 'author' => $blOrg, 'publisher' => $blOrg, 'mainEntityOfPage' => $blUrl, 'url' => $blUrl, 'inLanguage' => 'en-US',
-                'isPartOf' => ['@type' => 'Blog', '@id' => $blBase . '/blog/#blog', 'name' => 'HARDROCK Sand and Gravel Blog', 'url' => $blBase . '/blog/'],
+                'isPartOf' => ['@type' => 'Blog', '@id' => $blBase . '/blog/#blog', 'name' => 'Hardrock Sand And Gravel Blog', 'url' => $blBase . '/blog/'],
             ],
             blog_breadcrumb_schema($post['title'], $post['slug']),
         ]];

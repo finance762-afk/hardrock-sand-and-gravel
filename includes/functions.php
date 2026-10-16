@@ -270,7 +270,7 @@ if (!function_exists('generateLocalBusinessSchema')) {
         foreach ((array) $services as $fnSvc) {
             $fnOffers[] = ['@type' => 'Offer', 'itemOffered' => ['@type' => 'Service', 'name' => $fnSvc['name'], 'url' => $fnBase . '/services/' . $fnSvc['slug'] . '/']];
         }
-        $fnSame = array_values(array_filter(array_merge([$gbp['share_url'] ?? ''], array_values((array) $socialLinks))));
+        $fnSame = array_values(array_filter(array_merge([$gbp['share_url'] ?? ''], array_values((array) $socialLinks), (array) ($GLOBALS['schemaSameAs'] ?? []))));
 
         $fnNode = [
             '@type' => 'LocalBusiness',

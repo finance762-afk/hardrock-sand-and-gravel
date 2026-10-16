@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('ponds');
-$pageTitle       = 'Pond Digging in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'Pond Digging in Sherman, TX | Hardrock Sand And Gravel';
 $pageDescription = 'Pond digging and shaping for rural and residential land in Sherman, Denison and Grayson County, with rip rap for the banks. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/ponds/';
 $ogImage         = '/assets/images/pond-excavation-trees.jpg';
@@ -25,9 +25,9 @@ $spTel       = 'tel:' . $phoneE164;
 /* FAQ: research-brief questions this page can answer truthfully (service area, pricing) */
 $faqs = [
     ['q' => 'Does HARDROCK dig ponds outside Sherman?',
-     'a' => 'HARDROCK Sand and Gravel takes pond work in Sherman, Denison and across Grayson County. Call ' . $spCall . ' with the property location and HARDROCK will confirm the job is in its area before anything is scheduled.'],
+     'a' => 'Hardrock Sand And Gravel takes pond work in Sherman, Denison and across Grayson County. Call ' . $spCall . ' with the property location and HARDROCK will confirm the job is in its area before anything is scheduled.'],
     ['q' => 'How is a pond job priced?',
-     'a' => 'HARDROCK Sand and Gravel prices pond work over the phone once the rough size, the site and any clearing or rip rap are known. Have a length, width and average depth in mind; the volume math on this page gives a starting number to share.'],
+     'a' => 'Hardrock Sand And Gravel prices pond work over the phone once the rough size, the site and any clearing or rip rap are known. Have a length, width and average depth in mind; the volume math on this page gives a starting number to share.'],
 ];
 
 $pageSchemas = [
@@ -87,7 +87,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Ponds · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title"><span class="text-accent">Pond Digging</span> in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel digs and shapes ponds for rural and residential property in Sherman, Denison and across Grayson County. The same company can clear the spot first and haul rip rap for the banks afterward, so a landowner planning a stock pond or a pond near the house makes one call instead of three.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel digs and shapes ponds for rural and residential property in Sherman, Denison and across Grayson County. The same company can clear the spot first and haul rip rap for the banks afterward, so a landowner planning a stock pond or a pond near the house makes one call instead of three.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -195,8 +195,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="sp-breakdown__grid">
       <div class="reveal-left">
         <span class="eyebrow">What's included</span>
-        <h2 id="pd-breakdown-title">What does pond work with HARDROCK Sand and Gravel cover?</h2>
-        <p class="answer-block">HARDROCK Sand and Gravel covers pond work from an overgrown spot to a finished basin. That can mean clearing brush where the pond will sit, digging and shaping the basin around standing trees, and armoring banks with rip rap where waves hit. Every piece is priced together on one phone call.</p>
+        <h2 id="pd-breakdown-title">What does pond work with Hardrock Sand And Gravel cover?</h2>
+        <p class="answer-block">Hardrock Sand And Gravel covers pond work from an overgrown spot to a finished basin. That can mean clearing brush where the pond will sit, digging and shaping the basin around standing trees, and armoring banks with rip rap where waves hit. Every piece is priced together on one phone call.</p>
         <ul class="sp-included">
           <li><?php echo icon('check', 18); ?><span>Brush cleared off the pond site</span></li>
           <li><?php echo icon('check', 18); ?><span>Basin dug out and shaped</span></li>
@@ -270,7 +270,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Questions</span>
       <h2 id="pd-faq-title">What do landowners ask HARDROCK before a pond is dug?</h2>
-      <p>Landowners planning a pond with HARDROCK Sand and Gravel usually want to know two things first: whether HARDROCK works on their side of Grayson County, and how a pond job gets priced before any equipment shows up.</p>
+      <p>Landowners planning a pond with Hardrock Sand And Gravel usually want to know two things first: whether HARDROCK works on their side of Grayson County, and how a pond job gets priced before any equipment shows up.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $faqIdx => $faq): ?>
@@ -288,10 +288,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ RELATED SERVICES ============ -->
 <?php echo sp_related_section(['rip-rap', 'land-clearing', 'fill-dirt'],
     'What other work goes with a new <span class="text-accent">pond</span>?',
-    'A new pond usually touches three other jobs. HARDROCK Sand and Gravel clears brush and trees off the site before digging, sets rip rap on banks that catch waves, and delivers fill dirt for low spots elsewhere on the property, so one Sherman company can carry the project from overgrown ground to a finished bank.'); ?>
+    'A new pond usually touches three other jobs. Hardrock Sand And Gravel clears brush and trees off the site before digging, sets rip rap on banks that catch waves, and delivers fill dirt for low spots elsewhere on the property, so one Sherman company can carry the project from overgrown ground to a finished bank.'); ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need a pond dug before the next wet season?',
-    'Call HARDROCK Sand and Gravel with the property location and the size you have in mind, or send the form. HARDROCK is open from 6 AM Monday through Thursday and until 2 PM on Saturday.'); ?>
+    'Call Hardrock Sand And Gravel with the property location and the size you have in mind, or send the form. HARDROCK is open from 6 AM Monday through Thursday and until 2 PM on Saturday.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

@@ -36,7 +36,7 @@ $faqs = [
     ['q' => 'How many cubic yards of gravel fit in a pickup truck?',
      'a' => 'Often only about half a cubic yard of gravel, because a half-ton pickup\'s payload rating limits the weight it can carry. A 7-yard driveway would take about 15 trips, which is why most Grayson County drives are delivered in bulk.'],
     ['q' => 'Does HARDROCK price driveway gravel by the yard or by the ton?',
-     'a' => 'HARDROCK Sand and Gravel prices each load by phone, because the material, the amount and the address all change the number. Work out your cubic yards first, then call ' . $spCall . ' and ask how that material is measured and priced.'],
+     'a' => 'Hardrock Sand And Gravel prices each load by phone, because the material, the amount and the address all change the number. Work out your cubic yards first, then call ' . $spCall . ' and ask how that material is measured and priced.'],
 ];
 $pageSchemas = [blog_post_schema($blPost, $pageDescription, 'gravel driveway, how much gravel for a driveway, driveway gravel Sherman TX, road base, 57 rock, cubic yards, Grayson County')];
 /* FAQPage mirrors the visible FAQ below (AI comprehension aid only) */
@@ -79,7 +79,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="bl-intro__grid">
       <div class="blog-post__content reveal-left">
         <p class="answer-block">A gravel driveway needs about one cubic yard of rock for every 80 square feet at 4 inches deep. A 12 by 50 foot drive laid 4 inches deep takes about 7.4 cubic yards, so order roughly 7.8 to 8.2 once you add 5 to 10 percent for settling.</p>
-        <p>HARDROCK Sand and Gravel, a supplier in Sherman, TX since 2019, delivers the road base and crushed rock that go into a drive. This guide shows the arithmetic, the layers and the Grayson County ground conditions that change the order, so the number you give on the phone is one you trust.</p>
+        <p>Hardrock Sand And Gravel, a supplier in Sherman, TX since 2016, delivers the road base and crushed rock that go into a drive. This guide shows the arithmetic, the layers and the Grayson County ground conditions that change the order, so the number you give on the phone is one you trust.</p>
         <p>Already have a drive that washed out? Skip ahead to <a href="<?php echo esc(blog_url('fix-gravel-driveway-after-heavy-rain-grayson-county')); ?>">fixing a gravel driveway after heavy rain</a>.</p>
       </div>
       <figure class="blog-post__featured-image reveal-right">
@@ -91,7 +91,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
 <!-- ============ MID-PAGE ESTIMATE BAND ============ -->
 <?php $ctaBandTitle = 'Know your drive\'s <span class="text-accent">size</span>? Get a price.';
-$ctaBandCopy = 'Send the length, width and address of your drive and HARDROCK Sand and Gravel prices the load by phone.';
+$ctaBandCopy = 'Send the length, width and address of your drive and Hardrock Sand And Gravel prices the load by phone.';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
 
 <!-- ============ BODY ============ -->
@@ -131,7 +131,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
         <p>The Handbook of Texas puts average rainfall near 37 inches a year, and a lane that is firm in August can be soft in March. If your lot sits on clay or stays wet after a storm, plan for the 6 inch build, not the 4 inch top-up. Local pages cover the ground in more detail for <a href="/service-areas/sherman/">Sherman</a> and the wider <a href="/service-areas/grayson-county/">Grayson County</a> area.</p>
 
         <h2 id="order">What should you tell HARDROCK when you order driveway gravel?</h2>
-        <p class="answer-block">Give HARDROCK Sand and Gravel the address, the length and width of the drive, the depth you plan and where the pile can go. Mention soft ground, a narrow gate or a culvert crossing too. With those details the load is priced and a delivery day set on the same call.</p>
+        <p class="answer-block">Give Hardrock Sand And Gravel the address, the length and width of the drive, the depth you plan and where the pile can go. Mention soft ground, a narrow gate or a culvert crossing too. With those details the load is priced and a delivery day set on the same call.</p>
         <ul>
           <li><strong>Address and drop spot.</strong> A firm, level place close to the work, clear of wires and buried lines.</li>
           <li><strong>Drive size.</strong> Length, width and the depth you chose, or the cubic yards from the table.</li>
@@ -156,7 +156,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
         </nav>
         <div class="bl-side-cta">
           <h2>Price my drive</h2>
-          <p>HARDROCK Sand and Gravel delivers road base and 57 rock in Sherman, Denison and Grayson County.</p>
+          <p>Hardrock Sand And Gravel delivers road base and 57 rock in Sherman, Denison and Grayson County.</p>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>Call <?php echo esc($spCall); ?></a>
           <button type="button" class="btn btn-accent" data-open-estimate>Get a free estimate</button>
         </div>
@@ -219,6 +219,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Ready to order driveway gravel?',
-    'Call HARDROCK Sand and Gravel with the size of the drive and the address. HARDROCK checks the cubic yards, prices the load by phone and sets a delivery day.'); ?>
+    'Call Hardrock Sand And Gravel with the size of the drive and the address. HARDROCK checks the cubic yards, prices the load by phone and sets a delivery day.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

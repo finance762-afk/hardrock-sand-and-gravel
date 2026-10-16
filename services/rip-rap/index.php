@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('rip-rap');
-$pageTitle       = 'Rip Rap Delivery in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'Rip Rap Delivery in Sherman, TX | Hardrock Sand And Gravel';
 $pageDescription = 'Rip rap delivered and set over filter fabric on pond banks, creek slopes and culverts in Sherman, Denison and Grayson County. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/rip-rap/';
 $ogImage         = '/assets/images/rip-rap-crew-skid-steer.jpg';
@@ -25,9 +25,9 @@ $spTel       = 'tel:' . $phoneE164;
 /* FAQ: research-brief questions this page can answer truthfully (delivery area, pricing unit) */
 $faqs = [
     ['q' => 'Do you deliver rip rap to Sherman and the surrounding area?',
-     'a' => 'Yes. HARDROCK Sand and Gravel delivers rip rap across Sherman, Denison and the rest of Grayson County. Call ' . $spCall . ' with the address and the length of bank you need to cover, and HARDROCK will confirm the delivery, the price and a day.'],
+     'a' => 'Yes. Hardrock Sand And Gravel delivers rip rap across Sherman, Denison and the rest of Grayson County. Call ' . $spCall . ' with the address and the length of bank you need to cover, and HARDROCK will confirm the delivery, the price and a day.'],
     ['q' => 'Do you sell rip rap by the ton or the cubic yard?',
-     'a' => 'HARDROCK Sand and Gravel quotes every rip rap order by phone, because the price depends on the rock size, the amount and how far the load travels. Work out the cubic yards with the bank math above, then call ' . $spCall . ' for the current price and how the load is measured.'],
+     'a' => 'Hardrock Sand And Gravel quotes every rip rap order by phone, because the price depends on the rock size, the amount and how far the load travels. Work out the cubic yards with the bank math above, then call ' . $spCall . ' for the current price and how the load is measured.'],
 ];
 
 $pageSchemas = [
@@ -72,7 +72,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Rip rap · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title"><span class="text-accent">Rip Rap</span> for Banks and Culverts in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel delivers rip rap to Sherman, Denison and the rest of Grayson County, and sets it on pond banks, creek slopes and culvert outlets. On HARDROCK's rip rap jobs, filter fabric goes down the bank first and the rock goes over it, so the clay underneath cannot wash out.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel delivers rip rap to Sherman, Denison and the rest of Grayson County, and sets it on pond banks, creek slopes and culvert outlets. On HARDROCK's rip rap jobs, filter fabric goes down the bank first and the rock goes over it, so the clay underneath cannot wash out.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -262,7 +262,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Questions</span>
       <h2 id="rr-faq-title">What do customers ask before ordering rip rap?</h2>
-      <p>Customers ordering rip rap from HARDROCK Sand and Gravel usually ask two things before anything else: whether HARDROCK delivers rip rap to their property, and how a rip rap load is measured and priced.</p>
+      <p>Customers ordering rip rap from Hardrock Sand And Gravel usually ask two things before anything else: whether HARDROCK delivers rip rap to their property, and how a rip rap load is measured and priced.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $faqIdx => $faq): ?>
@@ -280,10 +280,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ RELATED SERVICES ============ -->
 <?php echo sp_related_section(['ponds', 'river-rock', '57-67-rock'],
     'What else goes with <span class="text-accent">rip rap</span> on a pond or creek job?',
-    'Rip rap is usually one part of a bigger water job. HARDROCK Sand and Gravel also digs and shapes ponds, hauls river rock for dry creek beds and splash areas, and delivers 57 and 67 crushed rock for drain trenches, so the whole job can come from one company in Sherman.'); ?>
+    'Rip rap is usually one part of a bigger water job. Hardrock Sand And Gravel also digs and shapes ponds, hauls river rock for dry creek beds and splash areas, and delivers 57 and 67 crushed rock for drain trenches, so the whole job can come from one company in Sherman.'); ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need a bank armored before the next big rain?',
-    'Call HARDROCK Sand and Gravel with the address and the length of bank, or send the form. HARDROCK opens at 6 AM Monday through Thursday, so an early call gets rip rap on the schedule sooner.'); ?>
+    'Call Hardrock Sand And Gravel with the address and the length of bank, or send the form. HARDROCK opens at 6 AM Monday through Thursday, so an early call gets rip rap on the schedule sooner.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('house-pads');
-$pageTitle       = 'House Pads in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'House Pads in Sherman, TX | Hardrock Sand And Gravel';
 $pageDescription = 'House pads raised and leveled with fill and base for new slabs in Sherman, Denison and Grayson County. Call HARDROCK at ' . formatPhone($phone) . ' with your pad spec.';
 $canonicalUrl    = $siteUrl . '/services/house-pads/';
 $ogImage         = '/assets/images/excavator-crushed-rock-pad.jpg';
@@ -25,9 +25,9 @@ $spTel       = 'tel:' . $phoneE164;
 /* FAQ: research-brief questions this page can answer truthfully (service area, pricing unit) */
 $faqs = [
     ['q' => 'Do you build house pads around Sherman and Denison?',
-     'a' => 'Yes. HARDROCK Sand and Gravel builds house pads in Sherman, Denison and the rest of Grayson County. Call ' . $spCall . ' with the site address and the slab size, and have the pad spec close by if the builder or engineer has written one.'],
+     'a' => 'Yes. Hardrock Sand And Gravel builds house pads in Sherman, Denison and the rest of Grayson County. Call ' . $spCall . ' with the site address and the slab size, and have the pad spec close by if the builder or engineer has written one.'],
     ['q' => 'Do you price pad fill by the ton or the cubic yard?',
-     'a' => 'HARDROCK Sand and Gravel quotes each house pad by phone, because the pad size, the height, the material in the spec and the haul all change the number. Bring the cubic-yard figure from the pad math on this page, and HARDROCK will give you the current price and how the fill is measured.'],
+     'a' => 'Hardrock Sand And Gravel quotes each house pad by phone, because the pad size, the height, the material in the spec and the haul all change the number. Bring the cubic-yard figure from the pad math on this page, and HARDROCK will give you the current price and how the fill is measured.'],
 ];
 
 $pageSchemas = [
@@ -92,7 +92,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">House pads · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title"><span class="text-accent">House Pads</span> for New Slabs in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel builds house pads across Sherman, Denison and Grayson County, raising and leveling the building site with fill and base material so the new slab goes down on flat, firm ground. Send the builder's or engineer's pad spec, and HARDROCK prices the material and the work by phone.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel builds house pads across Sherman, Denison and Grayson County, raising and leveling the building site with fill and base material so the new slab goes down on flat, firm ground. Send the builder's or engineer's pad spec, and HARDROCK prices the material and the work by phone.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -301,10 +301,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ RELATED SERVICES ============ -->
 <?php echo sp_related_section(['fill-dirt', 'road-base', 'land-clearing'],
     'What other work comes before <span class="text-accent">the slab is poured</span>?',
-    'Before a slab goes down, many lots need more than the pad itself. HARDROCK Sand and Gravel clears brush and trees off the footprint, delivers fill dirt to raise and level the ground, and supplies road base for the pad cap and the drive the concrete trucks will use.'); ?>
+    'Before a slab goes down, many lots need more than the pad itself. Hardrock Sand And Gravel clears brush and trees off the footprint, delivers fill dirt to raise and level the ground, and supplies road base for the pad cap and the drive the concrete trucks will use.'); ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need a pad ready before the slab crew arrives?',
-    'Call HARDROCK Sand and Gravel or send the form with the slab size and the site address. The sooner the pad is on the calendar, the sooner the forms can go up.'); ?>
+    'Call Hardrock Sand And Gravel or send the form with the slab size and the site address. The sooner the pad is on the calendar, the sooner the forms can go up.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

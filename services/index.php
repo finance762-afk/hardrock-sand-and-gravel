@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $pageTitle       = 'Sand, Gravel and Site Work in Sherman, TX | HARDROCK';
-$pageDescription = 'All 13 HARDROCK Sand and Gravel services: pea gravel, road base, 57/67 rock, fill dirt, rip rap, driveways, house pads, ponds and land clearing in Sherman, TX.';
+$pageDescription = 'All 13 Hardrock Sand And Gravel services: pea gravel, road base, 57/67 rock, fill dirt, rip rap, driveways, house pads, ponds and land clearing in Sherman, TX.';
 $canonicalUrl    = $siteUrl . '/services/';
 $ogImage         = '/assets/images/gravel-stockpiles-job-site.jpg';
 $currentPage     = 'services';
@@ -102,7 +102,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="hero-text hero-copy">
       <span class="eyebrow">All services · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
       <h1 class="hero-title" id="sp-hero-title"><span class="text-accent">Sand, Gravel</span> and Site Work in Sherman, TX</h1>
-      <p class="hero-answer">HARDROCK Sand and Gravel sells and delivers eight bulk materials, from pea gravel to rip rap, and builds the driveways, house pads and ponds they go into. This page lists all <?php echo count($services); ?> services for homeowners, farms and contractors in Sherman, Denison and Grayson County, with a guide to which material suits which job.</p>
+      <p class="hero-answer">Hardrock Sand And Gravel sells and delivers eight bulk materials, from pea gravel to rip rap, and builds the driveways, house pads and ponds they go into. This page lists all <?php echo count($services); ?> services for homeowners, farms and contractors in Sherman, Denison and Grayson County, with a guide to which material suits which job.</p>
       <div class="hub-hero__actions">
         <button type="button" class="btn btn-primary btn-lg" data-open-estimate>Get a free estimate</button>
         <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -122,7 +122,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow-label">What We Do</span>
       <h2 id="hub-services-title">Which <span class="text-accent">sand, gravel and site work</span> services does HARDROCK offer?</h2>
-      <p class="hero-answer">HARDROCK Sand and Gravel offers <?php echo count($services); ?> services in Sherman, Denison and Grayson County. Four are site work: driveways, house pads, ponds and land clearing. The rest are bulk delivery of pea gravel, road base, decomposed granite, 57 and 67 rock, fill dirt, river rock, mason sand and rip rap. Each card opens the full page for that service.</p>
+      <p class="hero-answer">Hardrock Sand And Gravel offers <?php echo count($services); ?> services in Sherman, Denison and Grayson County. Four are site work: driveways, house pads, ponds and land clearing. The rest are bulk delivery of pea gravel, road base, decomposed granite, 57 and 67 rock, fill dirt, river rock, mason sand and rip rap. Each card opens the full page for that service.</p>
     </div>
 
     <div class="hub-group reveal-left"><h3>Site work</h3></div>
@@ -173,7 +173,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="reveal-left">
         <span class="eyebrow">Ordering</span>
         <h2 id="hub-order-title">How do you order sand, gravel or site work from HARDROCK?</h2>
-        <p class="answer-block">You order from HARDROCK Sand and Gravel by phone or with the estimate form. Give the material or job, the address and a rough size, and HARDROCK calls back with the price and a delivery or work day. HARDROCK opens at 6 AM Monday through Thursday.</p>
+        <p class="answer-block">You order from Hardrock Sand And Gravel by phone or with the estimate form. Give the material or job, the address and a rough size, and HARDROCK calls back with the price and a delivery or work day. HARDROCK opens at 6 AM Monday through Thursday.</p>
         <p class="hub-order__formula">Length × Width × Depth (ft) <em>÷ 27 = cubic yards</em></p>
         <p>A 12 × 20 ft parking area 4 inches deep is 12 × 20 × ⅓ = 80 cubic feet, about 3 cubic yards. Every material page has its own worked example, and HARDROCK can check the math on the phone. Hours are Monday to Thursday 6 AM to 5 PM, Friday 9 AM to 5 PM and Saturday 9 AM to 2 PM; call <a href="<?php echo esc($spTel); ?>"><?php echo esc($spCall); ?></a> or email <a href="mailto:<?php echo esc($email); ?>"><?php echo esc($email); ?></a>.</p>
       </div>
@@ -204,6 +204,6 @@ if ($hubReviews !== ''): ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need a load or a job priced this week?',
-    'Call HARDROCK Sand and Gravel or send the form with the material, the amount and the address. We call back with a price and a day.'); ?>
+    'Call Hardrock Sand And Gravel or send the form with the material, the amount and the address. We call back with a price and a day.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

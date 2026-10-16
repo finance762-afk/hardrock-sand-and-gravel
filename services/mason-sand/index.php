@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('mason-sand');
-$pageTitle       = 'Mason Sand in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'Mason Sand in Sherman, TX | Hardrock Sand And Gravel';
 $pageDescription = 'Mason sand delivered in Sherman, Denison and Grayson County, TX for mortar, flagstone and paver bedding, and sandboxes. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/mason-sand/';
 $ogImage         = '/assets/images/flagstone-patio-fire-pit.jpg';
@@ -27,9 +27,9 @@ $faqs = [
     ['q' => 'Which type of sand should I use for my project?',
      'a' => 'Pick by grain size and job. Mason sand is the finest of the common bulk sands, which makes it the choice for mortar, setting flagstone and filling a sandbox. Concrete sand is coarser and is used in concrete mixes and under heavier paver work. Fill sand is for leveling and backfill. Tell HARDROCK what you are building and the call will sort out the right sand.'],
     ['q' => 'Will HARDROCK haul mason sand to a home in Denison or out by the lake?',
-     'a' => 'HARDROCK Sand and Gravel delivers mason sand to homes in Sherman, Denison and the rest of Grayson County. Call ' . $spCall . ' with the address and the spot where the pile should go, such as the side yard or the end of the drive, and the delivery day is set on that call.'],
+     'a' => 'Hardrock Sand And Gravel delivers mason sand to homes in Sherman, Denison and the rest of Grayson County. Call ' . $spCall . ' with the address and the spot where the pile should go, such as the side yard or the end of the drive, and the delivery day is set on that call.'],
     ['q' => 'Is mason sand priced per ton or per cubic yard?',
-     'a' => 'HARDROCK Sand and Gravel quotes mason sand by phone rather than posting a rate, since the price moves with the amount and the trip to your address. Measure the patio, sandbox or mortar job first, then call ' . $spCall . ' for the current price and the unit it is sold in.'],
+     'a' => 'Hardrock Sand And Gravel quotes mason sand by phone rather than posting a rate, since the price moves with the amount and the trip to your address. Measure the patio, sandbox or mortar job first, then call ' . $spCall . ' for the current price and the unit it is sold in.'],
 ];
 
 $pageSchemas = [
@@ -95,7 +95,7 @@ html.js-anim .ms-mix.reveal-up:not(.in) .ms-mix__bar li { transform: scaleY(.2);
       <div class="hero-text hero-copy">
         <span class="eyebrow">Mason sand · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title"><span class="text-accent">Mason Sand</span> in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel delivers mason sand to Sherman, Denison and Grayson County for masons, patio builders and homeowners. Mason sand is a fine, clean sand that mixes into smooth mortar for brick and stone, beds flagstone and pavers level, and fills a backyard sandbox with something soft enough for kids.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel delivers mason sand to Sherman, Denison and Grayson County for masons, patio builders and homeowners. Mason sand is a fine, clean sand that mixes into smooth mortar for brick and stone, beds flagstone and pavers level, and fills a backyard sandbox with something soft enough for kids.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -257,7 +257,7 @@ html.js-anim .ms-mix.reveal-up:not(.in) .ms-mix__bar li { transform: scaleY(.2);
     <div class="section-title reveal-up">
       <span class="eyebrow">Questions</span>
       <h2 id="ms-faq-title">What should you ask before ordering mason sand?</h2>
-      <p>Mason sand buyers calling HARDROCK Sand and Gravel mostly want to settle which kind of sand the project really calls for, whether the truck can reach a home in their part of Grayson County, and how the sand is priced.</p>
+      <p>Mason sand buyers calling Hardrock Sand And Gravel mostly want to settle which kind of sand the project really calls for, whether the truck can reach a home in their part of Grayson County, and how the sand is priced.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $faqIdx => $faq): ?>
@@ -275,10 +275,10 @@ html.js-anim .ms-mix.reveal-up:not(.in) .ms-mix__bar li { transform: scaleY(.2);
 <!-- ============ RELATED SERVICES ============ -->
 <?php echo sp_related_section(['decomposed-granite', 'fill-dirt', 'delivery'],
     'What else does a <span class="text-accent">mason sand</span> patio project need?',
-    'A patio or fire pit build usually needs more than one material. HARDROCK Sand and Gravel also carries decomposed granite for paths and patio surfaces and fill dirt for leveling a low yard, and delivers bulk loads across Sherman and Grayson County, so the sand and the ground work can be ordered together.'); ?>
+    'A patio or fire pit build usually needs more than one material. Hardrock Sand And Gravel also carries decomposed granite for paths and patio surfaces and fill dirt for leveling a low yard, and delivers bulk loads across Sherman and Grayson County, so the sand and the ground work can be ordered together.'); ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need mason sand for a patio, fire pit or sandbox?',
-    'Call HARDROCK Sand and Gravel with the job, the measurements and the address, or send the form. HARDROCK calls back with the price and a delivery day, so the sand is there before the stone work starts.'); ?>
+    'Call Hardrock Sand And Gravel with the job, the measurements and the address, or send the form. HARDROCK calls back with the price and a delivery day, so the sand is there before the stone work starts.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

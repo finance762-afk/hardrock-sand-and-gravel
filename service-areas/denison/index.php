@@ -27,7 +27,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/area-page.php';
 $apSlug          = 'denison';
 $apRow           = ap_area($apSlug);
 $pageTitle       = 'Sand and Gravel Delivery in Denison, TX | HARDROCK';
-$pageDescription = 'HARDROCK Sand and Gravel delivers rip rap, road base, pea gravel and fill dirt to Denison, TX, about 11 miles north of Sherman. Call us at ' . formatPhone($phone) . '.';
+$pageDescription = 'Hardrock Sand And Gravel delivers rip rap, road base, pea gravel and fill dirt to Denison, TX, about 11 miles north of Sherman. Call us at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . ap_url($apSlug);
 $ogImage         = '/assets/images/' . $apRow['photo'] . '.jpg';
 $currentPage     = 'areas';
@@ -43,7 +43,7 @@ $spTel       = 'tel:' . $phoneE164;
 
 $faqs = [
     ['q' => 'Does HARDROCK deliver rip rap and gravel to Denison, TX?',
-     'a' => 'Yes. HARDROCK Sand and Gravel is based in Sherman, which sits about 11 miles south of Denison, and delivers bulk rock, gravel, sand and fill dirt to Denison addresses. Call ' . $spCall . ' with the address and the job, and HARDROCK prices the load by phone.'],
+     'a' => 'Yes. Hardrock Sand And Gravel is based in Sherman, which sits about 11 miles south of Denison, and delivers bulk rock, gravel, sand and fill dirt to Denison addresses. Call ' . $spCall . ' with the address and the job, and HARDROCK prices the load by phone.'],
     ['q' => 'Do I need permission before putting rip rap on the Lake Texoma shoreline?',
      'a' => 'Possibly, and HARDROCK cannot answer that for your shoreline. The U.S. Army Corps of Engineers, Tulsa District, administers the Lake Texoma Shoreline Management Plan, so ask the Corps before moving rock at the water\'s edge. Rip rap on a private pond or ditch bank is a different question; call ' . $spCall . ' to talk it through.'],
     ['q' => 'What should I tell HARDROCK about an older Denison lot before a delivery?',
@@ -113,7 +113,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Red River side of Grayson County</span>
         <h1 class="hero-title" id="sp-hero-title">Sand and Gravel Delivery in <span class="text-accent">Denison</span>, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel delivers rip rap, road base, pea gravel and fill dirt to Denison, about 11 miles north of Sherman.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel delivers rip rap, road base, pea gravel and fill dirt to Denison, about 11 miles north of Sherman.</p>
         <div class="hero-actions btn-group">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -151,7 +151,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <div class="dn-lake__copy reveal-left">
         <span class="eyebrow">Denison, Texas</span>
         <h2 id="dn-lake-title">Where can you get rip rap and gravel delivered in Denison, TX?</h2>
-        <p class="answer-block">HARDROCK Sand and Gravel, a Sherman, TX supplier in business since 2019, delivers rip rap, road base, pea gravel, 57 and 67 rock and fill dirt to Denison addresses, about 11 miles north of Sherman. Call <?php echo esc($spCall); ?> with the address and the job, and HARDROCK prices the load by phone.</p>
+        <p class="answer-block">Hardrock Sand And Gravel, a Sherman, TX supplier in business since 2016, delivers rip rap, road base, pea gravel, 57 and 67 rock and fill dirt to Denison addresses, about 11 miles north of Sherman. Call <?php echo esc($spCall); ?> with the address and the job, and HARDROCK prices the load by phone.</p>
         <p>Denison sits in the northeast corner of the county, about a mile south of the Oklahoma line, with city limits that reach the Red River. Denison Dam sits roughly five miles north and holds back Lake Texoma, and Eisenhower State Park sits on the lake shore northwest of town. That water is why bank, ditch and pond work are worth planning for here, and why rip rap is the first material to ask about when you search for sand and gravel near me in Denison.</p>
         <p>Dwight D. Eisenhower was born in Denison on October 14, 1890, and the house is now the three-acre Eisenhower Birthplace State Historic Site. Those are sights a visitor looks for; for a gravel order, the useful facts are the roads, the slopes and the soil described below.</p>
       </div>
@@ -231,7 +231,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Available in Denison</span>
       <h2 id="dn-svc-title">What can HARDROCK deliver or build in Denison, TX?</h2>
-      <p class="answer-block">HARDROCK Sand and Gravel delivers eight bulk materials to Denison and also digs ponds, builds house pads and driveways, and clears land. The six below fit water, bank and drive jobs best; every other material and service has its own page, listed underneath.</p>
+      <p class="answer-block">Hardrock Sand And Gravel delivers eight bulk materials to Denison and also digs ponds, builds house pads and driveways, and clears land. The six below fit water, bank and drive jobs best; every other material and service has its own page, listed underneath.</p>
     </div>
     <?php echo ap_service_list(['rip-rap', 'ponds', 'river-rock', 'pea-gravel', 'road-base', 'fill-dirt'], 'Denison'); ?>
   </div>
@@ -243,7 +243,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="section-title reveal-up">
       <span class="eyebrow">Why HARDROCK</span>
       <h2 id="dn-why-title">Why choose a Sherman supplier for a Denison job?</h2>
-      <p>HARDROCK Sand and Gravel serves Denison from Sherman, a short run up the highway. The four facts below come from the business's own details, so a first-time Denison customer knows what to expect on the phone.</p>
+      <p>Hardrock Sand And Gravel serves Denison from Sherman, a short run up the highway. The four facts below come from the business's own details, so a first-time Denison customer knows what to expect on the phone.</p>
     </div>
     <ul class="ap-why__grid">
       <li class="reveal-up reveal-delay-1"><?php echo icon('waves', 24); ?><b>Rock for water</b><span>Rip rap, river rock and 57/67 rock are all on the product list, so a bank or a drain is one call.</span></li>
@@ -291,7 +291,7 @@ if ($dnReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow">Also serving</span>
       <h2 id="dn-near-title">Where else does HARDROCK deliver besides Denison?</h2>
-      <p>HARDROCK Sand and Gravel also delivers in Sherman, its home base, and across the rest of Grayson County. Each page covers its own roads, ground conditions and the materials that suit the work there.</p>
+      <p>Hardrock Sand And Gravel also delivers in Sherman, its home base, and across the rest of Grayson County. Each page covers its own roads, ground conditions and the materials that suit the work there.</p>
     </div>
     <?php echo ap_nearby($apSlug); ?>
   </div>
@@ -299,6 +299,6 @@ if ($dnReviews !== ''): ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Get a Free Estimate in Denison',
-    'Call HARDROCK Sand and Gravel or send the form with your Denison address, the material and the size of the bank, drive or bed. HARDROCK prices the load by phone and sets a delivery day.'); ?>
+    'Call Hardrock Sand And Gravel or send the form with your Denison address, the material and the size of the bank, drive or bed. HARDROCK prices the load by phone and sets a delivery day.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

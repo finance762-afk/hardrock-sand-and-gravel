@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-page.php';
 <?php
 /* ---- Page setup ------------------------------------------------------------------------------- */
 $svc             = sp_service('road-base');
-$pageTitle       = 'Road Base in Sherman, TX | HARDROCK Sand and Gravel';
+$pageTitle       = 'Road Base in Sherman, TX | Hardrock Sand And Gravel';
 $pageDescription = 'Road base delivered to Sherman, Denison and Grayson County for gravel drives, house pads and parking areas on clay ground. Call HARDROCK at ' . formatPhone($phone) . '.';
 $canonicalUrl    = $siteUrl . '/services/road-base/';
 $ogImage         = '/assets/images/gravel-driveway-rural.jpg';
@@ -25,11 +25,11 @@ $spTel       = 'tel:' . $phoneE164;
 /* FAQ: research-brief questions this page can answer truthfully (delivery area, quantity, how it is quoted) */
 $faqs = [
     ['q' => 'Can HARDROCK deliver road base to my property near Sherman?',
-     'a' => 'HARDROCK Sand and Gravel hauls road base to addresses in Sherman, Denison and across Grayson County. Give the address and where on the lot the load should be dumped when you call ' . $spCall . ', and the delivery day is set on the same call.'],
+     'a' => 'Hardrock Sand And Gravel hauls road base to addresses in Sherman, Denison and across Grayson County. Give the address and where on the lot the load should be dumped when you call ' . $spCall . ', and the delivery day is set on the same call.'],
     ['q' => 'How many cubic yards of road base does a driveway take?',
      'a' => 'Multiply the drive length by its width by the finished base depth, all in feet, then divide by 27. A 150-foot drive that is 12 feet wide with 6 inches of base works out to about 33 cubic yards before any allowance for compaction, which HARDROCK can help you add.'],
     ['q' => 'How is a road base order priced?',
-     'a' => 'Every road base order from HARDROCK Sand and Gravel is priced on a phone call, since the total turns on the amount and the haul to your address. Have your measurements ready and call ' . $spCall . ' to get the current figure and how the load is measured.'],
+     'a' => 'Every road base order from Hardrock Sand And Gravel is priced on a phone call, since the total turns on the amount and the haul to your address. Have your measurements ready and call ' . $spCall . ' to get the current figure and how the load is measured.'],
 ];
 
 $pageSchemas = [
@@ -95,7 +95,7 @@ html.js-anim .rb-lifts__diagram:not(.in) .rb-section li { transform: translateY(
       <div class="hero-text hero-copy">
         <span class="eyebrow">Road base · <?php echo esc($address['city']); ?>, <?php echo esc($address['state']); ?></span>
         <h1 class="hero-title" id="sp-hero-title"><span class="text-accent">Road Base</span> for Drives and Pads in Sherman, TX</h1>
-        <p class="hero-answer">HARDROCK Sand and Gravel delivers road base to Sherman, Denison and the rest of Grayson County for homeowners, farms and builders who need a firm layer under a gravel drive, a house pad or a parking area. Compacted road base carries the weight, so the surface above it stops rutting when the clay gets wet.</p>
+        <p class="hero-answer">Hardrock Sand And Gravel delivers road base to Sherman, Denison and the rest of Grayson County for homeowners, farms and builders who need a firm layer under a gravel drive, a house pad or a parking area. Compacted road base carries the weight, so the surface above it stops rutting when the clay gets wet.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>or call <?php echo esc($spCall); ?></a>
@@ -178,8 +178,8 @@ html.js-anim .rb-lifts__diagram:not(.in) .rb-section li { transform: translateY(
       <div class="sp-expert__copy reveal-left">
         <span class="eyebrow">Material or the whole job</span>
         <h2 id="rb-expert-title">Should you order <span class="text-accent">road base</span> or have HARDROCK build the drive?</h2>
-        <p class="answer-block">HARDROCK Sand and Gravel handles road base either way: as a delivered load for your own crew, or as part of a gravel driveway or house pad HARDROCK builds. Owners with a tractor and a compactor often take the load. Everyone else usually hands HARDROCK the job.</p>
-        <div class="sp-figure"><b>2019</b><span>the year HARDROCK opened for business in Grayson County</span></div>
+        <p class="answer-block">Hardrock Sand And Gravel handles road base either way: as a delivered load for your own crew, or as part of a gravel driveway or house pad HARDROCK builds. Owners with a tractor and a compactor often take the load. Everyone else usually hands HARDROCK the job.</p>
+        <div class="sp-figure"><b>2016</b><span>the year HARDROCK opened for business in Grayson County</span></div>
         <ul class="sp-points">
           <li><?php echo icon('tractor', 20); ?><span><b>Doing it yourself.</b> Have the area cleared and roughly graded before the truck comes, and keep the dump spot close to where the base will be spread.</span></li>
           <li><?php echo icon('route', 20); ?><span><b>A new or rebuilt drive.</b> HARDROCK builds <a href="/services/driveways/">gravel driveways for homes and rural lots</a>, with the base and the surface rock handled together.</span></li>
@@ -256,7 +256,7 @@ html.js-anim .rb-lifts__diagram:not(.in) .rb-section li { transform: translateY(
         <span class="eyebrow">Recent work</span>
         <h2 id="rb-proof-title">What does a finished HARDROCK gravel drive look like?</h2>
         <p class="answer-block">A finished HARDROCK gravel drive is a straight, even run of fresh crushed gravel from the road to where it is needed. The drive in this photo crosses open pasture, the kind of long rural approach around Sherman that carries a tractor as often as a car.</p>
-        <p>Long country drives off the farm roads around Howe, Tom Bean and Bells take a beating from trucks and trailers, which is why the layer under the surface matters as much as the rock on top. Every material and job HARDROCK handles is listed on <a href="/services/">the full HARDROCK services page</a>.</p>
+        <p>Long country drives off the farm roads around Howe, Tom Bean and Bells take a beating from trucks and trailers, which is why the layer under the surface matters as much as the rock on top. For layer depths and yardage on a full drive, see <a href="/blog/how-much-gravel-for-a-driveway-sherman-tx/">how much gravel a driveway takes in Sherman</a>, and for rebuilding a rutted drive with fresh base, see <a href="/blog/fix-gravel-driveway-after-heavy-rain-grayson-county/">fixing a gravel driveway after heavy rain</a>. Every material and job HARDROCK handles is listed on <a href="/services/">the full HARDROCK services page</a>.</p>
       </div>
     </div>
     <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/google-reviews.php';
@@ -274,7 +274,7 @@ html.js-anim .rb-lifts__diagram:not(.in) .rb-section li { transform: translateY(
     <div class="section-title reveal-up">
       <span class="eyebrow">Questions</span>
       <h2 id="rb-faq-title">What do people ask HARDROCK before ordering road base?</h2>
-      <p>Before a road base load is scheduled, HARDROCK Sand and Gravel usually hears three questions: whether the truck can reach the property, how many cubic yards the drive or pad will take, and how the order is priced.</p>
+      <p>Before a road base load is scheduled, Hardrock Sand And Gravel usually hears three questions: whether the truck can reach the property, how many cubic yards the drive or pad will take, and how the order is priced.</p>
     </div>
     <div class="faq-grid">
       <?php foreach ($faqs as $faqIdx => $faq): ?>
@@ -292,10 +292,10 @@ html.js-anim .rb-lifts__diagram:not(.in) .rb-section li { transform: translateY(
 <!-- ============ RELATED SERVICES ============ -->
 <?php echo sp_related_section(['driveways', 'house-pads', '57-67-rock'],
     'What gets built on top of <span class="text-accent">road base</span>?',
-    'Road base is the bottom half of most jobs, so it pairs with the work that sits on it. HARDROCK Sand and Gravel builds gravel driveways and house pads around Sherman and also hauls 57 and 67 crushed rock for the finish layer, so the base, the top and the labor can come from one call.'); ?>
+    'Road base is the bottom half of most jobs, so it pairs with the work that sits on it. Hardrock Sand And Gravel builds gravel driveways and house pads around Sherman and also hauls 57 and 67 crushed rock for the finish layer, so the base, the top and the labor can come from one call.'); ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need road base down before the spring rains?',
-    'Call HARDROCK Sand and Gravel with the address and the length and width of the drive or pad, or send the form. The number and a delivery day come back on the same phone call.'); ?>
+    'Call Hardrock Sand And Gravel with the address and the length and width of the drive or pad, or send the form. The number and a delivery day come back on the same phone call.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

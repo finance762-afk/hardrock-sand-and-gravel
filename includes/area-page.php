@@ -19,7 +19,7 @@ $apAreas = [
         'name' => 'Sherman', 'label' => 'Sherman, TX', 'kind' => 'City',
         'photo' => 'excavator-crushed-rock-pad', 'alt' => 'Yellow excavator beside a long pile of light grey crushed rock on a graded pad, with power lines overhead',
         'blurb' => 'The Grayson County seat and HARDROCK\'s home base: in-town lots, building pads and acreage at the edge of the city.',
-        'bullets' => ['Based in Sherman since 2019', 'Pads, drives and beds in town', 'Loads priced by phone'],
+        'bullets' => ['Based in Sherman since 2016', 'Pads, drives and beds in town', 'Loads priced by phone'],
     ],
     'denison' => [
         'name' => 'Denison', 'label' => 'Denison, TX', 'kind' => 'City',

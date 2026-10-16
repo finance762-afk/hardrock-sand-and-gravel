@@ -37,7 +37,7 @@ $faqs = [
     ['q' => 'Can I fix a washed-out driveway with pea gravel?',
      'a' => 'Pea gravel is a poor repair for a drive. The stones are rounded, so they shift under tires instead of locking together. Packed road base fills the washout, and crushed 57 rock goes on top; both are on HARDROCK\'s product list.'],
     ['q' => 'Can HARDROCK deliver rock to repair a washout?',
-     'a' => 'Yes. HARDROCK Sand and Gravel delivers road base, 57 and 67 rock and rip rap in Sherman, Denison and Grayson County, and also builds gravel driveways. Call ' . $spCall . ' with the address and the size of the damage and the load is priced by phone.'],
+     'a' => 'Yes. Hardrock Sand And Gravel delivers road base, 57 and 67 rock and rip rap in Sherman, Denison and Grayson County, and also builds gravel driveways. Call ' . $spCall . ' with the address and the size of the damage and the load is priced by phone.'],
 ];
 $pageSchemas = [blog_post_schema($blPost, $pageDescription, 'gravel driveway repair, washed out gravel driveway, driveway after heavy rain, road base, rip rap, culvert, Grayson County TX')];
 /* FAQPage mirrors the visible FAQ below (AI comprehension aid only) */
@@ -83,7 +83,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="bl-intro__grid">
       <div class="blog-post__content reveal-left">
         <p class="answer-block">Let the gravel driveway dry, rake displaced rock back from the edges, fill ruts and potholes with packed road base, and clear the ditch or culvert before the next storm. A true washout needs road base compacted in first, not loose stone dumped on top.</p>
-        <p>HARDROCK Sand and Gravel, a supplier in Sherman, TX since 2019, delivers the road base, crushed rock and rip rap these repairs use. This guide covers what heavy rain does to a gravel drive in Grayson County, how to repair it in order, and how much rock a patch takes.</p>
+        <p>Hardrock Sand And Gravel, a supplier in Sherman, TX since 2016, delivers the road base, crushed rock and rip rap these repairs use. This guide covers what heavy rain does to a gravel drive in Grayson County, how to repair it in order, and how much rock a patch takes.</p>
         <p>Building a new drive instead? Start with <a href="<?php echo esc(blog_url('how-much-gravel-for-a-driveway-sherman-tx')); ?>">how much gravel a driveway needs</a>.</p>
       </div>
       <figure class="blog-post__featured-image reveal-right">
@@ -95,7 +95,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
 <!-- ============ MID-PAGE ESTIMATE BAND ============ -->
 <?php $ctaBandTitle = 'Drive washed <span class="text-accent">out</span>? Get a price.';
-$ctaBandCopy = 'Send the address and the size of the damage and HARDROCK Sand and Gravel prices the repair rock by phone.';
+$ctaBandCopy = 'Send the address and the size of the damage and Hardrock Sand And Gravel prices the repair rock by phone.';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
 
 <!-- ============ BODY ============ -->
@@ -134,7 +134,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
 
         <h2 id="call">When should you call a supplier instead of patching?</h2>
         <p class="answer-block">Call when damage runs over a long stretch, the same spot washes out after every storm, a culvert is undermined, or the base underneath has failed. At that point the repair is a rebuild: shaped subgrade, compacted road base and fresh top rock, sized in cubic yards.</p>
-        <p>HARDROCK Sand and Gravel delivers the material or builds the drive; see <a href="/services/delivery/">delivery</a> for how an order works. Tell HARDROCK the address, the length of the damaged stretch and where the water goes, and the load is priced by phone. Call <a href="<?php echo esc($spTel); ?>"><?php echo esc($spCall); ?></a> Monday to Thursday from 6:00 AM, Friday from 9:00 AM or Saturday from 9:00 AM to 2:00 PM.</p>
+        <p>Hardrock Sand And Gravel delivers the material or builds the drive; see <a href="/services/delivery/">delivery</a> for how an order works. Tell HARDROCK the address, the length of the damaged stretch and where the water goes, and the load is priced by phone. Call <a href="<?php echo esc($spTel); ?>"><?php echo esc($spCall); ?></a> Monday to Thursday from 6:00 AM, Friday from 9:00 AM or Saturday from 9:00 AM to 2:00 PM.</p>
 
       </div>
 
@@ -152,7 +152,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
         </nav>
         <div class="bl-side-cta">
           <h2>Need repair rock?</h2>
-          <p>HARDROCK Sand and Gravel delivers road base, 57 rock and rip rap in Sherman, Denison and Grayson County.</p>
+          <p>Hardrock Sand And Gravel delivers road base, 57 rock and rip rap in Sherman, Denison and Grayson County.</p>
           <a class="link-call" href="<?php echo esc($spTel); ?>"><?php echo icon('phone', 18); ?>Call <?php echo esc($spCall); ?></a>
           <button type="button" class="btn btn-accent" data-open-estimate>Get a free estimate</button>
         </div>
@@ -215,6 +215,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php'; ?>
 
 <!-- ============ FINAL CTA ============ -->
 <?php echo sp_final_cta('Need rock to fix the drive?',
-    'Call HARDROCK Sand and Gravel with the address and the size of the damage. HARDROCK prices the load by phone and sets a delivery day.'); ?>
+    'Call Hardrock Sand And Gravel with the address and the size of the damage. HARDROCK prices the load by phone and sets a delivery day.'); ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
